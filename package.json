@@ -1,0 +1,49 @@
+{
+    "name": "bee-ui",
+    "version": "0.0.1",
+    "description": "",
+    "main": "./dist/bee-min.css",
+    "filename": "bee-min.css",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "jest",
+        "build": "gulp minify",
+        "watch": "gulp watch",
+        "prepare": "npm run snyk-protect",
+        "snyk-protect": "snyk-protect"
+    },
+    "repository": "git+https://github.com/xirosoft/bee-ui.git",
+    "keywords": [
+        "bee",
+        "css",
+        "UI",
+        "framework"
+    ],
+    "author": "Xirosoft",
+    "license": "MIT",
+    "homepage": "https://github.com/xirosoft/bee-ui",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-build": "^0.5.3",
+        "gulp-clean-css": "^4.2.0",
+        "gulp-cli": "^2.0.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-gzip": "^1.4.2",
+        "gulp-header": "^2.0.5",
+        "gulp-load-plugins": "^2.0.1",
+        "gulp-size": "^3.0.0"
+    },
+    "dependencies": {
+        "@snyk/protect": "^1.707.0",
+        "glob": "^7.2.0",
+        "global": "^4.4.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-sizereport": "^1.2.1",
+        "jest": "^27.3.1",
+        "sass": "^1.51.0",
+        "sass-true": "^6.1.0"
+    },
+    "snyk": true
+}

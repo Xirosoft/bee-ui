@@ -1,0 +1,275 @@
+/*
+* Bee UI 0.0.1
+* © 2023 Xirosoft, 
+* https://xirosoft.github.io/bee
+*/
+/* BASE STYLING + RESET FOR BEE UI */
+:root {
+  /* Colors */
+  --bee-bg: #ffffff;
+}
+
+/* RESET */
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  /* Prevent setting borders from increasing the size of an element */
+  box-sizing: border-box;
+  border: 0 solid currentColor;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove default margin and padding */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Allow % styles to work on page */
+html,
+body {
+  border: none;
+  height: 100%;
+}
+
+/* Nunito Sans for the font */
+body {
+  letter-spacing: 0.01rem;
+  line-height: 1.8;
+  /* Globally adjust line height */
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--bee-fg);
+}
+
+/* Remove bullets from unordered lists */
+ul {
+  list-style: none;
+}
+
+/* Setting up embedded content */
+audio,
+canvas,
+iframe,
+img,
+embed,
+object,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Page sections set to block */
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Base styling for labels */
+label {
+  display: inline-block;
+}
+
+/* Base styling for fieldsets */
+fieldset {
+  padding: 1rem;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+/* Hidden elements must not show */
+[hidden] {
+  display: none !important;
+}
+
+/* Selection Color */
+::selection {
+  position: relative;
+}
+
+/* When focusing any element */
+:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Remove all animations based on preference */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* ANIMATIONS */
+/* FONT */ /* GRID */
+:root {
+  --grid-template-column: repeat(12, minmax(0, 1fr));
+  --grid-column-start: auto;
+  --grid-column-end: auto;
+  --grid-row-start: auto;
+  --grid-row-end: auto;
+}
+
+/* This works well with panel */
+section {
+  display: block;
+}
+
+.content {
+  max-width: 48em;
+  margin: 0 auto 1.5em;
+  width: 100%;
+}
+
+/* MEDIA CSS */
+/* Handles images, videos, figures, etc */
+video.video-fullscreen {
+  position: absolute;
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+}
+
+.hero.fullscreen video {
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Add to parent container to make media child fill container */
+.media-stretch {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  /* Add pseudoclass to allow media to have height (default height is 0) */
+  /* Force media embed to fill parent container */
+  /* Alternate media ratios */
+  /* For HTML5 video objects */
+}
+
+.media-stretch::before {
+  content: "";
+  display: block;
+  padding-bottom: 56.25%; /* 9 / 16  for 16:9 ratio */
+}
+
+.media-stretch iframe,
+.media-stretch embed,
+.media-stretch object {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Make sure media does exceed or go under boundary limit */
+  height: 100%;
+}
+
+.media-stretch.rat-4-3::before {
+  padding-bottom: 75%;
+}
+
+.media-stretch.rat-1-1::before {
+  padding-bottom: 100%;
+}
+
+.media-stretch video {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* FIGURES */
+/* For flexible media display */
+.fig {
+  margin: 0 0 0.5rem 0; /* Small margin at the bottom */
+}
+
+.fig .fig-caption {
+  margin-top: 1rem;
+}
+
+/* IMAGES */
+.img-stretch {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-cover {
+  object-fit: cover;
+}
+
+.img-contain {
+  object-fit: contain;
+}
+
+.btn {
+  padding: 8px 12px;
+}
+
+/* UTILS */
+/* Utility classes to help solve some very annoying issues */

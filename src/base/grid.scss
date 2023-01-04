@@ -1,0 +1,13 @@
+@use 'sass:map';
+
+@use '../internal' as *;
+
+/* GRID */
+
+:root {
+    --grid-template-column: repeat(#{$grid-columns}, minmax(0, 1fr));
+    --grid-column-start: auto;
+    --grid-column-end: auto;
+    --grid-row-start: auto;
+    --grid-row-end: auto;
+}
