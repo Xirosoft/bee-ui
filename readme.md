@@ -58,7 +58,7 @@ If you want to use single or some number of components.
 Use Gitpod, a free online dev environment for GitHub.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/xirosoft/bee-ui)
-[<img src="https://svgshare.com/i/pKC.svg" width="165px">](https://https://vscode.dev/github/xirosoft/bee-ui)
+[<img src="https://svgshare.com/i/pKC.svg" width="165px">](https://vscode.dev/github/xirosoft/bee-ui)
 
 
 Or clone locally:
