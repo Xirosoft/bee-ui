@@ -6,10 +6,12 @@ const $ = require('gulp-load-plugins')();
 const sizereport = require('gulp-sizereport');
 const gzip = require('gulp-gzip');
 const head = '/*\r\n* Bee UI ' + prop.version +
-    `\r\n* © ${new Date().getFullYear()} Xirosoft, \r\n* https://xirosoft.github.io/bee\r\n*/\r\n`;;
+    `\r\n* © ${new Date().getFullYear()} Xirosoft, \r\n* https://xirosoft.github.io/bee\r\n*/\r\n`;
+const cssDir = './dist/css/';
 
-generateGulpBuild(`core`, `src/bee-core.scss`, `bee-core`);
-generateGulpBuild(`all`, `src/bee-all.scss`, `bee-all`);
+
+generateGulpBuild(`core`, `src/beeui.core.scss`, `beeui.core`);
+generateGulpBuild(`all`, `src/beeui.all.scss`, `beeui.all`);
 // Compile separate components
 generateGulpBuildComponents(`components`, `src/components/`, `components/`);
 
@@ -30,10 +32,10 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
                     sass.logError.call(this, err);
                 })
             )
-            .pipe($.concat(`${outputName}.css`))
+            .pipe($.concat(outputName + '.css'))
             .pipe($.header(head))
             .pipe($.size())
-            .pipe(gulp.dest('./dist/'))
+            .pipe(gulp.dest(cssDir))
             .on('error', (err) => {
                 console.error(err);
                 process.exit(1);
@@ -45,7 +47,7 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
         gulp.series(taskName, () => {
             return (
                 gulp
-                    .src([`./dist/${outputName}.css`])
+                    .src([cssDir + outputName + '*.css'])
                     .pipe(
                         minify(
                             {
@@ -78,8 +80,8 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
                     )
                     .pipe($.header(head))
                     .pipe($.size())
-                    .pipe($.concat(`${outputName}.min.css`))
-                    .pipe(gulp.dest('./dist/'))
+                    .pipe($.concat(outputName + '.min.css'))
+                    .pipe(gulp.dest(cssDir))
                     .on('error', (err) => {
                         console.error(`Error encountered for task ${taskName}. Failing.`);
                         process.exit(1);
@@ -94,7 +96,7 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
         gulp.series(taskName, `minify-${taskName}`, () => {
             return (
                 gulp
-                    .src([`./dist/${outputName}.min.css`])
+                    .src([cssDir + outputName + '.min.css'])
                     .pipe(gzip())
                     .pipe(
                         sizereport({
@@ -102,7 +104,7 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
                             total: false,
                         })
                     )
-                    .pipe(gulp.dest('./dist/'))
+                    .pipe(gulp.dest(cssDir))
                     .on('error', (err) => {
                         console.error(`Error encountered for task ${taskName}. Failing.`);
                         process.exit(1);
@@ -116,7 +118,7 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
 function generateGulpBuildComponents(taskName, sassDir, outputDir) {
     gulp.task(taskName, () => {
         return gulp
-            .src([`${sassDir}*.scss`])
+            .src([sassDir + '*.scss'])
             .pipe(
                 sass({
                     includePaths: ['./node_modules'],
@@ -130,7 +132,7 @@ function generateGulpBuildComponents(taskName, sassDir, outputDir) {
             )
             .pipe($.header(head))
             .pipe($.size())
-            .pipe(gulp.dest(`./dist/${outputDir}`))
+            .pipe(gulp.dest(cssDir + outputDir))
             .on('error', (err) => {
                 console.error(err);
                 process.exit(1);

@@ -275,7 +275,7 @@ video.video-fullscreen {
 * Variants: primary, secondary
 * Version: 0.0.1
 * Since: 0.0.1
-* Live Url: https://xirosoft.com/bee-ui/component/button
+* Live Url: https://xirosoft.com/bee-ui/components/button
 */
 .btn {
   padding: 8px 12px;
@@ -287,8 +287,37 @@ video.video-fullscreen {
 * variants: One,Two
 * Version: 0.0.1
 * Since: 0.0.1
-* Live Url: https://xirosoft.com/bee-ui/component/button
+* Live Url: https://xirosoft.com/bee-ui/components/image-box
 */
 .image-box {
   padding: 8px 12px;
+}
+
+.image-box {
+  --image-box-border-radius: 8px;
+  --image-box-padding: 8px;
+  --image-box-max-width: 320px;
+  font-family: "Arial, Helvetica, sans-serif";
+  width: 100%;
+  max-width: var(--image-box-max-width);
+  border: 1px solid #cdcdcd;
+  border-radius: var(--image-box-border-radius);
+}
+
+.image-box-header img {
+  width: 100%;
+  border-radius: var(--image-box-border-radius) var(--image-box-border-radius) 0 0;
+}
+
+.image-box-content {
+  padding: var(--image-box-padding);
+}
+
+.image-box-title {
+  line-height: 1;
+  margin: 0;
+}
+
+.image-box-title a {
+  text-decoration: none;
 }
