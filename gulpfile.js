@@ -10,13 +10,15 @@ const head = '/*\r\n* Bee UI ' + prop.version +
 
 generateGulpBuild(`core`, `src/bee-core.scss`, `bee-core`);
 generateGulpBuild(`all`, `src/bee-all.scss`, `bee-all`);
+// Compile separate components
+generateGulpBuildComponents(`components`, `src/components/`, `components/`);
 
 // source file name
 // file name
 function generateGulpBuild(taskName, sassFilePath, outputName) {
     gulp.task(taskName, () => {
         return gulp
-            .src([sassFilePath], ['allowEmpty'])
+            .src([sassFilePath])
             .pipe(
                 sass({
                     includePaths: ['./node_modules'],
@@ -92,7 +94,7 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
         gulp.series(taskName, `minify-${taskName}`, () => {
             return (
                 gulp
-                    .src([`./dist/${outputName}.min.css`], ['allowEmpty'])
+                    .src([`./dist/${outputName}.min.css`])
                     .pipe(gzip())
                     .pipe(
                         sizereport({
@@ -110,8 +112,34 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
     );
 }
 
-gulp.task('watch', () => gulp.watch('./src/**/*.scss', gulp.parallel('minify-core', 'minify-all')));
 
-gulp.task('default', gulp.parallel('minify-core', 'minify-all'));
+function generateGulpBuildComponents(taskName, sassDir, outputDir) {
+    gulp.task(taskName, () => {
+        return gulp
+            .src([`${sassDir}*.scss`])
+            .pipe(
+                sass({
+                    includePaths: ['./node_modules'],
+                })
+            )
+            .on('error', sass.logError)
+            .pipe(
+                sass.sync().on('error', function (err) {
+                    sass.logError.call(this, err);
+                })
+            )
+            .pipe($.header(head))
+            .pipe($.size())
+            .pipe(gulp.dest(`./dist/${outputDir}`))
+            .on('error', (err) => {
+                console.error(err);
+                process.exit(1);
+            });
+    });
+}
+
+gulp.task('watch', () => gulp.watch('./src/**/*.scss', gulp.parallel('minify-core', 'components', 'minify-all')));
+
+gulp.task('default', gulp.parallel('minify-core', 'components', 'minify-all'));
 
 gulp.task('gzip', gulp.parallel('gzip-core', 'gzip-all'));

@@ -1,4 +1,5 @@
-@use "./core";
+// Base Styling
+@use "../base";
 
-// Extended Components
-// @use "../components/accordion";
+// Core (Extend) Components
+@use "../ext/button";

@@ -1,6 +1,5 @@
 @forward "internal";
 
-// Uses default config in _config.scss
-
 @forward "builds/core.scss";
 @forward "builds/ext.scss";
+@forward "builds/components.scss";

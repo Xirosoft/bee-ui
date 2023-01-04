@@ -267,9 +267,5 @@ video.video-fullscreen {
   object-fit: contain;
 }
 
-.btn {
-  padding: 8px 12px;
-}
-
 /* UTILS */
 /* Utility classes to help solve some very annoying issues */
