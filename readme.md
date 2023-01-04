@@ -72,6 +72,7 @@ $ npm watch
 ## Folder Structure  of **Bee UI**
     .
     ├── dist/                       # Compiled files
+        └── components/             # Compiled Components
     ├── docs/                       # Documentation
     └── src/                        # Source
         ├── builds/                 # 
