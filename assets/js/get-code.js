@@ -1,20 +1,19 @@
 let form = document.getElementById('getCodeForm')
+let outputCode = document.getElementById('outputCode')
 
 form.addEventListener('submit', async function (e) {
+  let cssCollection = [], minifiedCSS
   e.preventDefault();
-  let props = await getData(e.target);
-  let css = await generateCSS(props)
-  console.log(css);
+  let props = await getFormData(e.target);
+  for (item of props) {
+    cssCollection.push(await fetchData(item))
+  }
+  minifiedCSS = minifyCSS(cssCollection.toString())
+  outputCode.textContent = minifiedCSS
 })
 
-// async function generateCSS(e) {
-//   e.preventDefault();
-//   let props = await getData(e.target);
-//   let css = await generateCSS(props)
-// }
 
-
-function getData(form) {
+function getFormData(form) {
   var formData = new FormData(form);
   let formProp = [];
 
@@ -26,27 +25,33 @@ function getData(form) {
 
 
 function fetchData(component) {
-  let URI = `/dist/css/components/${component}.css`;
-  return new Promise((resolve, reject) => (
-    fetch(URI)
-      .then(data => data.text())
-      .then(data => resolve(data))
-      .catch(err => reject(err))
-  ))
+  let url = `/dist/css/components/${component}.css`;
+  return new Promise(async function (resolve, reject) {
+    // do async thing
+    const res = await fetch(url)
+    // resolve
+    res.status === 200 ? resolve(res.text()) : resolve(`\n\n/* ${component} not found! */\n\n`)
+  })
 }
 
-function generateCSS(props) {
-  // let csss = getCssFromFetch('image-box')
-  // console.log(props);
-  // return props
-  let css = []
-  props.map(item => {
-    css.push(getCssFromFetch(item))
-  })
+
+function minifyCSS(css) {
+  let url = 'https://www.toptal.com/developers/cssminifier/api/raw'
+
+  // return new Promise(async function (resolve, reject) {
+  // do async thing
+  // const res = await fetch(url, {
+  //   method: 'post',
+  //   credentials: 'same-origin',
+  //   headers: {
+  //     'Content-Type': 'application/x-www-form-urlencoded',
+  //   },
+  //   body: JSON.stringify({ input: css })
+  // })
+  // // resolve
+  // if (res.status === 200) {
+  //   resolve(res.text())
+  // }
+  // })
   return css;
 }
-// generateCSS()
-
-// function minifyCSS(css) {
-
-// }
