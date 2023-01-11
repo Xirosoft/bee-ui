@@ -1,0 +1,11 @@
+@use '../internal' as *;
+
+/*************************************
+/* Text Font Size
+*************************************/
+@for $i from 10 to 40 {
+	.text-#{$i} {
+		font-size: #{$i}px !important;
+	}
+}
+

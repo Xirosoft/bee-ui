@@ -1,6 +1,12 @@
 /* BASE STYLING + RESET FOR BEE UI */
 @use '../internal' as *;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     /* Colors */
     --bee-bg: #{$bee-bg};

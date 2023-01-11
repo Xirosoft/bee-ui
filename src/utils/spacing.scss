@@ -115,10 +115,3 @@ $colors: (
 		}
 	}
 }
-
-// Text font size
-@for $i from 10 to 33 {
-	.text-#{$i} {
-		font-size: #{$i}px !important;
-	}
-}
