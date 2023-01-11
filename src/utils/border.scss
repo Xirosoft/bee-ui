@@ -1,1 +1,44 @@
 @use '../internal' as *;
+
+
+/*************************************
+/* Border Style 
+*************************************/ 
+
+
+
+
+
+
+.border {
+    // Border Styles
+    &-solid {
+        border: 1px solid;
+        // Border Width
+        &-1 {
+            border-width: 1px; 
+        }
+        &-2 {
+           border-width: 1px; 
+        }
+        &-3 {
+           border-width: 1px; 
+        }
+        &-4 {
+            border-width: 1px; 
+        }
+        // Border Color
+        &-green {}
+        &-blue {}
+        &-red {}
+    }
+    &-dash {
+        
+    }
+    
+    
+    // Border Color
+    // Border Radius
+    // 
+    
+}

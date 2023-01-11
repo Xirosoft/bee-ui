@@ -3,6 +3,17 @@
 * © 2023 Xirosoft, 
 * https://xirosoft.github.io/bee
 */
+/**
+ * For max-width media query, device width are sets as::after
+ * xl = 1440
+ * medium = 1199
+ * tabland = 991
+ * tabport = 767
+ * phone
+ * phone-sm
+ * phone-mid
+ * phone-xm
+ */
 /****************************
 * Name: Image Box
 * Class: .image-box
