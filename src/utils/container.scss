@@ -1,0 +1,7 @@
+@use '../internal' as *;
+
+
+.container {
+    @include make-container;
+    display: inline;
+}

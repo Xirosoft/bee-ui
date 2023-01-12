@@ -1,3 +1,5 @@
+$prefix : 'bee-';
+
 // Breakpoints
 $xs: 'xs';
 $sm: 'sm';
@@ -15,3 +17,23 @@ $font-size-l: 1.25rem;
 $font-size-xl: 1.5rem;
 
 $grid-columns: 12;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+
+
+
+$container-padding-x: 1rem;
