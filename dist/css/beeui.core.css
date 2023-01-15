@@ -1013,133 +1013,423 @@ video.video-fullscreen {
 
 /*************************************
 /* Border Style 
+/* @properties: border-style, border-width, border-radius
+/* @styles: solid, dotted, double, groove, dashed, ridge, inset, outset, none, hidden
+/* @colors: $colors
 *************************************/
 .border {
   border: 1px solid;
 }
 
+.border-solid {
+  border-width: 1px;
+  border-style: solid;
+}
+
 .border-dotted {
+  border-width: 1px;
   border-style: dotted;
 }
 
 .border-dashed {
+  border-width: 1px;
   border-style: dashed;
 }
 
-.border-solid {
-  border-style: solid;
-}
-
 .border-double {
+  border-width: 1px;
   border-style: double;
 }
 
 .border-groove {
+  border-width: 1px;
   border-style: groove;
 }
 
 .border-ridge {
+  border-width: 1px;
   border-style: ridge;
 }
 
 .border-inset {
+  border-width: 1px;
   border-style: inset;
 }
 
 .border-outset {
+  border-width: 1px;
   border-style: outset;
 }
 
 .border-none {
+  border-width: 1px;
   border-style: none;
 }
 
-.border-hidden {
-  border-style: hidden;
+.border-top {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
 }
 
-.border-dotted {
-  border-style: dotted;
-}
-
-.border-dotted-1, .border-dashed-1, .border-solid-1, .border-double-1, .border-groove-1, .border-ridge-1, .border-inset-1, .border-outset-1, .border-none-1, .border-hidden-1, .border-dotted-1, .border-solid-1 {
+.border-top-1 {
   border-width: 1px;
+  border-style: solid;
 }
 
-.border-dotted-2, .border-dashed-2, .border-solid-2, .border-double-2, .border-groove-2, .border-ridge-2, .border-inset-2, .border-outset-2, .border-none-2, .border-hidden-2, .border-dotted-2, .border-solid-2 {
+.border-top-2 {
   border-width: 2px;
+  border-style: solid;
 }
 
-.border-dotted-3, .border-dashed-3, .border-solid-3, .border-double-3, .border-groove-3, .border-ridge-3, .border-inset-3, .border-outset-3, .border-none-3, .border-hidden-3, .border-dotted-3, .border-solid-3 {
+.border-top-3 {
   border-width: 3px;
+  border-style: solid;
 }
 
-.border-dotted-4, .border-dashed-4, .border-solid-4, .border-double-4, .border-groove-4, .border-ridge-4, .border-inset-4, .border-outset-4, .border-none-4, .border-hidden-4, .border-dotted-4, .border-solid-4 {
+.border-top-4 {
   border-width: 4px;
+  border-style: solid;
 }
 
-.border-dotted-5, .border-dashed-5, .border-solid-5, .border-double-5, .border-groove-5, .border-ridge-5, .border-inset-5, .border-outset-5, .border-none-5, .border-hidden-5, .border-dotted-5, .border-solid-5 {
+.border-top-5 {
   border-width: 5px;
+  border-style: solid;
 }
 
-.border-dotted-6, .border-dashed-6, .border-solid-6, .border-double-6, .border-groove-6, .border-ridge-6, .border-inset-6, .border-outset-6, .border-none-6, .border-hidden-6, .border-dotted-6, .border-solid-6 {
+.border-top-6 {
   border-width: 6px;
+  border-style: solid;
 }
 
-.border-dotted-7, .border-dashed-7, .border-solid-7, .border-double-7, .border-groove-7, .border-ridge-7, .border-inset-7, .border-outset-7, .border-none-7, .border-hidden-7, .border-dotted-7, .border-solid-7 {
+.border-top-7 {
   border-width: 7px;
+  border-style: solid;
 }
 
-.border-dotted-8, .border-dashed-8, .border-solid-8, .border-double-8, .border-groove-8, .border-ridge-8, .border-inset-8, .border-outset-8, .border-none-8, .border-hidden-8, .border-dotted-8, .border-solid-8 {
+.border-top-8 {
   border-width: 8px;
+  border-style: solid;
 }
 
-.border-dotted-9, .border-dashed-9, .border-solid-9, .border-double-9, .border-groove-9, .border-ridge-9, .border-inset-9, .border-outset-9, .border-none-9, .border-hidden-9, .border-dotted-9, .border-solid-9 {
+.border-top-9 {
   border-width: 9px;
+  border-style: solid;
 }
 
-.border-dotted-10, .border-dashed-10, .border-solid-10, .border-double-10, .border-groove-10, .border-ridge-10, .border-inset-10, .border-outset-10, .border-none-10, .border-hidden-10, .border-dotted-10, .border-solid-10 {
+.border-top-10 {
   border-width: 10px;
+  border-style: solid;
 }
 
-.border-primary {
-  border-color: #007bff;
+.border-top-11 {
+  border-width: 11px;
+  border-style: solid;
 }
 
-.border-secondary {
-  border-color: #6c757d;
+.border-right {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
 }
 
-.border-success {
-  border-color: #28a745;
+.border-right-1 {
+  border-width: 1px;
+  border-style: solid;
 }
 
-.border-danger {
-  border-color: #dc3545;
+.border-right-2 {
+  border-width: 2px;
+  border-style: solid;
 }
 
-.border-warning {
-  border-color: #ffc107;
+.border-right-3 {
+  border-width: 3px;
+  border-style: solid;
 }
 
-.border-info {
-  border-color: #17a2b8;
+.border-right-4 {
+  border-width: 4px;
+  border-style: solid;
 }
 
-.border-light {
-  border-color: #f8f9fa;
+.border-right-5 {
+  border-width: 5px;
+  border-style: solid;
 }
 
-.border-dark {
-  border-color: #343a40;
+.border-right-6 {
+  border-width: 6px;
+  border-style: solid;
 }
 
-.border-white {
-  border-color: #fff;
+.border-right-7 {
+  border-width: 7px;
+  border-style: solid;
 }
 
-.border-gray {
-  border-color: #6c757d;
+.border-right-8 {
+  border-width: 8px;
+  border-style: solid;
+}
+
+.border-right-9 {
+  border-width: 9px;
+  border-style: solid;
+}
+
+.border-right-10 {
+  border-width: 10px;
+  border-style: solid;
+}
+
+.border-right-11 {
+  border-width: 11px;
+  border-style: solid;
+}
+
+.border-bottom {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+}
+
+.border-bottom-1 {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-bottom-2 {
+  border-width: 2px;
+  border-style: solid;
+}
+
+.border-bottom-3 {
+  border-width: 3px;
+  border-style: solid;
+}
+
+.border-bottom-4 {
+  border-width: 4px;
+  border-style: solid;
+}
+
+.border-bottom-5 {
+  border-width: 5px;
+  border-style: solid;
+}
+
+.border-bottom-6 {
+  border-width: 6px;
+  border-style: solid;
+}
+
+.border-bottom-7 {
+  border-width: 7px;
+  border-style: solid;
+}
+
+.border-bottom-8 {
+  border-width: 8px;
+  border-style: solid;
+}
+
+.border-bottom-9 {
+  border-width: 9px;
+  border-style: solid;
+}
+
+.border-bottom-10 {
+  border-width: 10px;
+  border-style: solid;
+}
+
+.border-bottom-11 {
+  border-width: 11px;
+  border-style: solid;
+}
+
+.border-left {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+}
+
+.border-left-1 {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-left-2 {
+  border-width: 2px;
+  border-style: solid;
+}
+
+.border-left-3 {
+  border-width: 3px;
+  border-style: solid;
+}
+
+.border-left-4 {
+  border-width: 4px;
+  border-style: solid;
+}
+
+.border-left-5 {
+  border-width: 5px;
+  border-style: solid;
+}
+
+.border-left-6 {
+  border-width: 6px;
+  border-style: solid;
+}
+
+.border-left-7 {
+  border-width: 7px;
+  border-style: solid;
+}
+
+.border-left-8 {
+  border-width: 8px;
+  border-style: solid;
+}
+
+.border-left-9 {
+  border-width: 9px;
+  border-style: solid;
+}
+
+.border-left-10 {
+  border-width: 10px;
+  border-style: solid;
+}
+
+.border-left-11 {
+  border-width: 11px;
+  border-style: solid;
+}
+
+.border-x {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+}
+
+.border-x-1 {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-x-2 {
+  border-width: 2px;
+  border-style: solid;
+}
+
+.border-x-3 {
+  border-width: 3px;
+  border-style: solid;
+}
+
+.border-x-4 {
+  border-width: 4px;
+  border-style: solid;
+}
+
+.border-x-5 {
+  border-width: 5px;
+  border-style: solid;
+}
+
+.border-x-6 {
+  border-width: 6px;
+  border-style: solid;
+}
+
+.border-x-7 {
+  border-width: 7px;
+  border-style: solid;
+}
+
+.border-x-8 {
+  border-width: 8px;
+  border-style: solid;
+}
+
+.border-x-9 {
+  border-width: 9px;
+  border-style: solid;
+}
+
+.border-x-10 {
+  border-width: 10px;
+  border-style: solid;
+}
+
+.border-x-11 {
+  border-width: 11px;
+  border-style: solid;
+}
+
+.border-y {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+}
+
+.border-y-1 {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-y-2 {
+  border-width: 2px;
+  border-style: solid;
+}
+
+.border-y-3 {
+  border-width: 3px;
+  border-style: solid;
+}
+
+.border-y-4 {
+  border-width: 4px;
+  border-style: solid;
+}
+
+.border-y-5 {
+  border-width: 5px;
+  border-style: solid;
+}
+
+.border-y-6 {
+  border-width: 6px;
+  border-style: solid;
+}
+
+.border-y-7 {
+  border-width: 7px;
+  border-style: solid;
+}
+
+.border-y-8 {
+  border-width: 8px;
+  border-style: solid;
+}
+
+.border-y-9 {
+  border-width: 9px;
+  border-style: solid;
+}
+
+.border-y-10 {
+  border-width: 10px;
+  border-style: solid;
+}
+
+.border-y-11 {
+  border-width: 11px;
+  border-style: solid;
 }
 
 /*************************************

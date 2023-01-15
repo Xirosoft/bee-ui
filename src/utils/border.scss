@@ -1,111 +1,81 @@
+@use 'sass:math';
 @use '../internal' as *;
 
 
 /*************************************
 /* Border Style 
+/* @properties: border-style, border-width, border-radius
+/* @styles: solid, dotted, double, groove, dashed, ridge, inset, outset, none, hidden
+/* @colors: $colors
 *************************************/
+
+$border: (
+    'prefix': 'border',
+    'styles': (solid, dotted, dashed, double, groove, ridge, inset, outset, none),
+    'variant': (top, right, bottom, left, x, y),
+    'max-width': 12
+);
 
 .border {
     border: 1px solid;
-    // Border Name
-    &-dotted {
-        border-style: dotted;
+}
+
+// Border Styles
+// class: border-solid, border-dotted
+@each $style in map-get($border, 'styles') {
+    .#{map-get($border, prefix)}-#{$style} {
+        border-width: 1px;
+        border-style: $style;
     }
-    &-dashed {
-        border-style: dashed;
-    }
-    &-solid {
-        border-style: solid;
-    }
-    &-double {
-        border-style: double;
-    }
-    &-groove {
-        border-style: groove;
-    }
-    &-ridge {
-        border-style: ridge;
-    }
-    &-inset {
-        border-style: inset;
-    }
-    &-outset {
-        border-style: outset;
-    }
-    &-none {
-        border-style: none;
-    }
-    &-hidden {
-        border-style: hidden;
-    }
-    &-dotted {
-        border-style: dotted;
-    }
-    &-dotted,&-dashed,&-solid,&-double,
-    &-groove,&-ridge,&-inset,&-outset,
-    &-none,&-hidden,&-dotted,&-solid {
-        // Border Width
-        &-1 {
-            border-width: 1px; 
+}
+
+
+// Border Variants
+// class: border-left, border-right
+@each $variant in map-get($border, 'variant') {
+    .#{map-get($border, prefix)}-#{$variant} {
+        @if($variant : 'x') {
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-style: solid;
+            
+            @for $i from 1 to map-get($border, 'max-width') {
+                &-#{$i} {
+                    border-width: #{$i}px;
+                    border-style: solid;
+                }
+            }
+
+
+        } @else if($variant : 'y') {
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            border-style: solid;
+
+            @for $i from 1 to map-get($border, 'max-width') {
+                &-#{$i} {
+                    border-width: #{$i}px;
+                    border-style: solid;
+                }
+            }
+        } @else {
+            border-#{$variant}-width: 1px;
+            border-style: solid;
+
+            @for $i from 1 to map-get($border, 'max-width') {
+                &-#{$i} {
+                    border-width: #{$i}px;
+                    border-style: solid;
+                }
+            }
         }
-        &-2 {
-           border-width: 2px; 
-        }
-        &-3 {
-           border-width: 3px; 
-        }
-        &-4 {
-            border-width: 4px; 
-        }
-        &-5 {
-            border-width: 5px; 
-        }
-        &-6 {
-            border-width: 6px; 
-        }
-        &-7 {
-            border-width: 7px; 
-        }
-        &-8 {
-            border-width: 8px; 
-        }
-        &-9 {
-            border-width: 9px; 
-        }
-        &-10 {
-            border-width: 10px; 
-        }
-    }
-    // Border Color
-    &-primary {
-        border-color: #007bff;
-    }
-    &-secondary {
-        border-color: #6c757d;
-    }
-    &-success {
-        border-color: #28a745;
-    }
-    &-danger {
-        border-color: #dc3545;
-    }
-    &-warning {
-        border-color: #ffc107;
-    }
-    &-info {
-        border-color: #17a2b8;
-    }
-    &-light {
-        border-color: #f8f9fa;
-    }
-    &-dark {
-        border-color: #343a40;
-    }
-    &-white {
-        border-color: #fff;
-    }
-    &-gray {
-        border-color: #6c757d;
+        
+        // @each $style in map-get($border, 'styles') {
+        //     &-#{$style} {
+        //         border-width: 1px;
+        //         border-style: $style;
+        //     }
+        // }
     }
 }
 
