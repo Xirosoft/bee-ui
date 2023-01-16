@@ -3,9 +3,6 @@
 * © 2023 Xirosoft, 
 * https://xirosoft.github.io/bee
 */
-/* 
-
-*/
 /**
  * For max-width media query, device width are sets as::after
  * xl = 1440
@@ -181,6 +178,16 @@ fieldset legend {
   --grid-column-end: auto;
   --grid-row-start: auto;
   --grid-row-end: auto;
+}
+
+.row {
+  --bee-gutter-x: 1rem;
+  --bee-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bee-gutter-y));
+  margin-right: calc(-0.5 * var(--bee-gutter-x));
+  margin-left: calc(-0.5 * var(--bee-gutter-x));
 }
 
 /* This works well with panel */

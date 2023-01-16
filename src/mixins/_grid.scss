@@ -1,0 +1,51 @@
+@use '../internal/constants' as *;
+@use '../internal/defaults' as *;
+
+/// Grid system
+/// @param {$gutter: 1rem } (default)
+/// Generate a flex wrapper with negetive gutter
+
+@mixin row-generator($gutter: $gutter) {
+    --#{$prefix}gutter-x: #{$gutter};
+    --#{$prefix}gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--#{$prefix}gutter-y));
+    margin-right: calc(-.5 * var(--#{$prefix}gutter-x));
+    margin-left: calc(-.5 * var(--#{$prefix}gutter-x));
+}
+
+
+
+
+/// col-generator
+/// @param {$size: container-width } (default)
+/// @param {$columns: number } (1-12)
+
+@mixin col-generator($size: false, $columns: $grid-columns) {
+    @if $size {
+      flex: 0 0 auto;
+      width: percentage(divide($size, $columns));
+  
+    } @else {
+      flex: 1 1 0;
+      max-width: 100%;
+    }
+}
+
+/// columns-generator
+/// @param {$columns: number } (1-12)
+/// @param {$gutter: gutter } (default: 1rem)
+/// @param {$breakpoints: $breakpoints } (map from default.scss)
+/// Generate semantic grid columns with these mixins.
+
+@mixin grid-generator(
+    $columns: get-map($default-grid, 'columns'),
+    $gutter: get-map($default-grid, 'gutter'),
+    $breakpoints: $default-breakpoints,
+    ) {
+
+}
+
+///
+/// col-1, col-md-6, .col-offset-2

@@ -1,0 +1,19 @@
+// @use '../internal/theme' as *;
+@use '../internal/constants' as *;
+@use '../internal/defaults' as *;
+
+
+// Container mixins
+@mixin container-generator($gutter: $gutter, $fluid: false) {
+    --#{$prefix}gutter-x: #{$gutter};
+    --#{$prefix}gutter-y: 0;
+    width: 100%;
+    @if($fluid: true) {
+        max-width: 100%;
+    }
+    padding-right: calc(var(--#{$prefix}gutter-x) * .5); // stylelint-disable-line function-disallowed-list
+    padding-left: calc(var(--#{$prefix}gutter-x) * .5); // stylelint-disable-line function-disallowed-list
+    margin-right: auto;
+    margin-left: auto;
+}
+  

@@ -29,10 +29,6 @@ $default-breakpoints: (
     $ratina: 1720px,
 );
 
-/* 
-
-*/
-
 
 $default-containers: (
     $xs: 480px,
@@ -44,7 +40,12 @@ $default-containers: (
     $ratina: 1600px,
 );
 
-$container-padding-x: 1rem;
+$default-grid: (
+    'gutter': 1rem,
+    'columns': 12,
+);
+
+$gutter: 1rem !default;
 
 $default-quartile-percentages: (
     25p: 25%,

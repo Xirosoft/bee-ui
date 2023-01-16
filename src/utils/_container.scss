@@ -3,7 +3,7 @@
 
 
 .container {
-    @include make-container;
+    @include container-generator;
     display: inline;
     
     @each $key, $val in $default-containers {
@@ -17,6 +17,6 @@
         }
     }
     &-fluid {
-        @include make-container($fluid: true);
+        @include container-generator($fluid: true);
     }
 }

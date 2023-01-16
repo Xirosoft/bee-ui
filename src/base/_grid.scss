@@ -11,3 +11,9 @@
     --grid-row-start: auto;
     --grid-row-end: auto;
 }
+
+
+
+.row {
+    @include row-generator;
+}
