@@ -3,6 +3,9 @@
 * © 2023 Xirosoft, 
 * https://xirosoft.github.io/bee
 */
+/* 
+
+*/
 /**
  * For max-width media query, device width are sets as::after
  * xl = 1440
@@ -1715,11 +1718,86 @@ video.video-fullscreen {
   --bee-gutter-x: 1rem;
   --bee-gutter-y: 0;
   width: 100%;
+  max-width: 100%;
   padding-right: calc(var(--bee-gutter-x) * 0.5);
   padding-left: calc(var(--bee-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
   display: inline;
+}
+
+@media (max-width: 479px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1719px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+.container-xs {
+  max-width: 480px;
+}
+
+.container-sm {
+  max-width: 540px;
+}
+
+.container-md {
+  max-width: 720px;
+}
+
+.container-lg {
+  max-width: 960px;
+}
+
+.container-xl {
+  max-width: 1140px;
+}
+
+.container-xxl {
+  max-width: 1320px;
+}
+
+.container-ratina {
+  max-width: 1600px;
+}
+
+.container-fluid {
+  --bee-gutter-x: 1rem;
+  --bee-gutter-y: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bee-gutter-x) * 0.5);
+  padding-left: calc(var(--bee-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* UTILS */

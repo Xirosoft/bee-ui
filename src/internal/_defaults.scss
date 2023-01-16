@@ -20,13 +20,31 @@ $default-sizing-system: (
 $default-absolutes-max: 9; // Include 8
 
 $default-breakpoints: (
-    $xs: 640px,
-    $sm: 768px,
-    $md: 1024px,
-    $lg: 1280px,
-    $xl: 1536px,
-    $xxl: 1600px,
+    $xs: 480px,
+    $sm: 576px,
+    $md: 768px,
+    $lg: 992px,
+    $xl: 1200px,
+    $xxl: 1400px,
+    $ratina: 1720px,
 );
+
+/* 
+
+*/
+
+
+$default-containers: (
+    $xs: 480px,
+    $sm: 540px,
+    $md: 720px,
+    $lg: 960px,
+    $xl: 1140px,
+    $xxl: 1320px,
+    $ratina: 1600px,
+);
+
+$container-padding-x: 1rem;
 
 $default-quartile-percentages: (
     25p: 25%,

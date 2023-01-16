@@ -1,0 +1,22 @@
+@use '../internal' as *;
+
+
+
+.container {
+    @include make-container;
+    display: inline;
+    
+    @each $key, $val in $default-containers {
+        @include mq($key) {
+            max-width: $val;
+        }
+    }
+    @each $key, $val in $default-containers {
+        &-#{$key} {
+            max-width: $val;
+        }
+    }
+    &-fluid {
+        @include make-container($fluid: true);
+    }
+}
