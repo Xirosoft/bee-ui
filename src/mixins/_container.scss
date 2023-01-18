@@ -4,12 +4,15 @@
 
 
 // Container mixins
-@mixin container-generator($gutter: $gutter, $fluid: false) {
+@mixin container-generator($gutter: $gutter, $fluid: false, $default: map-get($default-containers, $xxl)) {
+    display: block;
     --#{$prefix}gutter-x: #{$gutter};
     --#{$prefix}gutter-y: 0;
     width: 100%;
-    @if($fluid: true) {
+    @if($fluid == true) {
         max-width: 100%;
+    } @else {
+        max-width: $default;
     }
     padding-right: calc(var(--#{$prefix}gutter-x) * .5); // stylelint-disable-line function-disallowed-list
     padding-left: calc(var(--#{$prefix}gutter-x) * .5); // stylelint-disable-line function-disallowed-list

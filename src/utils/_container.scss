@@ -4,11 +4,12 @@
 
 .container {
     @include container-generator;
-    display: inline;
     
     @each $key, $val in $default-containers {
-        @include mq($key) {
-            max-width: $val;
+        @if($key != 'ratina' ) {
+            @include mq(null, $key) {
+                max-width: $val;
+            }
         }
     }
     @each $key, $val in $default-containers {
