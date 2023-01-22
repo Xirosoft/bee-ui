@@ -4,18 +4,18 @@
 
 
 // Container mixins
-@mixin container-generator($gutter: $gutter, $fluid: false, $default: map-get($default-containers, $xxl)) {
+@mixin container-generator($space: $space, $fluid: false, $default: map-get($default-containers, $xxl)) {
     display: block;
-    --#{$prefix}gutter-x: #{$gutter};
-    --#{$prefix}gutter-y: 0;
+    --#{$prefix}space-x: #{$space};
+    --#{$prefix}space-y: 0;
     width: 100%;
     @if($fluid == true) {
         max-width: 100%;
     } @else {
         max-width: $default;
     }
-    padding-right: calc(var(--#{$prefix}gutter-x) * .5); // stylelint-disable-line function-disallowed-list
-    padding-left: calc(var(--#{$prefix}gutter-x) * .5); // stylelint-disable-line function-disallowed-list
+    padding-right: calc(.5* var(--#{$prefix}space-x));
+    padding-left: calc(.5* var(--#{$prefix}space-x));
     margin-right: auto;
     margin-left: auto;
 }

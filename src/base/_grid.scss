@@ -17,3 +17,6 @@
 .row {
     @include row-generator;
 }
+.col {
+    @include grid-generator(12);
+}

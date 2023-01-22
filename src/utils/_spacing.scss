@@ -12,9 +12,9 @@ $colors: (
 	5: #a0bf60,
 );
 
-// Default gutter customizing
+// Default space customizing
 @for $i from 1 through 5 {
-	.gutters-#{$i * 5} {
+	.spaces-#{$i * 5} {
 		margin-right: -#{$i * 5}px;
 		margin-left: -#{$i * 5}px;
 

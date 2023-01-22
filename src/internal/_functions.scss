@@ -46,9 +46,18 @@ $DELIMETER: '-';
 /// @param {Number} $number - Number to remove unit from
 /// @return {Number} - Unitless number
 @function strip-unit($number) {
-    @if type-of($number)=='number' and not unitless($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
         @return math.div($number, ($number * 0 + 1));
     }
-
     @return $number;
 }
+
+
+
+/// make a custom percentage fucntion
+/// @param {Number} $number with-out unit
+/// @return {Number} $number with percentage
+@function get-percentage($width: 100%, $number) {
+    @return math.div($width, $number);
+}
+// @debug get-percentage(100%, strip-unit(12)) * 6

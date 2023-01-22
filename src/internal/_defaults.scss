@@ -20,6 +20,7 @@ $default-sizing-system: (
 $default-absolutes-max: 9; // Include 8
 
 $default-breakpoints: (
+    $xm: 375px,
     $xs: 480px,
     $sm: 576px,
     $md: 768px,
@@ -31,6 +32,7 @@ $default-breakpoints: (
 
 
 $default-containers: (
+    $xm: 100%,
     $xs: 480px,
     $sm: 540px,
     $md: 720px,
@@ -41,11 +43,11 @@ $default-containers: (
 );
 
 $default-grid: (
-    'gutter': 1rem,
+    'space': 1rem,
     'columns': 12,
 );
 
-$gutter: 1rem !default;
+$space: 1rem !default;
 
 $default-quartile-percentages: (
     25p: 25%,
