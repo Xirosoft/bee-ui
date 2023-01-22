@@ -1,16 +1,8 @@
 @use '../internal' as *;
 
 
-$devices: xs, sm, md, lg, xl;
 $margin_units: mb, mt, ml, mr;
 $padding_units: px, py, pb, pt, pl, pr;
-$colors: (
-	1: #fd8b60,
-	2: #fdb143,
-	3: #fed747,
-	4: #aed443,
-	5: #a0bf60,
-);
 
 // Default space customizing
 @for $i from 1 through 5 {
@@ -26,21 +18,7 @@ $colors: (
 	}
 }
 
-// For multi color
-// @each $rate, $color in $colors {
-// 	.ratings-#{$rate} {
-// 		&::before {
-// 			background-color: #{$color} !important;
-// 		}
-// 	}
-// }
 
-// Dynamic Blur - 100 to 600
-// @for $i from 1 through 6 {
-// 	.blur-#{$i * 100} {
-// 		filter: blur($i * 100 + px) !important;
-// 	}
-// }
 
 // margins
 @each $m in $margin_units {

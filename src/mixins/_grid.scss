@@ -3,7 +3,7 @@
 @use '../internal/constants' as *;
 @use '../internal/defaults' as *;
 @use '../internal/functions' as *;
-@use '../internal/mq' as *;
+@use '../internal/media-query' as *;
 
 /// Grid system
 /// @param {$space: 1rem } (default)
