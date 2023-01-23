@@ -1,5 +1,7 @@
 @use 'constants' as *;
 
+$rem-unit: 10px;
+
 $default-breakpoints: (
     $xm: 375px,
     $xs: 480px,
@@ -9,7 +11,7 @@ $default-breakpoints: (
     $xl: 1200px,
     $xxl: 1400px,
     $ratina: 1720px,
-);
+) !default;
 
 
 $default-containers: (
@@ -21,14 +23,18 @@ $default-containers: (
     $xl: 1140px,
     $xxl: 1320px,
     $ratina: 1600px,
-);
+) !default;
 
 $default-grid: (
     'space': 1rem,
     'columns': 12,
-);
+) !default;
 
 $space: 1rem !default;
+$default-spacing: (
+    $margin: ($left, $right, $top, $bottom, $x-exis, $y-exis),
+    $padding: ($left, $right, $top, $bottom, $x-exis, $y-exis)
+) !default;
 
 // DEFAULTS
 $default-sizing-system: (
@@ -46,14 +52,14 @@ $default-sizing-system: (
     20: 10rem,
     24: 12rem,
     32: 16rem,
-);
+) !default;
 
 $default-quartile-percentages: (
     25p: 25%,
     50p: 50%,
     75p: 75%,
     100p: 100%,
-);
+) !default;
 
 $default-percentages: (
     10p: 10%,
@@ -66,4 +72,4 @@ $default-percentages: (
     80p: 80%,
     90p: 90%,
     100p: 100%,
-);
+) !default;

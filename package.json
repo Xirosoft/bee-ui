@@ -25,11 +25,13 @@
     "license": "MIT",
     "homepage": "https://github.com/xirosoft/bee-ui",
     "devDependencies": {
+        "csscomb": "^4.3.0",
         "gulp": "^4.0.2",
         "gulp-build": "^0.5.3",
         "gulp-clean-css": "^4.2.0",
         "gulp-cli": "^2.0.1",
         "gulp-concat": "^2.6.1",
+        "gulp-csscomb": "^3.1.0",
         "gulp-gzip": "^1.4.2",
         "gulp-header": "^2.0.5",
         "gulp-load-plugins": "^2.0.1",

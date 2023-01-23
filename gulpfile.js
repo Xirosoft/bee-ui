@@ -5,6 +5,7 @@ const gulp = require('gulp');
 const $ = require('gulp-load-plugins')();
 const sizereport = require('gulp-sizereport');
 const gzip = require('gulp-gzip');
+const csscomb = require('gulp-csscomb');
 const head = '/*\r\n* Bee UI ' + prop.version +
     `\r\n* © ${new Date().getFullYear()} Xirosoft, \r\n* https://xirosoft.github.io/bee\r\n*/\r\n`;
 const cssDir = './dist/css/';
@@ -31,7 +32,8 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
                 sass.sync().on('error', function (err) {
                     sass.logError.call(this, err);
                 })
-            )
+                )
+            .pipe(csscomb())
             .pipe($.concat(outputName + '.css'))
             .pipe($.header(head))
             .pipe($.size())

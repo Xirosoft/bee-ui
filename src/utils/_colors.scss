@@ -1,0 +1,34 @@
+@use '../internal' as *;
+
+@each $color, $value in colorMap($baseColors, 10) {
+    // Text Colors
+    .#{$color} {
+        color: $value;
+    }
+    .\:hover-#{$color} {
+        &:hover {
+            color: $value;
+        }
+    }
+    
+
+    // Background Colors
+    .bg-#{$color} {
+        background-color: $value;
+    }
+    .\:hover-bg-#{$color} {
+        &:hover {
+            background-color: $value;
+        }
+    }
+
+    // Border Colors
+    .border-#{$color} {
+        border-color: $value;
+    }
+    .\:hover-border-#{$color} {
+        &:hover {
+            border-color: $value;
+        }
+    }
+}
