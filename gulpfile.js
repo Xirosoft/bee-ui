@@ -82,6 +82,7 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
                     )
                     .pipe($.header(head))
                     .pipe($.size())
+                    .pipe(csscomb())
                     .pipe($.concat(outputName + '.min.css'))
                     .pipe(gulp.dest(cssDir))
                     .on('error', (err) => {
@@ -106,6 +107,7 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
                             total: false,
                         })
                     )
+                    .pipe(csscomb())
                     .pipe(gulp.dest(cssDir))
                     .on('error', (err) => {
                         console.error(`Error encountered for task ${taskName}. Failing.`);
@@ -134,6 +136,7 @@ function generateGulpBuildComponents(taskName, sassDir, outputDir) {
             )
             .pipe($.header(head))
             .pipe($.size())
+            .pipe(csscomb())
             .pipe(gulp.dest(cssDir + outputDir))
             .on('error', (err) => {
                 console.error(err);

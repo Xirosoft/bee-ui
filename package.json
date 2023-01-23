@@ -9,7 +9,7 @@
     },
     "scripts": {
         "test": "jest",
-        "build": "gulp minify",
+        "build": "gulp minify-all",
         "watch": "gulp watch",
         "prepare": "npm run snyk-protect",
         "snyk-protect": "snyk-protect"
