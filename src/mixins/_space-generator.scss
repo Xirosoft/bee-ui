@@ -1,0 +1,45 @@
+
+@use 'sass:math';
+
+@use '../internal/defaults' as *;
+
+/// Space Generator Mixin
+/// @param {margin || padding} 
+/// @param {sizing map } $default-sizing-system
+/// @return all types of spacing classes
+
+@mixin space-generator($type: 'margin', $spacing: $default-sizing-system) {
+    &-none {
+        #{$type}: none;
+    }
+    @each $space-key, $space-val in $spacing {
+        &-#{$space-key} {
+            #{$type}: $space-val;
+        }
+    }
+    @each $direction-key, $direction-val in map-get($default-spacing, 'directions') {
+        @if($direction-key == 'x'){
+            @each $space-key, $space-val in $spacing {
+                &#{$direction-key}-#{$space-key} {
+                    #{$type}-left: $space-val;
+                    #{$type}-right: $space-val;
+                }
+            }
+        } @else if($direction-key == 'y') {
+            @each $space-key, $space-val in $spacing {
+                &#{$direction-key}-#{$space-key} {
+                    #{$type}-top: $space-val;
+                    #{$type}-bottom: $space-val;
+                }
+            }
+        } @else {
+            &#{$direction-key} {
+                @each $space-key, $space-val in $spacing {
+                    &-#{$space-key} {
+                        #{$type}-#{$direction-val}: $space-val;
+                    }
+                }
+            }
+        }
+    }
+}

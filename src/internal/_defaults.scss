@@ -32,8 +32,14 @@ $default-grid: (
 
 $space: 1rem !default;
 $default-spacing: (
-    $margin: ($left, $right, $top, $bottom, $x-exis, $y-exis),
-    $padding: ($left, $right, $top, $bottom, $x-exis, $y-exis)
+    'directions': (
+        $left: 'left',
+        $right: 'right',
+        $top: 'top',
+        $bottom: 'bottom',
+        $x-exis: 'x',
+        $y-exis: 'y'
+    )
 ) !default;
 
 // DEFAULTS
@@ -52,6 +58,7 @@ $default-sizing-system: (
     20: 10rem,
     24: 12rem,
     32: 16rem,
+    auto: auto,
 ) !default;
 
 $default-quartile-percentages: (

@@ -2,13 +2,36 @@
 
 
 
+.#{$margin}  {
+    @include space-generator($type: 'margin');
+}
+
+.#{$padding}  {
+    @include space-generator($type: 'padding');
+}
+
 
 
 
 
 // $margin_units: mb, mt, ml, mr;
 // $padding_units: px, py, pb, pt, pl, pr;
-
+// .#{$margin} {
+//     margin: 10px;
+//     @each $key, $direction in map-get($default-spacing, 'directions') {
+//         &#{$key} {
+//             margin-#{$direction}: 10px;
+//         }
+//     }
+// }
+// .#{$padding} {
+//     padding: 10px;
+//     @each $key, $direction in map-get($default-spacing, 'directions') {
+//         &#{$key} {
+//             padding-#{$direction}: 10px;
+//         }
+//     }
+// }
 
 
 
