@@ -7460,3 +7460,249 @@ video.video-fullscreen {
 .text-39 {
   font-size: 39px !important;
 }
+
+/*************************************
+/* Heading Text Font Size
+*************************************/
+h1, .h1 {
+  font-size: 5rem;
+}
+
+h2, .h2 {
+  font-size: 4.5rem;
+}
+
+h3, .h3 {
+  font-size: 4rem;
+}
+
+h4, .h4 {
+  font-size: 3.5rem;
+}
+
+h5, .h5 {
+  font-size: 3rem;
+}
+
+h6, .h6 {
+  font-size: 2.5rem;
+}
+
+/*************************************
+/* FlexBox Property
+*************************************/
+.flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.inline-flex {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.flex {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+
+  -webkit-box: 1;
+  -moz-box: 1;
+}
+
+.flex-direction {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-wrap {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: none;
+  flex-wrap: nowrap;
+}
+
+.flex-flow {
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.order {
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.flex-grow {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+.flex-shrink {
+  -ms-flex: 0;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+
+  -moz-flex-shrink: 0;
+}
+
+.flex-basis {
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+}
+
+.justify-content {
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.align-content {
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+}
+
+.align-items {
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+}
+
+.align-self {
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+/*************************************
+/* Position Property
+*************************************/
+.relative {
+  position: relative !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+.sticky {
+  position: sticky !important;
+  position: -webkit-sticky;
+}
+
+.my-class {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.my-class {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.my-class {
+  position: relative;
+  top: auto;
+  right: 3em;
+  left: 200px;
+}
+
+.my-class {
+  top: 3px;
+  left: 0;
+}
+
+.my-class {
+  position: relative;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 200px;
+}
+
+/*************************************
+/* Shadow Property
+*************************************/
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(33, 37, 41, 0.15) !important;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(33, 37, 41, 0.075) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(33, 37, 41, 0.175) !important;
+}
+
+/*************************************
+/* Z-Index Property
+*************************************/
+.z-index-1 {
+  z-index: 1px !important;
+}
+
+.z-index-2 {
+  z-index: 2px !important;
+}
+
+.z-index-3 {
+  z-index: 3px !important;
+}
+
+.z-index-4 {
+  z-index: 4px !important;
+}
+
+.z-index-5 {
+  z-index: 5px !important;
+}
+
+.z-index-6 {
+  z-index: 6px !important;
+}
+
+.z-index-7 {
+  z-index: 7px !important;
+}
+
+.z-index-8 {
+  z-index: 8px !important;
+}
+
+.z-index-9 {
+  z-index: 9px !important;
+}

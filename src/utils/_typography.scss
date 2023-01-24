@@ -9,3 +9,16 @@
 	}
 }
 
+
+
+/*************************************
+/* Heading Text Font Size
+*************************************/
+// @debug $heading-font-size;
+
+@each $key, $value in $heading-font-size {
+	h#{$key},.h#{$key} {
+		font-size: $value;
+	}
+}
+

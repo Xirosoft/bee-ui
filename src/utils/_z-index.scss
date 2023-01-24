@@ -1,0 +1,14 @@
+@use '../internal' as *;
+
+
+/*************************************
+/* Z-Index Property
+*************************************/
+
+@for $i from 1 to 10 {
+	.z-index-#{$i} {
+		z-index: #{$i}px !important;
+	}
+}
+
+
