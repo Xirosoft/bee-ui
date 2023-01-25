@@ -1,3 +1,6 @@
+@use 'sass:map';
+
+@use 'constants' as *;
 // Color scheme for bee
 
 // $bee-black: #000000;
@@ -51,27 +54,37 @@ $bee-bg: $bee-white;
 // $focus-color: rgba(240, 61, 77, 0.13);
 
 
+$default-colors: (
+  'primary': #0d6efd,
+  'secondary': #6c757d,
+  'success': #198754,
+  'info': #0dcaf0,
+  'warning': #ffc107,
+  'danger': #dc3545,
+  'light': #f8f9fa,
+  'dark': #212529,
+) !default;
 
 
-
-$baseColors: (
-  red: #F44336,
-  pink: #E91E63,
-  purple: #9C27B0,
-  deep-purple: #673AB7,
-  indigo: #3F51B5,
-  blue: #2196F3,
-  light-blue: #03A9F4,
-  cyan: #00BCD4,
-  teal: #009688,
-  green: #4CAF50,
-  light-green: #8BC34A,
-  lime: #CDDC39,
-  yellow: #FFEB3B,
-  amber: #FFC107,
-  orange: #FF9800,
-  deep-orange: #FF5722,
-  brown: #795548,
-  grey: #9E9E9E,
-  blue-grey: #607D8B
+$base-colors: (
+  'red': #F44336,
+  'pink': #E91E63,
+  'purple': #9C27B0,
+  'deep-purple': #673AB7,
+  'indigo': #3F51B5,
+  'blue': #2196F3,
+  'light-blue': #03A9F4,
+  'cyan': #00BCD4,
+  'teal': #009688,
+  'green': #4CAF50,
+  'light-green': #8BC34A,
+  'lime': #CDDC39,
+  'yellow': #FFEB3B,
+  'amber': #FFC107,
+  'orange': #FF9800,
+  'deep-orange': #FF5722,
+  'brown': #795548,
+  'grey': #9E9E9E,
+  'blue-grey': #607D8B
 );
+

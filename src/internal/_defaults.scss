@@ -26,11 +26,11 @@ $default-containers: (
 ) !default;
 
 $default-grid: (
-    'space': 1rem,
+    'space': 3rem,
     'columns': 12,
 ) !default;
 
-$space: 1rem !default;
+$space: 3rem !default;
 $default-spacing: (
     'directions': (
         $left: 'left',
@@ -58,7 +58,8 @@ $default-sizing-system: (
     20: 10rem,
     24: 12rem,
     32: 16rem,
-    auto: auto,
+    'auto': auto,
+    'none': none,
 ) !default;
 
 $default-quartile-percentages: (

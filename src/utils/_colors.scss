@@ -1,6 +1,19 @@
 @use '../internal' as *;
 
-@each $color, $value in colorMap($baseColors, 10) {
+
+/// Css Color Variable
+/// @param {Color Map} From internal/theme.scss
+/// 
+$all-colors : map-merge($default-colors, $base-colors);
+
+:root, [data-#{$prefix}theme="light"] {
+  @each $key, $value in $all-colors {
+    --#{$prefix}#{$key} : #{$value};
+  }
+}
+
+
+@each $color, $value in colorMap($base-colors, 10) {
     // Text Colors
     .#{$color} {
         color: $value;
