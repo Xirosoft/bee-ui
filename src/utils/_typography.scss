@@ -24,18 +24,10 @@
 
 
 /*************************************
-/* Content Text Font Size
+/* Font Weight Size
 *************************************/
-
-// p {
-// 	font-family: $default;
-// 	color: $content;
-// 	font-size: 16px;
-// 	font-weight: $medium;
-// 	line-height: 24px;
-// 	letter-spacing: 0em;
-// 	@include respond(phone) {
-// 		font-size: 14px;
-// 		line-height: 20px;
-// 	}
-// }
+@each $key, $value in $font-weights {
+	.font-#{$key} {
+		font-weight: $value;
+	}
+}

@@ -12,6 +12,24 @@ $all-colors : map-merge($default-colors, $base-colors);
   }
 }
 
+/*************************************
+/* Bg Color
+*************************************/
+@each $key, $value in $all-colors {
+    .bg-#{$key} {
+      background-color: nth($value, 1);
+    }
+    .text-bg-#{$key} {
+      background-color: nth($value, 1);
+      @if(type-of($value) == list) {
+          color: nth($value, 2);
+        }
+    }
+    .table-#{$key} {
+        background-color: nth($value, 1);
+      }
+}
+
 
 @each $color, $value in colorMap($base-colors, 10) {
     // Text Colors
@@ -45,3 +63,4 @@ $all-colors : map-merge($default-colors, $base-colors);
         }
     }
 }
+

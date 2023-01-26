@@ -1,0 +1,31 @@
+@use '../internal' as *;
+
+
+/*************************************
+/* Display Property
+*************************************/
+/// Display property Variable
+/// @param {Display Map} From internal/default.scss
+///
+
+
+@mixin display-property($props: $display-property) {
+    @each $props-key, $props-val in $props {
+        &-#{$props-key} {
+            display: $props-val !important;
+        }
+    }
+    @each $key, $val in $default-breakpoints {
+        @each $props-key, $props-val in $props {
+            &-#{$key}-#{$props-key} {
+                @include mq(null, $key) {
+                    display: $props-val !important;
+                }
+            }
+        }
+    }
+}
+
+.d {
+    @include display-property($display-property);
+}

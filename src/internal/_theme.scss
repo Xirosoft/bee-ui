@@ -55,14 +55,15 @@ $bee-bg: $bee-white;
 
 
 $default-colors: (
-  'primary': #0d6efd,
-  'secondary': #6c757d,
-  'success': #198754,
-  'info': #0dcaf0,
-  'warning': #ffc107,
-  'danger': #dc3545,
-  'light': #f8f9fa,
-  'dark': #212529,
+  // name: (bg-color, text-color)
+  'primary': (#0d6efd, #fff),
+  'secondary': (#6c757d, #fff),
+  'success': (#198754, #fff),
+  'info': (#0dcaf0, #fff),
+  'warning': (#ffc107, black),
+  'danger': (#dc3545, #fff),
+  'light': (#f8f9fa, black),
+  'dark': (#212529, #fff),
 ) !default;
 
 
@@ -87,4 +88,3 @@ $base-colors: (
   'grey': #9E9E9E,
   'blue-grey': #607D8B
 );
-

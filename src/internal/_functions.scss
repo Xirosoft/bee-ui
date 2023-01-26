@@ -75,11 +75,12 @@ $DELIMETER: '-';
     $colors: ();
 
     @each $color,
-    $value in $baseColors {
+    $val in $baseColors {
         $maxVar: 36;
         $mid: math.div($variations, 2);
         $dist: $mid - 1;
         $step: math.div($maxVar, $dist);
+        $value: nth($val, 1);
 
         // lighten and darken
         @for $i from 1 through $dist {
