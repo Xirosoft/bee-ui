@@ -1,4 +1,7 @@
 @use 'sass:map';
+@use 'sass:color';
+@use 'sass:math';
+
 
 @use 'constants' as *;
 // Color scheme for bee
@@ -54,6 +57,7 @@ $bee-bg: $bee-white;
 // $focus-color: rgba(240, 61, 77, 0.13);
 
 
+
 $default-colors: (
   // name: (bg-color, text-color)
   'primary': (#0d6efd, #fff),
@@ -64,6 +68,7 @@ $default-colors: (
   'danger': (#dc3545, #fff),
   'light': (#f8f9fa, black),
   'dark': (#212529, #fff),
+  'link': (transparent, #0d6efd),
 ) !default;
 
 

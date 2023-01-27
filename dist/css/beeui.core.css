@@ -186,6 +186,7 @@ fieldset legend {
   --bee-danger: #dc3545, #fff;
   --bee-light: #f8f9fa, black;
   --bee-dark: #212529, #fff;
+  --bee-link: transparent, #0d6efd;
   --bee-red: #F44336;
   --bee-pink: #E91E63;
   --bee-purple: #9C27B0;
@@ -312,6 +313,19 @@ fieldset legend {
 
 .table-dark {
   background-color: #212529;
+}
+
+.bg-link {
+  background-color: transparent;
+}
+
+.text-bg-link {
+  background-color: transparent;
+  color: #0d6efd;
+}
+
+.table-link {
+  background-color: transparent;
 }
 
 .bg-red {
@@ -5545,6 +5559,394 @@ fieldset legend {
     display: table-row !important;
   }
 }
+/*************************************
+/* Button Style
+*************************************/
+.btn {
+  padding: 0.8rem 1.6rem;
+  border: 1px solid;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border-color: #0d6efd;
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.btn-primary.active, .btn-primary:hover {
+  border-color: #0261ed;
+  background-color: #0261ed;
+}
+
+.btn-outline-primary {
+  border-color: #0d6efd;
+  background-color: transparent;
+  color: #0d6efd;
+}
+
+.btn-outline-primary.active, .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.btn-secondary {
+  border-color: #6c757d;
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-secondary.active, .btn-secondary:hover {
+  border-color: #616971;
+  background-color: #616971;
+}
+
+.btn-outline-secondary {
+  border-color: #6c757d;
+  background-color: transparent;
+  color: #6c757d;
+}
+
+.btn-outline-secondary.active, .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-success {
+  border-color: #198754;
+  background-color: #198754;
+  color: #fff;
+}
+
+.btn-success.active, .btn-success:hover {
+  border-color: #177a4c;
+  background-color: #177a4c;
+}
+
+.btn-outline-success {
+  border-color: #198754;
+  background-color: transparent;
+  color: #198754;
+}
+
+.btn-outline-success.active, .btn-outline-success:hover {
+  background-color: #198754;
+  color: #fff;
+}
+
+.btn-info {
+  border-color: #0dcaf0;
+  background-color: #0dcaf0;
+  color: #fff;
+}
+
+.btn-info.active, .btn-info:hover {
+  border-color: #0cb6d8;
+  background-color: #0cb6d8;
+}
+
+.btn-outline-info {
+  border-color: #0dcaf0;
+  background-color: transparent;
+  color: #0dcaf0;
+}
+
+.btn-outline-info.active, .btn-outline-info:hover {
+  background-color: #0dcaf0;
+  color: #fff;
+}
+
+.btn-warning {
+  border-color: #ffc107;
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-warning.active, .btn-warning:hover {
+  border-color: #ecb100;
+  background-color: #ecb100;
+}
+
+.btn-outline-warning {
+  border-color: #ffc107;
+  background-color: transparent;
+  color: #ffc107;
+}
+
+.btn-outline-warning.active, .btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-danger {
+  border-color: #dc3545;
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger.active, .btn-danger:hover {
+  border-color: #d12435;
+  background-color: #d12435;
+}
+
+.btn-outline-danger {
+  border-color: #dc3545;
+  background-color: transparent;
+  color: #dc3545;
+}
+
+.btn-outline-danger.active, .btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-light {
+  border-color: #f8f9fa;
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.btn-light.active, .btn-light:hover {
+  border-color: #dbe0e5;
+  background-color: #dbe0e5;
+}
+
+.btn-outline-light {
+  border-color: #f8f9fa;
+  background-color: transparent;
+  color: #f8f9fa;
+}
+
+.btn-outline-light.active, .btn-outline-light:hover {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.btn-dark {
+  border-color: #212529;
+  background-color: #212529;
+  color: #fff;
+}
+
+.btn-dark.active, .btn-dark:hover {
+  border-color: #1e2125;
+  background-color: #1e2125;
+}
+
+.btn-outline-dark {
+  border-color: #212529;
+  background-color: transparent;
+  color: #212529;
+}
+
+.btn-outline-dark.active, .btn-outline-dark:hover {
+  background-color: #212529;
+  color: #fff;
+}
+
+.btn-link {
+  padding: 0 !important;
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+  color: #0d6efd;
+  text-decoration: underline;
+
+  text-underline-offset: 0.4rem;
+}
+
+.btn-link.active, .btn-link:hover {
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-outline-link {
+  padding: 0 !important;
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+  color: transparent;
+  text-decoration: underline;
+
+  text-underline-offset: 0.4rem;
+}
+
+.btn-outline-link.active, .btn-outline-link:hover {
+  background-color: transparent;
+  color: #0d6efd;
+}
+
+.btn-lg {
+  padding: 1.2rem 2.2rem !important;
+}
+
+.btn-sm {
+  padding: 0.6rem 1.2rem !important;
+  font-size: 14px;
+}
+
+.btn-group {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-group .btn {
+  border-right: none;
+  border-radius: 0;
+}
+
+.btn-group .btn:first-of-type {
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.btn-group .btn:last-of-type {
+  border-right: 1px solid;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.btn-group-lg .btn {
+  padding: 1.2rem 2.2rem;
+}
+
+.btn-group-sm .btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 14px;
+}
+
+/*************************************
+/* Alert Style
+*************************************/
+.alert {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  border: 1px solid;
+  border-radius: 0.4rem;
+}
+
+.alert-primary {
+  border-color: #86b7fe;
+  background-color: #cfe2ff;
+  color: #024cb9;
+}
+
+.alert-primary a,
+.alert-primary .alert-link {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.alert-secondary {
+  border-color: #b5babf;
+  background-color: #e1e3e5;
+  color: #4c5258;
+}
+
+.alert-secondary a,
+.alert-secondary .alert-link {
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.alert-success {
+  border-color: #6be4ac;
+  background-color: #c4f4de;
+  color: #125f3b;
+}
+
+.alert-success a,
+.alert-success .alert-link {
+  color: #198754;
+  font-weight: 600;
+}
+
+.alert-info {
+  border-color: #85e5f8;
+  background-color: #cef5fc;
+  color: #098da8;
+}
+
+.alert-info a,
+.alert-info .alert-link {
+  color: #0dcaf0;
+  font-weight: 600;
+}
+
+.alert-warning {
+  border-color: #ffe083;
+  background-color: #fff3cd;
+  color: #b78a00;
+}
+
+.alert-warning a,
+.alert-warning .alert-link {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.alert-danger {
+  border-color: #ee9aa2;
+  background-color: #f8d7da;
+  color: #a31c29;
+}
+
+.alert-danger a,
+.alert-danger .alert-link {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.alert-light {
+  border-color: #bec7d1;
+  background-color: #fefefe;
+  color: #687d91;
+}
+
+.alert-light a,
+.alert-light .alert-link {
+  color: #687d91;
+  font-weight: 600;
+}
+
+.alert-dark {
+  border-color: #86929e;
+  background-color: #cfd3d8;
+  color: #171a1d;
+}
+
+.alert-dark a,
+.alert-dark .alert-link {
+  color: #212529;
+  font-weight: 600;
+}
+
+.alert-link {
+  border-color: rgba(128, 128, 128, 0);
+  background-color: rgba(204, 204, 204, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+.alert-link a,
+.alert-link .alert-link {
+  color: transparent;
+  font-weight: 600;
+}
+
+/*************************************
+/* Badge Style
+*************************************/
+.badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  font-size: 0.7em;
+  line-height: 1.2;
+}
+
 /* ANIMATIONS */
 /*************************************
 /* Border Style 
@@ -5970,280 +6372,288 @@ fieldset legend {
 /*************************************
 /* Border Radius 
 *************************************/
-.border-radius-1 {
+.radius-1 {
   border-radius: 1px !important;
 }
 
-.border-radius-2 {
+.radius-2 {
   border-radius: 2px !important;
 }
 
-.border-radius-3 {
+.radius-3 {
   border-radius: 3px !important;
 }
 
-.border-radius-4 {
+.radius-4 {
   border-radius: 4px !important;
 }
 
-.border-radius-5 {
+.radius-5 {
   border-radius: 5px !important;
 }
 
-.border-radius-6 {
+.radius-6 {
   border-radius: 6px !important;
 }
 
-.border-radius-7 {
+.radius-7 {
   border-radius: 7px !important;
 }
 
-.border-radius-8 {
+.radius-8 {
   border-radius: 8px !important;
 }
 
-.border-radius-9 {
+.radius-9 {
   border-radius: 9px !important;
 }
 
-.border-radius-10 {
+.radius-10 {
   border-radius: 10px !important;
 }
 
-.border-radius-11 {
+.radius-11 {
   border-radius: 11px !important;
 }
 
-.border-radius-12 {
+.radius-12 {
   border-radius: 12px !important;
 }
 
-.border-radius-13 {
+.radius-13 {
   border-radius: 13px !important;
 }
 
-.border-radius-14 {
+.radius-14 {
   border-radius: 14px !important;
 }
 
-.border-radius-15 {
+.radius-15 {
   border-radius: 15px !important;
 }
 
-.border-radius-16 {
+.radius-16 {
   border-radius: 16px !important;
 }
 
-.border-radius-17 {
+.radius-17 {
   border-radius: 17px !important;
 }
 
-.border-radius-18 {
+.radius-18 {
   border-radius: 18px !important;
 }
 
-.border-radius-19 {
+.radius-19 {
   border-radius: 19px !important;
 }
 
-.border-radius-20 {
+.radius-20 {
   border-radius: 20px !important;
 }
 
-.border-radius-21 {
+.radius-21 {
   border-radius: 21px !important;
 }
 
-.border-radius-22 {
+.radius-22 {
   border-radius: 22px !important;
 }
 
-.border-radius-23 {
+.radius-23 {
   border-radius: 23px !important;
 }
 
-.border-radius-24 {
+.radius-24 {
   border-radius: 24px !important;
 }
 
-.border-radius-25 {
+.radius-25 {
   border-radius: 25px !important;
 }
 
-.border-radius-26 {
+.radius-26 {
   border-radius: 26px !important;
 }
 
-.border-radius-27 {
+.radius-27 {
   border-radius: 27px !important;
 }
 
-.border-radius-28 {
+.radius-28 {
   border-radius: 28px !important;
 }
 
-.border-radius-29 {
+.radius-29 {
   border-radius: 29px !important;
 }
 
-.border-radius-30 {
+.radius-30 {
   border-radius: 30px !important;
 }
 
-.border-radius-31 {
+.radius-31 {
   border-radius: 31px !important;
 }
 
-.border-radius-32 {
+.radius-32 {
   border-radius: 32px !important;
 }
 
-.border-radius-33 {
+.radius-33 {
   border-radius: 33px !important;
 }
 
-.border-radius-34 {
+.radius-34 {
   border-radius: 34px !important;
 }
 
-.border-radius-35 {
+.radius-35 {
   border-radius: 35px !important;
 }
 
-.border-radius-36 {
+.radius-36 {
   border-radius: 36px !important;
 }
 
-.border-radius-37 {
+.radius-37 {
   border-radius: 37px !important;
 }
 
-.border-radius-38 {
+.radius-38 {
   border-radius: 38px !important;
 }
 
-.border-radius-39 {
+.radius-39 {
   border-radius: 39px !important;
 }
 
-.border-radius-40 {
+.radius-40 {
   border-radius: 40px !important;
 }
 
-.border-radius-41 {
+.radius-41 {
   border-radius: 41px !important;
 }
 
-.border-radius-42 {
+.radius-42 {
   border-radius: 42px !important;
 }
 
-.border-radius-43 {
+.radius-43 {
   border-radius: 43px !important;
 }
 
-.border-radius-44 {
+.radius-44 {
   border-radius: 44px !important;
 }
 
-.border-radius-45 {
+.radius-45 {
   border-radius: 45px !important;
 }
 
-.border-radius-46 {
+.radius-46 {
   border-radius: 46px !important;
 }
 
-.border-radius-47 {
+.radius-47 {
   border-radius: 47px !important;
 }
 
-.border-radius-48 {
+.radius-48 {
   border-radius: 48px !important;
 }
 
-.border-radius-49 {
+.radius-49 {
   border-radius: 49px !important;
 }
 
-.border-radius-50 {
+.radius-50 {
   border-radius: 50px !important;
 }
 
-.border-radius-51 {
+.radius-51 {
   border-radius: 51px !important;
 }
 
-.border-radius-52 {
+.radius-52 {
   border-radius: 52px !important;
 }
 
-.border-radius-53 {
+.radius-53 {
   border-radius: 53px !important;
 }
 
-.border-radius-54 {
+.radius-54 {
   border-radius: 54px !important;
 }
 
-.border-radius-55 {
+.radius-55 {
   border-radius: 55px !important;
 }
 
-.border-radius-56 {
+.radius-56 {
   border-radius: 56px !important;
 }
 
-.border-radius-57 {
+.radius-57 {
   border-radius: 57px !important;
 }
 
-.border-radius-58 {
+.radius-58 {
   border-radius: 58px !important;
 }
 
-.border-radius-59 {
+.radius-59 {
   border-radius: 59px !important;
 }
 
-.border-radius-60 {
+.radius-60 {
   border-radius: 60px !important;
 }
 
-.border-radius-61 {
+.radius-61 {
   border-radius: 61px !important;
 }
 
-.border-radius-62 {
+.radius-62 {
   border-radius: 62px !important;
 }
 
-.border-radius-63 {
+.radius-63 {
   border-radius: 63px !important;
 }
 
-.border-radius-64 {
+.radius-64 {
   border-radius: 64px !important;
 }
 
-.border-radius-65 {
+.radius-65 {
   border-radius: 65px !important;
 }
 
-.border-radius-66 {
+.radius-66 {
   border-radius: 66px !important;
 }
 
-.border-radius-67 {
+.radius-67 {
   border-radius: 67px !important;
 }
 
-.border-radius-68 {
+.radius-68 {
   border-radius: 68px !important;
 }
 
-.border-radius-69 {
+.radius-69 {
   border-radius: 69px !important;
+}
+
+.radius-circle {
+  border-radius: 50%;
+}
+
+.radius-pill {
+  border-radius: 999px;
 }
 
 .container {

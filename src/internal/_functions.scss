@@ -1,6 +1,7 @@
 @use 'sass:string';
 @use 'sass:list';
 @use 'sass:map';
+@use 'sass:color';
 @use 'sass:math';
 @use 'sass-true/sass/config/throw';
 @use 'sass-true/sass/true' as *;
@@ -54,7 +55,6 @@ $DELIMETER: '-';
 }
 
 
-
 /// make a custom percentage fucntion
 /// @param {Number} $number with-out unit
 /// @return {Number} $number with percentage
@@ -98,4 +98,15 @@ $DELIMETER: '-';
     }
 
     @return $colors;
+}
+
+
+
+/// Hex to HSL color
+/// @param {Color: name/hex/rgb} 
+/// @param {Percentage: lightness}
+/// @return {Hex} hex code
+
+@function hex2hsl($color, $lightness: 50%) {
+    @return color.scale($color, $lightness: $lightness);
 }

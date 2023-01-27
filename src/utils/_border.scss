@@ -83,8 +83,16 @@ $border: (
 /*************************************
 /* Border Radius 
 *************************************/
-@for $i from 1 to 70 {
-	.border-radius-#{$i} {
-		border-radius: #{$i}px !important;
-	}
+.radius {
+    @for $i from 1 to 70 {
+        &-#{$i} {
+            border-radius: #{$i}px !important;
+        }
+    }
+    &-circle {
+        border-radius: 50%;
+    }
+    &-pill {
+        border-radius: 999px;
+    }
 }
