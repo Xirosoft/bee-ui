@@ -117,5 +117,22 @@ $display-property: (
     'grid': grid,
     'table': table,
     'table-cell': table-cell,
-    'table-row': table-row
+    'table-row': table-row,
+);
+
+// Display Direction Property
+$display-direction-property: (
+    'justify-content-center': center,
+    'justify-content-left': left,
+    'justify-content-start': flex-start,
+    'justify-content-right': right,
+    'justify-content-end': flex-end,
+    'justify-content-inherit': inherit,
+    'justify-content-initial': initial,
+    'justify-content-normal': normal,
+    'justify-content-revert': revert,
+    'justify-content-unset': unset,
+    'justify-content-around': space-around,
+    'justify-content-between': space-between,
+    'justify-content-evenly': space-evenly,
 );

@@ -6,9 +6,9 @@
 .flexbox {
     @include flexbox;
 }
-.inline-flex {
-    @include inline-flex;
-}
+// .inline-flex {
+//     @include inline-flex;
+// }
 .flex {
     @include flex;
 }

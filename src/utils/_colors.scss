@@ -8,7 +8,7 @@ $all-colors : map-merge($default-colors, $base-colors);
 
 :root, [data-#{$prefix}theme="light"] {
   @each $key, $value in $all-colors {
-    --#{$prefix}#{$key} : #{$value};
+    --#{$prefix}#{$key} : #{nth($value, 1)};
   }
 }
 
@@ -19,48 +19,61 @@ $all-colors : map-merge($default-colors, $base-colors);
     .bg-#{$key} {
       background-color: nth($value, 1);
     }
+}
+/*************************************
+/* Text Bg Color
+*************************************/
+@each $key, $value in $all-colors {
     .text-bg-#{$key} {
       background-color: nth($value, 1);
       @if(type-of($value) == list) {
           color: nth($value, 2);
         }
     }
+}
+/*************************************
+/* Table Bg Color
+*************************************/
+@each $key, $value in $all-colors {
     .table-#{$key} {
         background-color: nth($value, 1);
       }
 }
+/*************************************
+/* Text Color
+*************************************/
+@each $key, $value in $all-colors {
+    .text-#{$key} {
+      color: nth($value, 1);
+    }
+}
 
 
+/*************************************
+/* BG Hex Color
+*************************************/
 @each $color, $value in colorMap($base-colors, 10) {
-    // Text Colors
-    .#{$color} {
-        color: $value;
-    }
-    .\:hover-#{$color} {
-        &:hover {
-            color: $value;
-        }
-    }
-    
-
     // Background Colors
     .bg-#{$color} {
         background-color: $value;
     }
-    .\:hover-bg-#{$color} {
-        &:hover {
-            background-color: $value;
-        }
+}
+/*************************************
+/* Text Hex Color
+*************************************/
+@each $color, $value in colorMap($base-colors, 10) {
+    // Text Colors
+    .text-#{$color} {
+        color: $value;
     }
-
+}
+/*************************************
+/* Border Hex Color
+*************************************/
+@each $color, $value in colorMap($base-colors, 10) {
     // Border Colors
     .border-#{$color} {
         border-color: $value;
-    }
-    .\:hover-border-#{$color} {
-        &:hover {
-            border-color: $value;
-        }
     }
 }
 

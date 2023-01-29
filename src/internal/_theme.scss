@@ -69,10 +69,15 @@ $default-colors: (
   'light': (#f8f9fa, black),
   'dark': (#212529, #fff),
   'link': (transparent, #0d6efd),
+  'body': (#fff, black),
+  'white': (#fff, black),
+  'transparent': (transparent, black),
 ) !default;
 
 
 $base-colors: (
+  'white': #ffffff,
+  'black': #000,
   'red': #F44336,
   'pink': #E91E63,
   'purple': #9C27B0,
@@ -91,5 +96,6 @@ $base-colors: (
   'deep-orange': #FF5722,
   'brown': #795548,
   'grey': #9E9E9E,
-  'blue-grey': #607D8B
+  'blue-grey': #607D8B,
+  'border': #dee2e6,
 );

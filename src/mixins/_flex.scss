@@ -3,24 +3,30 @@
 // The spec: http://www.w3.org/TR/css3-flexbox
 // --------------------------------------------------
 
-// Flexbox display
-@mixin flexbox {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+// FlexBox Priperty
+  // - applies to: flex value
+  // flex | inline-flex 
+  @mixin flexbox($value: flex) {
+    @if $value == flex {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    } @else if $value == inline-flex {
+        display: -webkit-inline-box;
+        display: -moz-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+    } @else {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+    }
   }
-  
-  // Inline flex display
-  @mixin inline-flex {
-    display: -webkit-inline-box;
-    display: -moz-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-  
+
   // The 'flex' shorthand
   // - applies to: flex items
   // <positive-number>, initial, auto, or none
@@ -192,7 +198,7 @@
       -webkit-box-align: end;
          -moz-box-align: end;
          -ms-flex-align: end;
-    } @else {
+    }  @else {
       -webkit-box-align: $value;
          -moz-box-align: $value;
          -ms-flex-align: $value;

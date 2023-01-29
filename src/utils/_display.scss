@@ -29,3 +29,17 @@
 .d {
     @include display-property($display-property);
 }
+
+
+/*************************************
+/* Display Direction Property
+*************************************/
+/// Display Direction property Variable
+/// @param {Display Direction Map} From internal/default.scss
+///
+
+@each $key, $value in $display-direction-property {
+    .#{$key} {
+        justify-content: $value !important;
+    }
+}

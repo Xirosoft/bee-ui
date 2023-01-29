@@ -1,0 +1,58 @@
+@use '../internal' as *;
+
+
+/*************************************
+/* Pagination Style
+*************************************/
+
+.pagination {
+    @include flexbox(flex);
+    @include flex-wrap;
+    @include align-items(center);
+    list-style: none;
+
+    .page-item {
+        &.disable {
+            .page-link {
+                color: #6c757d;
+                pointer-events: none;
+                
+            }
+        }
+        .page-link {
+            position: relative;
+            display: block;
+            color: var(--bee-primary);
+            text-decoration: none;
+            background-color: var(--bee-white);
+            border: 1px solid var(--bee-border);
+            padding: 0.6rem 1.2rem;
+            display: block;
+            text-transform: capitalize;
+
+            &:hover {
+                background: var(--bee-light);
+            }
+            &.active {
+                background: var(--bee-primary);
+                color: var(--bee-white);
+                border-color: var(--bee-primary);
+            }
+        }
+        &:first-child {
+            .page-link  {
+                border-top-left-radius: 0.4rem;
+                border-bottom-left-radius: 0.4rem
+            }
+        }
+        &:last-child {
+            .page-link {
+                border-top-right-radius: 0.4rem;
+                border-bottom-right-radius: 0.4rem
+            }
+        }
+        &:not(:first-child) .page-link {
+            margin-left: -0.1rem;
+        }
+    }
+}

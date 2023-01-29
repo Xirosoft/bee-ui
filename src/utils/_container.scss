@@ -1,7 +1,9 @@
 @use '../internal' as *;
 
 
-
+/*************************************
+/* Container
+*************************************/
 .container {
     @include container-generator;
     

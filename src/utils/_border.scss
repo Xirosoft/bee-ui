@@ -1,9 +1,8 @@
 @use 'sass:math';
 @use '../internal' as *;
 
-
 /*************************************
-/* Border Style 
+/* Button Style
 /* @properties: border-style, border-width, border-radius
 /* @styles: solid, dotted, double, groove, dashed, ridge, inset, outset, none, hidden
 /* @colors: $colors
@@ -20,8 +19,10 @@ $border: (
     border: 1px solid;
 }
 
-// Border Styles
-// class: border-solid, border-dotted
+/*************************************
+/* Border Styles
+/* class: border-solid, border-dotted
+*************************************/
 @each $style in map-get($border, 'styles') {
     .#{map-get($border, prefix)}-#{$style} {
         border-width: 1px;
@@ -29,9 +30,10 @@ $border: (
     }
 }
 
-
-// Border Variants
-// class: border-left, border-right
+/*************************************
+/* Border Variants
+/* class: border-left, border-right
+*************************************/
 @each $variant in map-get($border, 'variant') {
     .#{map-get($border, prefix)}-#{$variant} {
         @if($variant : 'x') {
