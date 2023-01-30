@@ -5,6 +5,15 @@
 */
 /* BASE STYLING + RESET FOR BEE UI */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*************************************
+/* Body Typography
+*************************************/
+/*************************************
+/* Input Typography
+*************************************/
+/*************************************
+/* List Group 
+*************************************/
 /* FONT */
 * {
   box-sizing: border-box;
@@ -71,13 +80,12 @@ body {
 
 /* Nunito Sans for the font */
 body {
-  color: var(--bee-fg);
-  letter-spacing: 0.01rem;
-  font-weight: 400;
+  color: var(--bee-body-color);
+  font-weight: var(--bee-body-font-weight);
+  font-size: var(--bee-body-font-size);
+  font-family: var(--bee-body-font-family);
+  line-height: var(--bee-body-font-line-height);
   /* Globally adjust line height */
-  font-size: 1.6rem;
-  font-family: "Inter", sans-serif;
-  line-height: 1.8;
 }
 
 /* Setting up embedded content */
@@ -164,11 +172,6 @@ fieldset legend {
   display: none !important;
 }
 
-/* Selection Color */
-::selection {
-  position: relative;
-}
-
 /* When focusing any element */
 :focus {
   outline: none;
@@ -190,6 +193,53 @@ fieldset legend {
     scroll-behavior: auto !important;
   }
 }
+/*************************************
+/* Body Default Style
+*************************************/
+:root, [data-bee-theme=light] {
+  --bee-body-font-family: Inter;
+  --bee-body-font-size: 1.6rem;
+  --bee-body-font-weight: 400;
+  --bee-body-font-line-height: 1.5;
+  --bee-body-color: #212529;
+  --bee-body-bg: #fff;
+}
+
+/*************************************
+/* Input Default Style
+*************************************/
+:root {
+  --bee-input-font-family: Inter;
+  --bee-input-font-size: 1.4rem;
+  --bee-input-font-weight: 400;
+  --bee-input-font-line-height: 1.5;
+  --bee-input-color: #212529;
+  --bee-input-bg: #fff;
+  --bee-input-padding-x: 0.6rem;
+  --bee-input-padding-y: 1.2rem;
+  --bee-input-border-color: #dee2e6;
+  --bee-input-border-primary: #0d6efd;
+  --bee-input-focus-border-color: #86b7fe;
+}
+
+/*************************************
+/* List Group Default Style
+*************************************/
+:root {
+  --bee-list-group-color: var(--bee-body-color);
+  --bee-list-group-bg: var(--bee-body-bg);
+  --bee-list-group-border-color: var(--bee-border);
+  --bee-list-group-border-width: 0.1rem;
+  --bee-list-group-border-radius: 0.6rem;
+  --bee-list-group-item-padding-x: 1.6rem;
+  --bee-list-group-item-padding-y: 0.8rem;
+  --bee-list-group-disabled-color: var(--bee-secondary);
+  --bee-list-group-disabled-bg: var(--bee-body-bg);
+  --bee-list-group-active-color: #fff;
+  --bee-list-group-active-bg: var(--bee-primary);
+  --bee-list-group-active-border-color: var(--bee-primary);
+}
+
 :root, [data-bee-theme=light] {
   --bee-primary: #0d6efd;
   --bee-secondary: #6c757d;
@@ -4473,6 +4523,138 @@ fieldset legend {
 
 .pagination .page-item:not(:first-child) .page-link {
   margin-left: -0.1rem;
+}
+
+/*************************************
+/* Input Style
+*************************************/
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password],
+input[type=number],
+input[type=file],
+input[type=search],
+input[type=button],
+input[type=submit],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=time],
+input[type=url],
+input[type=monthl],
+input[type=week],
+textarea {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--bee-input-border-color);
+}
+
+.form-control {
+  display: block;
+  padding: var(--bee-input-padding-x) var(--bee-input-padding-x);
+  width: 100%;
+  border: 1px solid var(--bee-input-border-color);
+  border-radius: 0.5rem;
+  background-color: var(--bee-input-bg);
+  background-clip: padding-box;
+  color: var(--bee-input-color);
+  font-weight: var(--bee-input-font-weight);
+  font-size: var(--bee-input-font-size);
+  font-family: var(--bee-input-font-family);
+  line-height: var(--bee-input-font-line-height);
+
+  appearance: none;
+}
+
+.form-control[type=file] {
+  overflow: hidden;
+}
+
+.form-control[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+
+.form-control:focus {
+  outline: 0;
+  border-color: var(--bee-input-focus-border-color);
+  background-color: var(--bee-input-bg);
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.25);
+  color: var(--bee-input-color);
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+/*************************************
+/* Input Group Style
+*************************************/
+.input-group {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+/*************************************
+/* List Style
+*************************************/
+.list-group {
+  max-width: 40rem;
+  list-style: none;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: var(--bee-list-group-item-padding-y) var(--bee-list-group-item-padding-x);
+  border: var(--bee-list-group-border-width) solid var(--bee-list-group-border-color);
+  background-color: var(--bee-list-group-bg);
+  color: var(--bee-list-group-color);
+  text-decoration: none;
+}
+
+.list-group-item + .list-group-item {
+  border-top-width: 0;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: var(--bee-list-group-border-radius);
+  border-top-right-radius: var(--bee-list-group-border-radius);
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: var(--bee-list-group-border-radius);
+  border-bottom-left-radius: var(--bee-list-group-border-radius);
+}
+
+.list-group-item.active {
+  z-index: 2;
+  border-color: var(--bee-list-group-active-border-color);
+  background: var(--bee-list-group-active-bg);
+  color: var(--bee-list-group-active-color);
+}
+
+.list-group-item.disable {
+  color: var(--bee-secondary);
+  pointer-events: none;
+}
+
+.list-group a:not(.active):hover {
+  background: var(--bee-light);
 }
 
 /*************************************

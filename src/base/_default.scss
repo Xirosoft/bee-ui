@@ -68,13 +68,13 @@ body {
 
 /* Nunito Sans for the font */
 body {
-    letter-spacing: 0.01rem;
-    line-height: 1.8;
+    font-family: var(--bee-body-font-family);
+    font-size:var(--bee-body-font-size);
+    font-weight: var(--bee-body-font-weight);
+    line-height: var(--bee-body-font-line-height);
+    color: var(--bee-body-color);
+    // letter-spacing: 0.01rem;
     /* Globally adjust line height */
-    font-size: 1.6rem;
-    font-weight: 400;
-    font-family: 'Inter', sans-serif;
-    color: var(--bee-fg);
 }
 
 /* Setting up embedded content */
@@ -161,12 +161,6 @@ fieldset {
 /* Hidden elements must not show */
 [hidden] {
     display: none !important;
-}
-
-/* Selection Color */
-::selection {
-    position: relative;
-    // background-color: var(--cirrus-select-bg);
 }
 
 /* When focusing any element */

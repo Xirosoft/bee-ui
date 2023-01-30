@@ -136,3 +136,67 @@ $display-direction-property: (
     'justify-content-between': space-between,
     'justify-content-evenly': space-evenly,
 );
+
+
+/*************************************
+/* Body Typography
+*************************************/
+$body-property: (
+	'body-font-family' : Inter,
+	'body-font-size' : 1.6rem,
+	'body-font-weight' : 400,
+	'body-font-line-height' : 1.5,
+	'body-color' : #212529,
+	'body-bg' : #fff
+);
+
+
+/*************************************
+/* Input Typography
+*************************************/
+$input-property: (
+	'input-font-family' : Inter,
+	'input-font-size' : 1.4rem,
+	'input-font-weight' : 400,
+	'input-font-line-height' : 1.5,
+	'input-color' : #212529,
+	'input-bg' : #fff,
+    'input-padding-x': 0.6rem, 
+    'input-padding-y': 1.2rem,
+    'input-border-color': #dee2e6,
+    'input-border-primary': #0d6efd,
+    'input-focus-border-color': #86b7fe,
+);
+
+@mixin border-radius($radius: 0.4rem) {
+    border-radius: $radius;
+}
+
+/*************************************
+/* List Group 
+*************************************/
+$list-group: (
+    'list-group-color': var(--bee-body-color),
+    'list-group-bg': var(--bee-body-bg),
+    'list-group-border-color': var(--bee-border),
+    'list-group-border-width': 0.1rem,
+    'list-group-border-radius': 0.6rem,
+    'list-group-item-padding-x': 1.6rem,
+    'list-group-item-padding-y': 0.8rem,
+    // 'list-group-action-color': var(--bee-secondary),
+    // 'list-group-action-hover-color': var(--bee-body-color),
+    // 'list-group-action-hover-bg': var(--bee-light),
+    // 'list-group-action-active-color': var(--bee-white),
+    // 'list-group-action-active-bg': var(--bee-primary),
+    'list-group-disabled-color': var(--bee-secondary),
+    'list-group-disabled-bg': var(--bee-body-bg),
+    'list-group-active-color': #fff,
+    'list-group-active-bg': var(--bee-primary),
+    'list-group-active-border-color': var(--bee-primary),
+);
+    
+    // display: flex;
+    // flex-direction: column;
+    // padding-left: 0;
+    // margin-bottom: 0;
+    // border-radius: var(--bs-list-group-border-radius);
