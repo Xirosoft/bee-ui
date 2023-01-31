@@ -22,6 +22,27 @@
     }
 }
 
+
+$margin_auto: m, ml, mr, ms, me;
+
+// Margin
+
+@each $margin in $margin_auto {
+    .#{$margin}-auto {
+        @if($margin == 'm') {
+            margin: auto !important;
+        } @else if ($margin == 'ml') {
+            margin-left: auto !important;
+        } @else if ($margin == 'mr') {
+            margin-right: auto !important;
+        } @else if ($margin == 'ms') {
+            margin-left: auto !important;
+        } @else if ($margin == 'me') {
+            margin-right: auto !important;
+        }
+    }
+}
+
 /*************************************
 /* Margin Property
 *************************************/

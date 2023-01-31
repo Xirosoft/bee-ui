@@ -6660,6 +6660,26 @@ video.video-fullscreen {
   margin: 50px !important;
 }
 
+.m-auto {
+  margin: auto !important;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.ms-auto {
+  margin-left: auto !important;
+}
+
+.me-auto {
+  margin-right: auto !important;
+}
+
 /*************************************
 /* Margin Property
 *************************************/
@@ -7475,6 +7495,49 @@ h6, .h6 {
 }
 
 /*************************************
+/* Text Align
+*************************************/
+.text-inherit {
+  text-align: inherit !important;
+}
+
+.text-initial {
+  text-align: initial !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-revert {
+  text-align: revert !important;
+}
+
+.text-unset {
+  text-align: unset !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-start {
+  text-align: start !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-end {
+  text-align: end !important;
+}
+
+/*************************************
 /* FlexBox Property
 *************************************/
 .flexbox {
@@ -7685,6 +7748,20 @@ h6, .h6 {
   z-index: 9px !important;
 }
 
+/****************************
+* Name: button
+* Class: .btn
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://xirosoft.com/bee-ui/components/banner
+*/
+/*********************************
+/* Banner Section Start
+*********************************/
+/*********************************
+/* Banner Section End
+*********************************/
 /****************************
 * Name: Image Box
 * Class: .image-box

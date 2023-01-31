@@ -106,6 +106,20 @@ $font-weights: (
     '900': 900
 );
 
+// Text Direction
+$text-direction: (
+    "inherit": inherit,
+    "initial": initial,
+    "justify": justify,
+    "revert": revert,
+    "unset": unset,
+    "left": left,
+    "start": start,
+    "center": center,
+    "right": right, 
+    "end": end,
+);
+
 // Display Property
 $display-property: (
     'none': none,
