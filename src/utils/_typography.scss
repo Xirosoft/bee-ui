@@ -10,8 +10,6 @@
 	}
 }
 
-
-
 /*************************************
 /* Heading Text Font Size
 *************************************/
@@ -22,7 +20,6 @@
 		font-size: $value;
 	}
 }
-
 
 /*************************************
 /* Font Weight Size
@@ -39,5 +36,14 @@
 @each $key, $value in $text-direction {
 	.text-#{$key} {
 		text-align: $value !important;
+	}
+}
+
+/*************************************
+/* Text Transform
+*************************************/
+@each $key, $value in $text-transform {
+	.text-#{$key} {
+		text-transform: $value !important;
 	}
 }

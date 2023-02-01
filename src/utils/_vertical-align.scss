@@ -1,0 +1,10 @@
+@use '../internal' as *;
+
+/*************************************
+/* Vertical Align
+*************************************/
+@each $key, $val in  $vertical-align {
+    .v-align-#{$key} {
+        vertical-align: $val !important;
+    }
+}

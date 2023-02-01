@@ -1,0 +1,13 @@
+@use '../internal' as *;
+
+
+/*************************************
+/* Opacity Percentage
+*************************************/
+
+@for $i from 0 to 21 {
+    .opacity-#{$i * 5} {
+        opacity: #{$i * 5}#{"%"} !important;
+    }
+}
+

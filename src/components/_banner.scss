@@ -12,74 +12,76 @@
 /*********************************
 /* Banner Section Start
 *********************************/
-// .banner__section {
-// 	background: rgba($primary, 0.08);
-// 	// background: #94c34714;
-// 	position: relative;
-// 	padding: 180px 0 160px;
-// 	z-index: 1;
+.banner__section {
+	// background: rgba($primary, 0.08);
+	background: #94c34714;
+	position: relative;
+	padding: 18rem 0 16rem;
+	z-index: 1;
 
-// 	&::after {
-// 		content: "";
-// 		position: absolute;
-// 		top: 0;
-// 		left: 0;
-// 		right: 0;
-// 		bottom: 0;
-// 		height: 100%;
-// 		width: 100%;
-// 		background: url("../images/banner/bg-shape.png");
-// 		background-repeat: no-repeat;
-// 		background-size: cover;
-// 		background-position: center;
-// 		z-index: -1;
-// 	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		// background: url("./bg-shape.png");
+        background: url('../../components/banner/image/bg-shape.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		z-index: -1;
+	}
 
-// 	@include mq(lg) {
-// 		padding: 150px 0;
-// 	}
-// 	@include mq(lg) {
-// 		padding: 120px 0;
-// 	}
-// }
-// .hero__content {
-// 	max-width: 575px;
-// 	.hero {
-// 		&__subtitle {
-// 			font-family: $default;
-// 			font-size: 18px;
-// 			font-weight: $semibold;
-// 			line-height: 25px;
-// 			color: $primary;
-// 			margin-bottom: 4px;
-// 		}
-// 		&__title {
-// 			color: $heading;
-// 			margin-bottom: 0;
-// 		}
-// 		&__desc {
-// 			font-size: 16px;
-// 			line-height: 26px;
-// 			margin: 24px 0 0;
-// 		}
-// 		&__btn {
-// 			margin-top: 40px;
-// 		}
-// 	}
-// }
+	@include mq(lg) {
+		padding: 15rem 0;
+	}
+	@include mq(lg) {
+		padding: 12rem 0;
+	}
+}
+.hero__content {
+	max-width: 57.5rem;
+	.hero {
+		&__subtitle {
+			font-family: $default;
+			font-size: 18px;
+			font-weight: $semibold;
+			line-height: 25px;
+			color: $primary;
+			margin-bottom: 4px;
+		}
+		&__title {
+			color: $heading;
+			margin-bottom: 0;
+		}
+		&__desc {
+			font-size: 16px;
+			line-height: 26px;
+			margin: 24px 0 0;
+		}
+		&__btn {
+			margin-top: 40px;
+		}
+	}
+}
 
-// .banner__image {
-// 	aspect-ratio: 6.3/4;
-// 	position: relative;
-// 	@include respond(tabport) {
-// 		max-width: 400px;
-// 		margin: 0px auto 30px;
-// 	}
-// 	width: 100%;
-// 	height: auto;
-// 	object-fit: cover;
-// 	object-position: center;
-// }
+.banner__image {
+	aspect-ratio: 6.3/4;
+	position: relative;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+    
+	@include mq(md) {
+		max-width: 400px;
+		margin: 0px auto 30px;
+	}
+}
 /*********************************
 /* Banner Section End
 *********************************/

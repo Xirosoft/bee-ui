@@ -62,7 +62,7 @@ $default-sizing-system: (
     'none': none,
 ) !default;
 
-$default-quartile-percentages: (
+$opacity-percentages: (
     25p: 25%,
     50p: 50%,
     75p: 75%,
@@ -71,7 +71,7 @@ $default-quartile-percentages: (
 
 // Percentage
 $default-percentages: (
-    10p: 10%,
+    10p: 10%, 
     20p: 20%,
     30p: 30%,
     40p: 40%,
@@ -120,6 +120,14 @@ $text-direction: (
     "end": end,
 );
 
+// Text Transform
+
+$text-transform: (
+    'lowercase': lowercase,
+    'capitalize': capitalize,
+    'uppercase': uppercase,
+);
+
 // Display Property
 $display-property: (
     'none': none,
@@ -134,27 +142,58 @@ $display-property: (
     'table-row': table-row,
 );
 
+// Display align Direction Property
+$display-align-direction-property: (
+    'start': flex-start,
+    'end': flex-end,
+    'center': center,
+    'baseline': baseline,
+    'stretch': stretch,
+);
+// Display Self Direction Property
+$display-self-direction-property: (
+    'start': flex-start,
+    'end': flex-end,
+    'center': center,
+    'baseline': baseline,
+    'stretch': stretch,
+);
+// Display Wrap Direction Property
+$display-wrap-direction-property: (
+    'nowrap' : nowrap,
+    'wrap' : wrap,
+
+);
+
 // Display Direction Property
 $display-direction-property: (
-    'justify-content-center': center,
-    'justify-content-left': left,
-    'justify-content-start': flex-start,
-    'justify-content-right': right,
-    'justify-content-end': flex-end,
-    'justify-content-inherit': inherit,
-    'justify-content-initial': initial,
-    'justify-content-normal': normal,
-    'justify-content-revert': revert,
-    'justify-content-unset': unset,
-    'justify-content-around': space-around,
-    'justify-content-between': space-between,
-    'justify-content-evenly': space-evenly,
+    'center': center,
+    'left': left,
+    'start': flex-start,
+    'right': right,
+    'end': flex-end,
+    'inherit': inherit,
+    'initial': initial,
+    'normal': normal,
+    'revert': revert,
+    'unset': unset,
+    'around': space-around,
+    'between': space-between,
+    'evenly': space-evenly,
+);
+
+// Order Property
+$order-property: (
+    '0' : 0,
+    '1' : 1,
+    '2' : 2,
+    '3' : 3,
+    '4' : 4,
+    '5' : 5,
 );
 
 
-/*************************************
-/* Body Typography
-*************************************/
+// Body Typography
 $body-property: (
 	'body-font-family' : Inter,
 	'body-font-size' : 1.6rem,
@@ -165,9 +204,8 @@ $body-property: (
 );
 
 
-/*************************************
-/* Input Typography
-*************************************/
+// Input Typography
+
 $input-property: (
 	'input-font-family' : Inter,
 	'input-font-size' : 1.4rem,
@@ -186,9 +224,8 @@ $input-property: (
     border-radius: $radius;
 }
 
-/*************************************
-/* List Group 
-*************************************/
+
+// List Group 
 $list-group: (
     'list-group-color': var(--bee-body-color),
     'list-group-bg': var(--bee-body-bg),
@@ -208,9 +245,49 @@ $list-group: (
     'list-group-active-bg': var(--bee-primary),
     'list-group-active-border-color': var(--bee-primary),
 );
-    
-    // display: flex;
-    // flex-direction: column;
-    // padding-left: 0;
-    // margin-bottom: 0;
-    // border-radius: var(--bs-list-group-border-radius);
+
+
+// Object Fit
+
+$object-fit: (
+    'none': none,
+    'cover': cover,
+    'contain': contain,
+    'fill': fill,
+    'scale': scale-down,
+);
+
+// Overflow Property
+$overflow-property: (
+    'auto': auto,
+    'hidden': hidden,
+    'visible': visible,
+    'scroll': scroll,
+);
+
+// Sizing Property
+$sizing-property: (
+    'auto': auto,
+    'inherit': inherit,
+    'initial': initial,
+    'fit-content': fit-content,
+    'max-content': max-content,
+    'min-content': min-content,
+    'revert': revert,
+    'unset': unset,
+);
+
+// Vertical Align
+$vertical-align: (
+    'baseline': baseline,
+    'top': top,
+    'middle': middle,
+    'text-top': text-top,
+    'text-bottom': text-bottom,
+);
+
+// Visible Property
+$visible-property: (
+    'visible': visible,
+    'hidden': hidden,
+);
