@@ -265,422 +265,435 @@ fieldset legend {
   --bee-grey: #9E9E9E;
   --bee-blue-grey: #607D8B;
   --bee-border: #dee2e6;
+  --bee-bg-light: #f1f1f1;
 }
 
 /*************************************
 /* Bg Color
 *************************************/
 .bg-primary {
-  background-color: #0d6efd;
+  background-color: #0d6efd !important;
 }
 
 .bg-secondary {
-  background-color: #6c757d;
+  background-color: #6c757d !important;
 }
 
 .bg-success {
-  background-color: #198754;
+  background-color: #198754 !important;
 }
 
 .bg-info {
-  background-color: #0dcaf0;
+  background-color: #0dcaf0 !important;
 }
 
 .bg-warning {
-  background-color: #ffc107;
+  background-color: #ffc107 !important;
 }
 
 .bg-danger {
-  background-color: #dc3545;
+  background-color: #dc3545 !important;
 }
 
 .bg-light {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa !important;
 }
 
 .bg-dark {
-  background-color: #212529;
+  background-color: #212529 !important;
 }
 
 .bg-link {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .bg-body {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .bg-white {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .bg-transparent {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .bg-black {
-  background-color: #000;
+  background-color: #000 !important;
 }
 
 .bg-red {
-  background-color: #F44336;
+  background-color: #F44336 !important;
 }
 
 .bg-pink {
-  background-color: #E91E63;
+  background-color: #E91E63 !important;
 }
 
 .bg-purple {
-  background-color: #9C27B0;
+  background-color: #9C27B0 !important;
 }
 
 .bg-deep-purple {
-  background-color: #673AB7;
+  background-color: #673AB7 !important;
 }
 
 .bg-indigo {
-  background-color: #3F51B5;
+  background-color: #3F51B5 !important;
 }
 
 .bg-blue {
-  background-color: #2196F3;
+  background-color: #2196F3 !important;
 }
 
 .bg-light-blue {
-  background-color: #03A9F4;
+  background-color: #03A9F4 !important;
 }
 
 .bg-cyan {
-  background-color: #00BCD4;
+  background-color: #00BCD4 !important;
 }
 
 .bg-teal {
-  background-color: #009688;
+  background-color: #009688 !important;
 }
 
 .bg-green {
-  background-color: #4CAF50;
+  background-color: #4CAF50 !important;
 }
 
 .bg-light-green {
-  background-color: #8BC34A;
+  background-color: #8BC34A !important;
 }
 
 .bg-lime {
-  background-color: #CDDC39;
+  background-color: #CDDC39 !important;
 }
 
 .bg-yellow {
-  background-color: #FFEB3B;
+  background-color: #FFEB3B !important;
 }
 
 .bg-amber {
-  background-color: #FFC107;
+  background-color: #FFC107 !important;
 }
 
 .bg-orange {
-  background-color: #FF9800;
+  background-color: #FF9800 !important;
 }
 
 .bg-deep-orange {
-  background-color: #FF5722;
+  background-color: #FF5722 !important;
 }
 
 .bg-brown {
-  background-color: #795548;
+  background-color: #795548 !important;
 }
 
 .bg-grey {
-  background-color: #9E9E9E;
+  background-color: #9E9E9E !important;
 }
 
 .bg-blue-grey {
-  background-color: #607D8B;
+  background-color: #607D8B !important;
 }
 
 .bg-border {
-  background-color: #dee2e6;
+  background-color: #dee2e6 !important;
+}
+
+.bg-bg-light {
+  background-color: #f1f1f1 !important;
 }
 
 /*************************************
 /* Text Bg Color
 *************************************/
 .text-bg-primary {
-  background-color: #0d6efd;
+  background-color: #0d6efd !important;
   color: #fff;
 }
 
 .text-bg-secondary {
-  background-color: #6c757d;
+  background-color: #6c757d !important;
   color: #fff;
 }
 
 .text-bg-success {
-  background-color: #198754;
+  background-color: #198754 !important;
   color: #fff;
 }
 
 .text-bg-info {
-  background-color: #0dcaf0;
+  background-color: #0dcaf0 !important;
   color: #fff;
 }
 
 .text-bg-warning {
-  background-color: #ffc107;
+  background-color: #ffc107 !important;
   color: black;
 }
 
 .text-bg-danger {
-  background-color: #dc3545;
+  background-color: #dc3545 !important;
   color: #fff;
 }
 
 .text-bg-light {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa !important;
   color: black;
 }
 
 .text-bg-dark {
-  background-color: #212529;
+  background-color: #212529 !important;
   color: #fff;
 }
 
 .text-bg-link {
-  background-color: transparent;
+  background-color: transparent !important;
   color: #0d6efd;
 }
 
 .text-bg-body {
-  background-color: #fff;
+  background-color: #fff !important;
   color: black;
 }
 
 .text-bg-white {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .text-bg-transparent {
-  background-color: transparent;
+  background-color: transparent !important;
   color: black;
 }
 
 .text-bg-black {
-  background-color: #000;
+  background-color: #000 !important;
 }
 
 .text-bg-red {
-  background-color: #F44336;
+  background-color: #F44336 !important;
 }
 
 .text-bg-pink {
-  background-color: #E91E63;
+  background-color: #E91E63 !important;
 }
 
 .text-bg-purple {
-  background-color: #9C27B0;
+  background-color: #9C27B0 !important;
 }
 
 .text-bg-deep-purple {
-  background-color: #673AB7;
+  background-color: #673AB7 !important;
 }
 
 .text-bg-indigo {
-  background-color: #3F51B5;
+  background-color: #3F51B5 !important;
 }
 
 .text-bg-blue {
-  background-color: #2196F3;
+  background-color: #2196F3 !important;
 }
 
 .text-bg-light-blue {
-  background-color: #03A9F4;
+  background-color: #03A9F4 !important;
 }
 
 .text-bg-cyan {
-  background-color: #00BCD4;
+  background-color: #00BCD4 !important;
 }
 
 .text-bg-teal {
-  background-color: #009688;
+  background-color: #009688 !important;
 }
 
 .text-bg-green {
-  background-color: #4CAF50;
+  background-color: #4CAF50 !important;
 }
 
 .text-bg-light-green {
-  background-color: #8BC34A;
+  background-color: #8BC34A !important;
 }
 
 .text-bg-lime {
-  background-color: #CDDC39;
+  background-color: #CDDC39 !important;
 }
 
 .text-bg-yellow {
-  background-color: #FFEB3B;
+  background-color: #FFEB3B !important;
 }
 
 .text-bg-amber {
-  background-color: #FFC107;
+  background-color: #FFC107 !important;
 }
 
 .text-bg-orange {
-  background-color: #FF9800;
+  background-color: #FF9800 !important;
 }
 
 .text-bg-deep-orange {
-  background-color: #FF5722;
+  background-color: #FF5722 !important;
 }
 
 .text-bg-brown {
-  background-color: #795548;
+  background-color: #795548 !important;
 }
 
 .text-bg-grey {
-  background-color: #9E9E9E;
+  background-color: #9E9E9E !important;
 }
 
 .text-bg-blue-grey {
-  background-color: #607D8B;
+  background-color: #607D8B !important;
 }
 
 .text-bg-border {
-  background-color: #dee2e6;
+  background-color: #dee2e6 !important;
+}
+
+.text-bg-bg-light {
+  background-color: #f1f1f1 !important;
 }
 
 /*************************************
 /* Table Bg Color
 *************************************/
 .table-primary {
-  background-color: #0d6efd;
+  background-color: #0d6efd !important;
 }
 
 .table-secondary {
-  background-color: #6c757d;
+  background-color: #6c757d !important;
 }
 
 .table-success {
-  background-color: #198754;
+  background-color: #198754 !important;
 }
 
 .table-info {
-  background-color: #0dcaf0;
+  background-color: #0dcaf0 !important;
 }
 
 .table-warning {
-  background-color: #ffc107;
+  background-color: #ffc107 !important;
 }
 
 .table-danger {
-  background-color: #dc3545;
+  background-color: #dc3545 !important;
 }
 
 .table-light {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa !important;
 }
 
 .table-dark {
-  background-color: #212529;
+  background-color: #212529 !important;
 }
 
 .table-link {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .table-body {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .table-white {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .table-transparent {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .table-black {
-  background-color: #000;
+  background-color: #000 !important;
 }
 
 .table-red {
-  background-color: #F44336;
+  background-color: #F44336 !important;
 }
 
 .table-pink {
-  background-color: #E91E63;
+  background-color: #E91E63 !important;
 }
 
 .table-purple {
-  background-color: #9C27B0;
+  background-color: #9C27B0 !important;
 }
 
 .table-deep-purple {
-  background-color: #673AB7;
+  background-color: #673AB7 !important;
 }
 
 .table-indigo {
-  background-color: #3F51B5;
+  background-color: #3F51B5 !important;
 }
 
 .table-blue {
-  background-color: #2196F3;
+  background-color: #2196F3 !important;
 }
 
 .table-light-blue {
-  background-color: #03A9F4;
+  background-color: #03A9F4 !important;
 }
 
 .table-cyan {
-  background-color: #00BCD4;
+  background-color: #00BCD4 !important;
 }
 
 .table-teal {
-  background-color: #009688;
+  background-color: #009688 !important;
 }
 
 .table-green {
-  background-color: #4CAF50;
+  background-color: #4CAF50 !important;
 }
 
 .table-light-green {
-  background-color: #8BC34A;
+  background-color: #8BC34A !important;
 }
 
 .table-lime {
-  background-color: #CDDC39;
+  background-color: #CDDC39 !important;
 }
 
 .table-yellow {
-  background-color: #FFEB3B;
+  background-color: #FFEB3B !important;
 }
 
 .table-amber {
-  background-color: #FFC107;
+  background-color: #FFC107 !important;
 }
 
 .table-orange {
-  background-color: #FF9800;
+  background-color: #FF9800 !important;
 }
 
 .table-deep-orange {
-  background-color: #FF5722;
+  background-color: #FF5722 !important;
 }
 
 .table-brown {
-  background-color: #795548;
+  background-color: #795548 !important;
 }
 
 .table-grey {
-  background-color: #9E9E9E;
+  background-color: #9E9E9E !important;
 }
 
 .table-blue-grey {
-  background-color: #607D8B;
+  background-color: #607D8B !important;
 }
 
 .table-border {
-  background-color: #dee2e6;
+  background-color: #dee2e6 !important;
+}
+
+.table-bg-light {
+  background-color: #f1f1f1 !important;
 }
 
 /*************************************
@@ -816,6 +829,61 @@ fieldset legend {
 
 .text-border {
   color: #dee2e6;
+}
+
+.text-bg-light {
+  color: #f1f1f1;
+}
+
+/*************************************
+/* Link Color
+*************************************/
+.link-primary {
+  color: #0d6efd !important;
+}
+
+.link-secondary {
+  color: #6c757d !important;
+}
+
+.link-success {
+  color: #198754 !important;
+}
+
+.link-info {
+  color: #0dcaf0 !important;
+}
+
+.link-warning {
+  color: #ffc107 !important;
+}
+
+.link-danger {
+  color: #dc3545 !important;
+}
+
+.link-light {
+  color: #f8f9fa !important;
+}
+
+.link-dark {
+  color: #212529 !important;
+}
+
+.link-link {
+  color: transparent !important;
+}
+
+.link-body {
+  color: #fff !important;
+}
+
+.link-white {
+  color: #fff !important;
+}
+
+.link-transparent {
+  color: transparent !important;
 }
 
 /*************************************
@@ -1701,6 +1769,46 @@ fieldset legend {
   background-color: #dee2e6;
 }
 
+.bg-bg-light-100 {
+  background-color: white;
+}
+
+.bg-bg-light-900 {
+  background-color: #959595;
+}
+
+.bg-bg-light-200 {
+  background-color: white;
+}
+
+.bg-bg-light-800 {
+  background-color: #acacac;
+}
+
+.bg-bg-light-300 {
+  background-color: white;
+}
+
+.bg-bg-light-700 {
+  background-color: #c3c3c3;
+}
+
+.bg-bg-light-400 {
+  background-color: white;
+}
+
+.bg-bg-light-600 {
+  background-color: #dadada;
+}
+
+.bg-bg-light-50 {
+  background-color: white;
+}
+
+.bg-bg-light-500 {
+  background-color: #f1f1f1;
+}
+
 /*************************************
 /* Text Hex Color
 *************************************/
@@ -2584,6 +2692,46 @@ fieldset legend {
   color: #dee2e6;
 }
 
+.text-bg-light-100 {
+  color: white;
+}
+
+.text-bg-light-900 {
+  color: #959595;
+}
+
+.text-bg-light-200 {
+  color: white;
+}
+
+.text-bg-light-800 {
+  color: #acacac;
+}
+
+.text-bg-light-300 {
+  color: white;
+}
+
+.text-bg-light-700 {
+  color: #c3c3c3;
+}
+
+.text-bg-light-400 {
+  color: white;
+}
+
+.text-bg-light-600 {
+  color: #dadada;
+}
+
+.text-bg-light-50 {
+  color: white;
+}
+
+.text-bg-light-500 {
+  color: #f1f1f1;
+}
+
 /*************************************
 /* Border Hex Color
 *************************************/
@@ -3465,6 +3613,46 @@ fieldset legend {
 
 .border-border-500 {
   border-color: #dee2e6;
+}
+
+.border-bg-light-100 {
+  border-color: white;
+}
+
+.border-bg-light-900 {
+  border-color: #959595;
+}
+
+.border-bg-light-200 {
+  border-color: white;
+}
+
+.border-bg-light-800 {
+  border-color: #acacac;
+}
+
+.border-bg-light-300 {
+  border-color: white;
+}
+
+.border-bg-light-700 {
+  border-color: #c3c3c3;
+}
+
+.border-bg-light-400 {
+  border-color: white;
+}
+
+.border-bg-light-600 {
+  border-color: #dadada;
+}
+
+.border-bg-light-50 {
+  border-color: white;
+}
+
+.border-bg-light-500 {
+  border-color: #f1f1f1;
 }
 
 /*************************************
@@ -6492,6 +6680,27 @@ fieldset legend {
 
 .hidden {
   visibility: hidden !important;
+}
+
+/*************************************
+/* CheckBox 
+*************************************/
+.form-check-input {
+  margin-top: 0.25em;
+  width: 1em;
+  height: 1em;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  background-color: var(--bs-form-check-bg);
+  background-image: var(--bs-form-check-bg-image);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: top;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
 }
 
 /*************************************

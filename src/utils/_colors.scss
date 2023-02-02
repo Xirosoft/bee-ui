@@ -18,7 +18,7 @@ $all-colors : map-merge($default-colors, $base-colors);
 *************************************/
 @each $key, $value in $all-colors {
     .bg-#{$key} {
-      background-color: nth($value, 1);
+      background-color: nth($value, 1) !important;
     }
 }
 /*************************************
@@ -26,7 +26,7 @@ $all-colors : map-merge($default-colors, $base-colors);
 *************************************/
 @each $key, $value in $all-colors {
     .text-bg-#{$key} {
-      background-color: nth($value, 1);
+      background-color: nth($value, 1) !important;
       @if(type-of($value) == list) {
           color: nth($value, 2);
         }
@@ -37,7 +37,7 @@ $all-colors : map-merge($default-colors, $base-colors);
 *************************************/
 @each $key, $value in $all-colors {
     .table-#{$key} {
-        background-color: nth($value, 1);
+        background-color: nth($value, 1) !important;
       }
 }
 /*************************************
@@ -46,6 +46,15 @@ $all-colors : map-merge($default-colors, $base-colors);
 @each $key, $value in $all-colors {
     .text-#{$key} {
       color: nth($value, 1);
+    }
+}
+
+/*************************************
+/* Link Color
+*************************************/
+@each $key, $value in $default-colors {
+    .link-#{$key} {
+      color: nth($value, 1) !important;
     }
 }
 
