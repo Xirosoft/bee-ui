@@ -2,23 +2,20 @@ const prop = require('./package.json');
 const minify = require('gulp-clean-css');
 const sass = require('gulp-sass')(require('sass')); // Use Dart Sass;
 const gulp = require('gulp');
+const csscomb = require('gulp-csscomb');
 const $ = require('gulp-load-plugins')();
 const sizereport = require('gulp-sizereport');
 const gzip = require('gulp-gzip');
-const csscomb = require('gulp-csscomb');
-const head = '/*\r\n* Bee UI ' + prop.version +
-    `\r\n* © ${new Date().getFullYear()} Xirosoft, \r\n* https://xirosoft.github.io/bee\r\n*/\r\n`;
-const cssDir = './dist/css/';
+const head =  `/*\r\n* Bee UI ${prop.version} \r\n* © ${new Date().getFullYear()} Xirosoft, \r\n* https://xirosoft.github.io/bee\r\n*/\r\n`;
+const cssDir = prop.directories.css;
 
-
-generateGulpBuild(`core`, `src/beeui.core.scss`, `beeui.core`);
-generateGulpBuild(`all`, `src/beeui.all.scss`, `beeui.all`);
-// Compile separate components
+gulpComplier(`core`, `src/beeui.core.scss`, `beeui.core`);
+gulpComplier(`all`, `src/beeui.all.scss`, `beeui.all`);
 generateGulpBuildComponents(`components`, `src/components/`, `components/`);
 
 // source file name
 // file name
-function generateGulpBuild(taskName, sassFilePath, outputName) {
+function gulpComplier(taskName, sassFilePath, outputName) {
     gulp.task(taskName, () => {
         return gulp
             .src([sassFilePath])
@@ -32,12 +29,12 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
                 sass.sync().on('error', function (err) {
                     sass.logError.call(this, err);
                 })
-                )
+            )
             .pipe(csscomb())
-            .pipe($.concat(outputName + '.css'))
+            .pipe($.concat(`${outputName}.css`))
             .pipe($.header(head))
             .pipe($.size())
-            .pipe(gulp.dest(cssDir))
+            .pipe(gulp.dest(prop.directories.css))
             .on('error', (err) => {
                 console.error(err);
                 process.exit(1);
@@ -49,30 +46,10 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
         gulp.series(taskName, () => {
             return (
                 gulp
-                    .src([cssDir + outputName + '*.css'])
+                    .src([`${prop.directories.css}${outputName}.css`])
                     .pipe(
                         minify(
-                            {
-                                level: {
-                                    1: {
-                                        all: true,
-                                        normalizeUrls: false,
-                                    },
-                                    2: {
-                                        all: false,
-                                        removeDuplicateRules: true,
-                                        reduceNonAdjacentRules: true,
-                                        removeDuplicateFontRules: true,
-                                        removeDuplicateMediaBlocks: true,
-                                        mergeAdjacentRules: true,
-                                        mergeIntoShorthands: true,
-                                        mergeMedia: true,
-                                        mergeNonAdjacentRules: true,
-                                        mergeSemantically: false,
-                                        removeEmpty: true,
-                                    },
-                                },
-                            },
+                            { compatibility: 'ie8' },
                             (details) => {
                                 console.log('FULL');
                                 console.log(details.name + ': ' + details.stats.originalSize);
@@ -82,9 +59,8 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
                     )
                     .pipe($.header(head))
                     .pipe($.size())
-                    .pipe(csscomb())
-                    .pipe($.concat(outputName + '.min.css'))
-                    .pipe(gulp.dest(cssDir))
+                    .pipe($.concat(`${outputName}.min.css`))
+                    .pipe(gulp.dest(prop.directories.css))
                     .on('error', (err) => {
                         console.error(`Error encountered for task ${taskName}. Failing.`);
                         process.exit(1);
@@ -99,7 +75,7 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
         gulp.series(taskName, `minify-${taskName}`, () => {
             return (
                 gulp
-                    .src([cssDir + outputName + '.min.css'])
+                    .src([`${prop.directories.css}${outputName}.min.css`])
                     .pipe(gzip())
                     .pipe(
                         sizereport({
@@ -107,8 +83,7 @@ function generateGulpBuild(taskName, sassFilePath, outputName) {
                             total: false,
                         })
                     )
-                    .pipe(csscomb())
-                    .pipe(gulp.dest(cssDir))
+                    .pipe(gulp.dest(prop.directories.css))
                     .on('error', (err) => {
                         console.error(`Error encountered for task ${taskName}. Failing.`);
                         process.exit(1);
@@ -137,7 +112,7 @@ function generateGulpBuildComponents(taskName, sassDir, outputDir) {
             .pipe($.header(head))
             .pipe($.size())
             .pipe(csscomb())
-            .pipe(gulp.dest(cssDir + outputDir))
+            .pipe(gulp.dest(prop.directories.css + outputDir))
             .on('error', (err) => {
                 console.error(err);
                 process.exit(1);

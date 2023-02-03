@@ -1,4 +1,8 @@
-@use "./core";
+// @use "./core";
 
 // Extended Components
-@use "../components";
+@forward '../components/banner';
+@forward '../components/image-box';
+@forward '../components/button';
+@forward '../components/card';
+@forward '../components/progress';
