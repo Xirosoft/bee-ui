@@ -64,6 +64,7 @@ Use Gitpod, a free online dev environment for GitHub.
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/xirosoft/bee-ui)
 [<img src="https://svgshare.com/i/pKC.svg" width="165px">](https://vscode.dev/github/xirosoft/bee-ui)
 
+
 Or clone locally:
 
 ```bash
@@ -86,6 +87,14 @@ $ npm watch
         └── utils/                  # SCSS Utils styles
         ├── bee-all.scss            #
         └── bee-core.scss           #
+
+
+## Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+
+[<img src="https://contrib.rocks/image?repo=veler/DevToys">](https://github.com/xirosoft/bee-ui/graphs/contributors)
+
 
 ## ❤️ Sponsors and Backers
 
