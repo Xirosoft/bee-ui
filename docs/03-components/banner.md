@@ -1,0 +1,57 @@
+---
+id: banner
+title: Banner
+---
+
+<div className="banner__section">
+    <div className="container">
+        <div className="row align-items-center column-reverse-md">
+            <div className="col-lg-6 col-md-6">
+                <div className="hero__content text-start">
+                    <h4 className="hero__subtitle">100% Fresh Chicken</h4>
+                    <h1 className="hero__title">
+                        We’re Leader in <br />
+                        Poultry Farm Market
+                    </h1>
+                    <p className="hero__desc">Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellent non lectus. Ut lacinia erat ut diam volutpat,</p>
+                    <div className="hero__btn">
+                        <a href="#" className="btn btn-primary">view All Products</a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-6 col-md-6">
+                <div className="banner__image">
+                    <img src={require('@site/static/img/banner/bg-image.png').default} />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+
+```html
+<div class="banner__section">
+    <div class="container">
+        <div class="row align-items-center column-reverse-md">
+            <div class="col-lg-6 col-md-6">
+                <div class="hero__content text-start">
+                    <h4 class="hero__subtitle">100% Fresh Chicken</h4>
+                    <h1 class="hero__title">
+                        We’re Leader in <br />
+                        Poultry Farm Market
+                    </h1>
+                    <p class="hero__desc">Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellent non lectus. Ut lacinia erat ut diam volutpat,</p>
+                    <div class="hero__btn">
+                        <a href="#" class="btn btn-primary">view All Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="banner__image">
+                    <img src="image/bg-image.png" alt="bg-image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```

@@ -11,8 +11,8 @@
   "editUrl": "https://github.com/xirosoft/bee-ui-docs/edit/main/docs/02-xirosoft/sofiqul.md",
   "tags": [],
   "version": "current",
-  "lastUpdatedAt": 1539502055,
-  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "lastUpdatedAt": 1675770039,
+  "formattedLastUpdatedAt": "Feb 7, 2023",
   "frontMatter": {
     "id": "sofiqul",
     "title": "Sofiqul Islam"
@@ -23,7 +23,7 @@
     "permalink": "/bee-ui/docs/xirosoft/saiket"
   },
   "next": {
-    "title": "Security",
-    "permalink": "/bee-ui/docs/security"
+    "title": "Alert",
+    "permalink": "/bee-ui/docs/components/alert"
   }
 }

@@ -1,0 +1,88 @@
+---
+id: checkbox
+title: Check Box
+---
+
+<div className="form-check m-10">
+    <input className="checkbox-primary checkbox" type="checkbox" checked />
+    <input className="checkbox-secondary checkbox" type="checkbox" checked />
+    <input className="checkbox-success checkbox" type="checkbox" checked />
+    <input className="checkbox-info checkbox" type="checkbox" checked />
+    <input className="checkbox-warning checkbox" type="checkbox" checked />
+    <input className="checkbox-danger checkbox" type="checkbox" checked />
+    <input className="checkbox-dark checkbox" type="checkbox" checked />
+</div>
+<br />
+
+```html
+<div class="form-check m-10">
+    <input class="checkbox-primary checkbox" type="checkbox" checked />
+    <input class="checkbox-secondary checkbox" type="checkbox" checked />
+    <input class="checkbox-success checkbox" type="checkbox" checked />
+    <input class="checkbox-info checkbox" type="checkbox" checked />
+    <input class="checkbox-warning checkbox" type="checkbox" checked />
+    <input class="checkbox-danger checkbox" type="checkbox" checked />
+    <input class="checkbox-dark checkbox" type="checkbox" checked />
+</div>
+```
+## CheckBox Outline
+
+<div className="form-check m-10">
+    <input className="checkbox" id="check01" type="checkbox" checked />
+    <label htmlFor="check01">CheckBox Outline</label>
+</div>
+<div className="form-check m-10">
+    <input className="checkbox" id="check02" type="checkbox" />
+    <label htmlFor="check02">CheckBox Outline</label>
+</div>
+<div className="form-check m-10">
+    <input className="checkbox" id="check03" type="checkbox" />
+    <label htmlFor="check03">CheckBox Outline</label>
+</div>
+<br />
+
+```html
+<div class="form-check m-10">
+    <input class="checkbox" id="check01" type="checkbox" checked />
+    <label for="check01">CheckBox Outline</label>
+</div>
+<div class="form-check m-10">
+    <input class="checkbox" id="check02" type="checkbox" />
+    <label for="check02">CheckBox Outline</label>
+</div>
+<div class="form-check m-10">
+    <input class="checkbox" id="check03" type="checkbox" />
+    <label for="check03">CheckBox Outline</label>
+</div>
+```
+
+## CheckBox Filled
+
+<div className="form-check m-10">
+    <input className="checkbox-primary checkbox" id="check-primary" type="checkbox" />
+    <label htmlFor="check-primary">CheckBox Primary</label>
+</div>
+<div className="form-check m-10">
+    <input className="checkbox-secondary checkbox" id="check-secondary" type="checkbox" />
+    <label htmlFor="check-secondary">CheckBox Secondary</label>
+</div>
+<div className="form-check m-10">
+    <input className="checkbox-success checkbox" id="check-success" type="checkbox" />
+    <label htmlFor="check-success">CheckBox Success</label>
+</div>
+<br />
+
+```html
+<div class="form-check m-10">
+    <input class="checkbox-primary checkbox" id="check-primary" type="checkbox" />
+    <label for="check-primary">CheckBox Primary</label>
+</div>
+<div class="form-check m-10">
+    <input class="checkbox-secondary checkbox" id="check-secondary" type="checkbox" />
+    <label for="check-secondary">CheckBox Secondary</label>
+</div>
+<div class="form-check m-10">
+    <input class="checkbox-success checkbox" id="check-success" type="checkbox" />
+    <label for="check-success">CheckBox Success</label>
+</div>
+```

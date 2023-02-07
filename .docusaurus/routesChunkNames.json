@@ -1,88 +1,97 @@
 {
-  "/bee-ui/__docusaurus/debug-b87": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---bee-ui-docusaurus-debug-70-a-896"
-    }
-  },
-  "/bee-ui/__docusaurus/debug/config-3cb": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---bee-ui-docusaurus-debug-70-a-896"
-    }
-  },
-  "/bee-ui/__docusaurus/debug/content-f72": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---bee-ui-docusaurus-debug-70-a-896"
-    },
-    "allContent": "allContent---bee-ui-docusaurus-debug-content-246-5a6"
-  },
-  "/bee-ui/__docusaurus/debug/globalData-d18": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---bee-ui-docusaurus-debug-70-a-896"
-    }
-  },
-  "/bee-ui/__docusaurus/debug/metadata-5ff": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---bee-ui-docusaurus-debug-70-a-896"
-    }
-  },
-  "/bee-ui/__docusaurus/debug/registry-735": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---bee-ui-docusaurus-debug-70-a-896"
-    }
-  },
-  "/bee-ui/__docusaurus/debug/routes-f1f": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---bee-ui-docusaurus-debug-70-a-896"
-    }
-  },
   "/bee-ui/help-9fb": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---bee-ui-help-8-f-7-3da"
+      "plugin": "8f7362f3"
     },
-    "content": "content---bee-ui-help-7-d-8-067"
+    "content": "7d87cf11"
   },
   "/bee-ui/search-833": {
-    "__comp": "__comp---theme-search-page-1-a-4-d6f",
+    "__comp": "1a4e3797",
     "__context": {
-      "plugin": "plugin---bee-ui-search-014-33f"
+      "plugin": "014b41a1"
     }
   },
-  "/bee-ui/docs-ac5": {
-    "__comp": "__comp---theme-doc-page-1-be-9be",
+  "/bee-ui/docs-bbf": {
+    "__comp": "1be78505",
     "__context": {
-      "plugin": "plugin---bee-ui-docsb-39-a13"
+      "plugin": "b3948add"
     },
-    "versionMetadata": "versionMetadata---bee-ui-docs-935-cd3"
+    "versionMetadata": "935f2afb"
+  },
+  "/bee-ui/docs/components/alert-210": {
+    "__comp": "17896441",
+    "content": "5e24edbb"
+  },
+  "/bee-ui/docs/components/background-color-21e": {
+    "__comp": "17896441",
+    "content": "e09a5386"
+  },
+  "/bee-ui/docs/components/badge-aae": {
+    "__comp": "17896441",
+    "content": "1d633514"
+  },
+  "/bee-ui/docs/components/banner-f5c": {
+    "__comp": "17896441",
+    "content": "a25d32bd"
+  },
+  "/bee-ui/docs/components/button-b6a": {
+    "__comp": "17896441",
+    "content": "a3aa6565"
+  },
+  "/bee-ui/docs/components/button-group-86d": {
+    "__comp": "17896441",
+    "content": "b47933a2"
+  },
+  "/bee-ui/docs/components/card-c84": {
+    "__comp": "17896441",
+    "content": "85965d97"
+  },
+  "/bee-ui/docs/components/checkbox-e2c": {
+    "__comp": "17896441",
+    "content": "5d892638"
+  },
+  "/bee-ui/docs/components/color-link-5c1": {
+    "__comp": "17896441",
+    "content": "8e6f14dc"
+  },
+  "/bee-ui/docs/components/form-ee0": {
+    "__comp": "17896441",
+    "content": "5b6b0426"
+  },
+  "/bee-ui/docs/components/list-28e": {
+    "__comp": "17896441",
+    "content": "d9f4d2fb"
+  },
+  "/bee-ui/docs/components/pagination-281": {
+    "__comp": "17896441",
+    "content": "cc55d2b4"
+  },
+  "/bee-ui/docs/components/team-section-e18": {
+    "__comp": "17896441",
+    "content": "671873f8"
   },
   "/bee-ui/docs/intro-cba": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---bee-ui-docs-introfed-950"
+    "__comp": "17896441",
+    "content": "fed7d42c"
   },
   "/bee-ui/docs/security-fbe": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---bee-ui-docs-securityc-1-b-5e9"
+    "__comp": "17896441",
+    "content": "c1bbc487"
   },
   "/bee-ui/docs/xirosoft/saiket-09a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---bee-ui-docs-xirosoft-saiketcb-4-ed6"
+    "__comp": "17896441",
+    "content": "cb4aedee"
   },
   "/bee-ui/docs/xirosoft/sofiqul-89a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---bee-ui-docs-xirosoft-sofiqul-1-cf-b16"
+    "__comp": "17896441",
+    "content": "1cfc801f"
   },
   "/bee-ui/-d7e": {
-    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__comp": "c4f5d8e4",
     "__context": {
-      "plugin": "plugin---bee-ui-help-8-f-7-3da"
+      "plugin": "8f7362f3"
     },
-    "config": "config---bee-ui-5-e-9-ef2"
+    "config": "5e9f5e1a"
   }
 }

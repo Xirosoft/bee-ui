@@ -1,0 +1,83 @@
+---
+id: list
+title: List Style
+---
+
+<ul className="list-group">
+    <li className="list-group-item">An item</li>
+    <li className="list-group-item">A second item</li>
+    <li className="list-group-item">A third item</li>
+    <li className="list-group-item">A fourth item</li>
+    <li className="list-group-item">And a fifth one</li>
+</ul>
+<br />
+
+```html
+<ul class="list-group">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+</ul>
+```
+
+## List Active Item
+<ul className="list-group">
+    <li className="list-group-item active">Active</li>
+    <li className="list-group-item">A second item</li>
+    <li className="list-group-item">A third item</li>
+    <li className="list-group-item">A fourth item</li>
+    <li className="list-group-item">And a fifth one</li>
+</ul>
+<br />
+
+```html
+<ul class="list-group">
+    <li class="list-group-item active">Active</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+</ul>
+```
+
+## List Disable Item
+<ul className="list-group">
+    <li className="list-group-item disable">Disable</li>
+    <li className="list-group-item">A second item</li>
+    <li className="list-group-item">A third item</li>
+    <li className="list-group-item">A fourth item</li>
+    <li className="list-group-item">And a fifth one</li>
+</ul>
+<br />
+
+```html
+<ul class="list-group">
+    <li class="list-group-item disable">Disable</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+</ul>
+```
+
+## List Link Item
+<div className="list-group">
+    <a href="#" className="list-group-item active">Active</a>
+    <a href="#" className="list-group-item">A second item</a>
+    <a href="#" className="list-group-item">A third item</a>
+    <a href="#" className="list-group-item">A fourth item</a>
+    <a href="#" className="list-group-item">And a fifth one</a>
+</div>
+<br />
+
+```html
+<div class="list-group">
+    <a href="#" class="list-group-item active">Active</a>
+    <a href="#" class="list-group-item">A second item</a>
+    <a href="#" class="list-group-item">A third item</a>
+    <a href="#" class="list-group-item">A fourth item</a>
+    <a href="#" class="list-group-item">And a fifth one</a>
+</div>
+```
