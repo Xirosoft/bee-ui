@@ -9,9 +9,9 @@ const gzip = require('gulp-gzip');
 const head =  `/*\r\n* Bee UI ${prop.version} \r\n* © ${new Date().getFullYear()} Xirosoft, \r\n* https://xirosoft.github.io/bee\r\n*/\r\n`;
 const cssDir = prop.directories.css;
 
-gulpComplier(`core`, `src/beeui.core.scss`, `beeui.core`);
-gulpComplier(`all`, `src/beeui.all.scss`, `beeui.all`);
-generateGulpBuildComponents(`components`, `src/components/`, `components/`);
+gulpComplier(`core`, `source/beeui.core.scss`, `beeui.core`);
+gulpComplier(`all`, `source/beeui.all.scss`, `beeui.all`);
+generateGulpBuildComponents(`components`, `source/components/`, `components/`);
 
 // source file name
 // file name
@@ -120,7 +120,7 @@ function generateGulpBuildComponents(taskName, sassDir, outputDir) {
     });
 }
 
-gulp.task('watch', () => gulp.watch('./src/**/*.scss', gulp.parallel('minify-core', 'components', 'minify-all')));
+gulp.task('watch', () => gulp.watch('./source/**/*.scss', gulp.parallel('minify-core', 'components', 'minify-all')));
 
 gulp.task('default', gulp.parallel('minify-core', 'components', 'minify-all'));
 

@@ -58,6 +58,16 @@ $all-colors : map-merge($default-colors, $base-colors);
     }
 }
 
+/*************************************
+/* CheckBox Bg Color
+*************************************/
+@each $key, $value in $default-colors {
+    .checkbox-#{$key} {
+      background: nth($value, 1) !important;
+      border-color: nth($value, 1) !important;
+    }
+}
+
 
 /*************************************
 /* BG Hex Color
