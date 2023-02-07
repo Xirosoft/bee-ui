@@ -8,9 +8,11 @@
   "slug": "/components/team-section",
   "permalink": "/bee-ui/docs/components/team-section",
   "draft": false,
-  "editUrl": "https://github.com/xirosoft/bee-ui-docs/edit/main/docs/03-components/team.md",
+  "editUrl": "https://github.com/xirosoft/bee-ui/edit/main/docs/03-components/team.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedAt": 1675775164,
+  "formattedLastUpdatedAt": "Feb 7, 2023",
   "frontMatter": {
     "id": "team-section",
     "title": "Team"

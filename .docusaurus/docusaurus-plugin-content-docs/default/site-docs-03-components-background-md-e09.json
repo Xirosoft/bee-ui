@@ -8,9 +8,11 @@
   "slug": "/components/background-color",
   "permalink": "/bee-ui/docs/components/background-color",
   "draft": false,
-  "editUrl": "https://github.com/xirosoft/bee-ui-docs/edit/main/docs/03-components/background.md",
+  "editUrl": "https://github.com/xirosoft/bee-ui/edit/main/docs/03-components/background.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedAt": 1675775164,
+  "formattedLastUpdatedAt": "Feb 7, 2023",
   "frontMatter": {
     "id": "background-color",
     "title": "Background color"

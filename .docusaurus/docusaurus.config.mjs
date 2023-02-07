@@ -23,7 +23,7 @@ export default {
         "docs": {
           "showLastUpdateAuthor": false,
           "showLastUpdateTime": true,
-          "editUrl": "https://github.com/xirosoft/bee-ui-docs/edit/main/",
+          "editUrl": "https://github.com/xirosoft/bee-ui/edit/main/",
           "path": "docs",
           "sidebarPath": "/Users/Data/sofiqul/23-01/bee-ui/sidebars.js"
         },
@@ -279,7 +279,7 @@ export default {
           "position": "left"
         },
         {
-          "href": "https://github.com/xirosoft/bee-ui-docs",
+          "href": "https://github.com/xirosoft/bee-ui",
           "position": "right",
           "className": "header-github-link",
           "aria-label": "GitHub repository"

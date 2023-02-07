@@ -21,7 +21,7 @@ module.exports = {
         docs: {
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
-          editUrl: "https://github.com/xirosoft/bee-ui-docs/edit/main/",
+          editUrl: "https://github.com/xirosoft/bee-ui/edit/main/",
           path: "docs",
           sidebarPath: require.resolve("./sidebars.js"),
         },
@@ -86,7 +86,7 @@ module.exports = {
           position: "left",
         },
         {
-          href: 'https://github.com/xirosoft/bee-ui-docs',
+          href: 'https://github.com/xirosoft/bee-ui',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
