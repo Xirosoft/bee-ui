@@ -43,6 +43,9 @@
         visibility: hidden;
         transition: $transition;
     }
+    &.circle {
+        border-radius: 50%;
+    }
     &:checked {
         background: $primary;
         border-color: $primary;
@@ -51,6 +54,15 @@
             border-color: $white;
             opacity: 1;
             visibility: visible;
+        }
+    }
+    &-outline {
+        &:checked {
+            background: transparent;
+
+            &::before {
+                border-color: $primary;
+            }
         }
     }
 }

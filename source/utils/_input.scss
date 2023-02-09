@@ -70,7 +70,7 @@ textarea {
 *************************************/
 .input-group {
     position: relative; 
-    @include flexbox(flex);
+    @include flex(flex);
     @include flex-wrap(wrap);
     @include align-items();
     margin-bottom: 1rem;
