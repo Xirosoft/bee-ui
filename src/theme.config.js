@@ -5,6 +5,12 @@ import { useConfig } from 'nextra-theme-docs'
  * @type {import('nextra-theme-docs').DocsThemeConfig}
  */
 export default {
+  logo: (
+    <>
+      <span style={{ fontSize: '2.5rem', fontWeight: '700', marginRight: '1rem' }}>Bee UI </span>
+      <span>Ultimate UI Package</span>
+    </>
+  ),
   banner: {
     key: 'notice',
     text: 'Our UI development is under condtruction!'
@@ -13,7 +19,7 @@ export default {
   //   link: 'https://facebook.com/xirosoft' // Next.js discord server,
   // },
   docsRepositoryBase:
-    'https://github.com/xirosoft/beeui',
+    'https://github.com/Xirosoft/bee-ui/edit/main',
   editLink: {
     text: 'Edit this page on GitHub'
   },
@@ -68,7 +74,7 @@ export default {
       titleTemplate: '%s – Bee UI',
       twitter: {
         cardType: 'summary_large_image',
-        site: 'https://xirosoft.github.io/beeui'
+        site: 'https://xirosoft.github.io/bee-ui'
       }
     }
   },
