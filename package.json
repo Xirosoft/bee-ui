@@ -27,6 +27,7 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
+        "export": "next export",
         "debug": "NODE_OPTIONS='--inspect' next dev",
         "clean": "rimraf .next .turbo",
         "all": "npm-run-all --parallel watch dev",
