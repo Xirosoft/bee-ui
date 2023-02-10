@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbee_ui=self.webpackChunkbee_ui||[]).push([[894],{8894:(e,u,s)=>{s.r(u)}}]);
