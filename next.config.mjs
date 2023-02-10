@@ -8,7 +8,12 @@ const withNextra = nextra({
   unstable_staticImage: true,
   flexsearch: {
     codeblock: true
-  }
+  },
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+  assetPrefix: './',
 })
 
 export default withNextra({
