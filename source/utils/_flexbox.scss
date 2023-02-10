@@ -3,15 +3,15 @@
 /*************************************
 /* FlexBox Property
 *************************************/
+.flex {
+    @include flex;
+}
 .flexbox {
     @include flexbox;
 }
 // .inline-flex {
 //     @include inline-flex;
 // }
-.flex {
-    @include flex;
-}
 .flex-direction {
     @include flex-direction;
 }

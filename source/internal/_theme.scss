@@ -72,6 +72,7 @@ $default-colors: (
   'body': (#fff, black),
   'white': (#fff, black),
   'transparent': (transparent, black),
+  'dot': (#c3c3c3, black)
 ) !default;
 
 
@@ -99,4 +100,5 @@ $base-colors: (
   'blue-grey': #607D8B,
   'border': #dee2e6,
   'bg-light': #f1f1f1,
+  'bg-dot': #c3c3c3,
 );

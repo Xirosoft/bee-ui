@@ -68,6 +68,35 @@ $all-colors : map-merge($default-colors, $base-colors);
     }
 }
 
+/*************************************
+/* Radio Bg Color
+*************************************/
+@each $key, $value in $all-colors {
+  .radio-#{$key} {
+      --radio-color: #{nth($value, 1)} !important;
+      --radio-bg: #{nth($value, 1)} !important;
+  }
+}
+
+/*************************************
+/* Switch Bg Color
+*************************************/
+@each $key, $value in $all-colors {
+  .switch-#{$key} {
+      --switch-bg: #{nth($value, 1)} !important;
+      --switch-border: #{nth($value, 1)} !important;
+  }
+}
+
+/*************************************
+/* Dots Bg Color
+*************************************/
+@each $key, $value in $default-colors {
+    .dot-#{$key} {
+      background: nth($value, 1) !important;
+    }
+}
+
 
 /*************************************
 /* BG Hex Color

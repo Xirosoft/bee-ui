@@ -25,7 +25,7 @@
     transition: $transition;
 
     &-bar {
-        @include flexbox;
+        @include flex;
         flex-direction: column;
         justify-content: center;
         overflow: hidden;

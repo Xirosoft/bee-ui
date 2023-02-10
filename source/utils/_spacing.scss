@@ -140,3 +140,13 @@ $padding_units: pt, pb, pl, pr, px, py;
         }
 	}
 }
+
+
+/*************************************
+/* Default gap Property
+*************************************/
+@for $i from 0 to 11 {
+    .gap-#{$i * 5} {
+        gap: #{$i * 5}px !important;
+    }
+}

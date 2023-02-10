@@ -206,7 +206,7 @@ fieldset legend {
   --bee-input-font-line-height: 1.5;
   --bee-input-color: #212529;
   --bee-input-bg: #fff;
-  --bee-input-padding-x: 0.6rem;
+  --bee-input-padding-x: 0.8rem;
   --bee-input-padding-y: 1.2rem;
   --bee-input-border-color: #dee2e6;
   --bee-input-border-primary: #0d6efd;
@@ -244,6 +244,7 @@ fieldset legend {
   --bee-body: #fff;
   --bee-white: #ffffff;
   --bee-transparent: transparent;
+  --bee-dot: #c3c3c3;
   --bee-black: #000;
   --bee-red: #F44336;
   --bee-pink: #E91E63;
@@ -266,6 +267,7 @@ fieldset legend {
   --bee-blue-grey: #607D8B;
   --bee-border: #dee2e6;
   --bee-bg-light: #f1f1f1;
+  --bee-bg-dot: #c3c3c3;
 }
 
 /*************************************
@@ -317,6 +319,10 @@ fieldset legend {
 
 .bg-transparent {
   background-color: transparent !important;
+}
+
+.bg-dot {
+  background-color: #c3c3c3 !important;
 }
 
 .bg-black {
@@ -407,6 +413,10 @@ fieldset legend {
   background-color: #f1f1f1 !important;
 }
 
+.bg-bg-dot {
+  background-color: #c3c3c3 !important;
+}
+
 /*************************************
 /* Text Bg Color
 *************************************/
@@ -466,6 +476,11 @@ fieldset legend {
 
 .text-bg-transparent {
   background-color: transparent !important;
+  color: black;
+}
+
+.text-bg-dot {
+  background-color: #c3c3c3 !important;
   color: black;
 }
 
@@ -557,6 +572,10 @@ fieldset legend {
   background-color: #f1f1f1 !important;
 }
 
+.text-bg-bg-dot {
+  background-color: #c3c3c3 !important;
+}
+
 /*************************************
 /* Table Bg Color
 *************************************/
@@ -606,6 +625,10 @@ fieldset legend {
 
 .table-transparent {
   background-color: transparent !important;
+}
+
+.table-dot {
+  background-color: #c3c3c3 !important;
 }
 
 .table-black {
@@ -696,6 +719,10 @@ fieldset legend {
   background-color: #f1f1f1 !important;
 }
 
+.table-bg-dot {
+  background-color: #c3c3c3 !important;
+}
+
 /*************************************
 /* Text Color
 *************************************/
@@ -745,6 +772,10 @@ fieldset legend {
 
 .text-transparent {
   color: transparent;
+}
+
+.text-dot {
+  color: #c3c3c3;
 }
 
 .text-black {
@@ -835,6 +866,10 @@ fieldset legend {
   color: #f1f1f1;
 }
 
+.text-bg-dot {
+  color: #c3c3c3;
+}
+
 /*************************************
 /* Link Color
 *************************************/
@@ -884,6 +919,10 @@ fieldset legend {
 
 .link-transparent {
   color: transparent !important;
+}
+
+.link-dot {
+  color: #c3c3c3 !important;
 }
 
 /*************************************
@@ -947,6 +986,432 @@ fieldset legend {
 .checkbox-transparent {
   border-color: transparent !important;
   background: transparent !important;
+}
+
+.checkbox-dot {
+  border-color: #c3c3c3 !important;
+  background: #c3c3c3 !important;
+}
+
+/*************************************
+/* Radio Bg Color
+*************************************/
+.radio-primary {
+  --radio-color: #0d6efd !important;
+  --radio-bg: #0d6efd !important;
+}
+
+.radio-secondary {
+  --radio-color: #6c757d !important;
+  --radio-bg: #6c757d !important;
+}
+
+.radio-success {
+  --radio-color: #198754 !important;
+  --radio-bg: #198754 !important;
+}
+
+.radio-info {
+  --radio-color: #0dcaf0 !important;
+  --radio-bg: #0dcaf0 !important;
+}
+
+.radio-warning {
+  --radio-color: #ffc107 !important;
+  --radio-bg: #ffc107 !important;
+}
+
+.radio-danger {
+  --radio-color: #dc3545 !important;
+  --radio-bg: #dc3545 !important;
+}
+
+.radio-light {
+  --radio-color: #f8f9fa !important;
+  --radio-bg: #f8f9fa !important;
+}
+
+.radio-dark {
+  --radio-color: #212529 !important;
+  --radio-bg: #212529 !important;
+}
+
+.radio-link {
+  --radio-color: transparent !important;
+  --radio-bg: transparent !important;
+}
+
+.radio-body {
+  --radio-color: #fff !important;
+  --radio-bg: #fff !important;
+}
+
+.radio-white {
+  --radio-color: #ffffff !important;
+  --radio-bg: #ffffff !important;
+}
+
+.radio-transparent {
+  --radio-color: transparent !important;
+  --radio-bg: transparent !important;
+}
+
+.radio-dot {
+  --radio-color: #c3c3c3 !important;
+  --radio-bg: #c3c3c3 !important;
+}
+
+.radio-black {
+  --radio-color: #000 !important;
+  --radio-bg: #000 !important;
+}
+
+.radio-red {
+  --radio-color: #F44336 !important;
+  --radio-bg: #F44336 !important;
+}
+
+.radio-pink {
+  --radio-color: #E91E63 !important;
+  --radio-bg: #E91E63 !important;
+}
+
+.radio-purple {
+  --radio-color: #9C27B0 !important;
+  --radio-bg: #9C27B0 !important;
+}
+
+.radio-deep-purple {
+  --radio-color: #673AB7 !important;
+  --radio-bg: #673AB7 !important;
+}
+
+.radio-indigo {
+  --radio-color: #3F51B5 !important;
+  --radio-bg: #3F51B5 !important;
+}
+
+.radio-blue {
+  --radio-color: #2196F3 !important;
+  --radio-bg: #2196F3 !important;
+}
+
+.radio-light-blue {
+  --radio-color: #03A9F4 !important;
+  --radio-bg: #03A9F4 !important;
+}
+
+.radio-cyan {
+  --radio-color: #00BCD4 !important;
+  --radio-bg: #00BCD4 !important;
+}
+
+.radio-teal {
+  --radio-color: #009688 !important;
+  --radio-bg: #009688 !important;
+}
+
+.radio-green {
+  --radio-color: #4CAF50 !important;
+  --radio-bg: #4CAF50 !important;
+}
+
+.radio-light-green {
+  --radio-color: #8BC34A !important;
+  --radio-bg: #8BC34A !important;
+}
+
+.radio-lime {
+  --radio-color: #CDDC39 !important;
+  --radio-bg: #CDDC39 !important;
+}
+
+.radio-yellow {
+  --radio-color: #FFEB3B !important;
+  --radio-bg: #FFEB3B !important;
+}
+
+.radio-amber {
+  --radio-color: #FFC107 !important;
+  --radio-bg: #FFC107 !important;
+}
+
+.radio-orange {
+  --radio-color: #FF9800 !important;
+  --radio-bg: #FF9800 !important;
+}
+
+.radio-deep-orange {
+  --radio-color: #FF5722 !important;
+  --radio-bg: #FF5722 !important;
+}
+
+.radio-brown {
+  --radio-color: #795548 !important;
+  --radio-bg: #795548 !important;
+}
+
+.radio-grey {
+  --radio-color: #9E9E9E !important;
+  --radio-bg: #9E9E9E !important;
+}
+
+.radio-blue-grey {
+  --radio-color: #607D8B !important;
+  --radio-bg: #607D8B !important;
+}
+
+.radio-border {
+  --radio-color: #dee2e6 !important;
+  --radio-bg: #dee2e6 !important;
+}
+
+.radio-bg-light {
+  --radio-color: #f1f1f1 !important;
+  --radio-bg: #f1f1f1 !important;
+}
+
+.radio-bg-dot {
+  --radio-color: #c3c3c3 !important;
+  --radio-bg: #c3c3c3 !important;
+}
+
+/*************************************
+/* Switch Bg Color
+*************************************/
+.switch-primary {
+  --switch-bg: #0d6efd !important;
+  --switch-border: #0d6efd !important;
+}
+
+.switch-secondary {
+  --switch-bg: #6c757d !important;
+  --switch-border: #6c757d !important;
+}
+
+.switch-success {
+  --switch-bg: #198754 !important;
+  --switch-border: #198754 !important;
+}
+
+.switch-info {
+  --switch-bg: #0dcaf0 !important;
+  --switch-border: #0dcaf0 !important;
+}
+
+.switch-warning {
+  --switch-bg: #ffc107 !important;
+  --switch-border: #ffc107 !important;
+}
+
+.switch-danger {
+  --switch-bg: #dc3545 !important;
+  --switch-border: #dc3545 !important;
+}
+
+.switch-light {
+  --switch-bg: #f8f9fa !important;
+  --switch-border: #f8f9fa !important;
+}
+
+.switch-dark {
+  --switch-bg: #212529 !important;
+  --switch-border: #212529 !important;
+}
+
+.switch-link {
+  --switch-bg: transparent !important;
+  --switch-border: transparent !important;
+}
+
+.switch-body {
+  --switch-bg: #fff !important;
+  --switch-border: #fff !important;
+}
+
+.switch-white {
+  --switch-bg: #ffffff !important;
+  --switch-border: #ffffff !important;
+}
+
+.switch-transparent {
+  --switch-bg: transparent !important;
+  --switch-border: transparent !important;
+}
+
+.switch-dot {
+  --switch-bg: #c3c3c3 !important;
+  --switch-border: #c3c3c3 !important;
+}
+
+.switch-black {
+  --switch-bg: #000 !important;
+  --switch-border: #000 !important;
+}
+
+.switch-red {
+  --switch-bg: #F44336 !important;
+  --switch-border: #F44336 !important;
+}
+
+.switch-pink {
+  --switch-bg: #E91E63 !important;
+  --switch-border: #E91E63 !important;
+}
+
+.switch-purple {
+  --switch-bg: #9C27B0 !important;
+  --switch-border: #9C27B0 !important;
+}
+
+.switch-deep-purple {
+  --switch-bg: #673AB7 !important;
+  --switch-border: #673AB7 !important;
+}
+
+.switch-indigo {
+  --switch-bg: #3F51B5 !important;
+  --switch-border: #3F51B5 !important;
+}
+
+.switch-blue {
+  --switch-bg: #2196F3 !important;
+  --switch-border: #2196F3 !important;
+}
+
+.switch-light-blue {
+  --switch-bg: #03A9F4 !important;
+  --switch-border: #03A9F4 !important;
+}
+
+.switch-cyan {
+  --switch-bg: #00BCD4 !important;
+  --switch-border: #00BCD4 !important;
+}
+
+.switch-teal {
+  --switch-bg: #009688 !important;
+  --switch-border: #009688 !important;
+}
+
+.switch-green {
+  --switch-bg: #4CAF50 !important;
+  --switch-border: #4CAF50 !important;
+}
+
+.switch-light-green {
+  --switch-bg: #8BC34A !important;
+  --switch-border: #8BC34A !important;
+}
+
+.switch-lime {
+  --switch-bg: #CDDC39 !important;
+  --switch-border: #CDDC39 !important;
+}
+
+.switch-yellow {
+  --switch-bg: #FFEB3B !important;
+  --switch-border: #FFEB3B !important;
+}
+
+.switch-amber {
+  --switch-bg: #FFC107 !important;
+  --switch-border: #FFC107 !important;
+}
+
+.switch-orange {
+  --switch-bg: #FF9800 !important;
+  --switch-border: #FF9800 !important;
+}
+
+.switch-deep-orange {
+  --switch-bg: #FF5722 !important;
+  --switch-border: #FF5722 !important;
+}
+
+.switch-brown {
+  --switch-bg: #795548 !important;
+  --switch-border: #795548 !important;
+}
+
+.switch-grey {
+  --switch-bg: #9E9E9E !important;
+  --switch-border: #9E9E9E !important;
+}
+
+.switch-blue-grey {
+  --switch-bg: #607D8B !important;
+  --switch-border: #607D8B !important;
+}
+
+.switch-border {
+  --switch-bg: #dee2e6 !important;
+  --switch-border: #dee2e6 !important;
+}
+
+.switch-bg-light {
+  --switch-bg: #f1f1f1 !important;
+  --switch-border: #f1f1f1 !important;
+}
+
+.switch-bg-dot {
+  --switch-bg: #c3c3c3 !important;
+  --switch-border: #c3c3c3 !important;
+}
+
+/*************************************
+/* Dots Bg Color
+*************************************/
+.dot-primary {
+  background: #0d6efd !important;
+}
+
+.dot-secondary {
+  background: #6c757d !important;
+}
+
+.dot-success {
+  background: #198754 !important;
+}
+
+.dot-info {
+  background: #0dcaf0 !important;
+}
+
+.dot-warning {
+  background: #ffc107 !important;
+}
+
+.dot-danger {
+  background: #dc3545 !important;
+}
+
+.dot-light {
+  background: #f8f9fa !important;
+}
+
+.dot-dark {
+  background: #212529 !important;
+}
+
+.dot-link {
+  background: transparent !important;
+}
+
+.dot-body {
+  background: #fff !important;
+}
+
+.dot-white {
+  background: #fff !important;
+}
+
+.dot-transparent {
+  background: transparent !important;
+}
+
+.dot-dot {
+  background: #c3c3c3 !important;
 }
 
 /*************************************
@@ -1872,6 +2337,46 @@ fieldset legend {
   background-color: #f1f1f1;
 }
 
+.bg-bg-dot-100 {
+  background-color: white;
+}
+
+.bg-bg-dot-900 {
+  background-color: #676767;
+}
+
+.bg-bg-dot-200 {
+  background-color: white;
+}
+
+.bg-bg-dot-800 {
+  background-color: #7e7e7e;
+}
+
+.bg-bg-dot-300 {
+  background-color: #f1f1f1;
+}
+
+.bg-bg-dot-700 {
+  background-color: #959595;
+}
+
+.bg-bg-dot-400 {
+  background-color: #dadada;
+}
+
+.bg-bg-dot-600 {
+  background-color: #acacac;
+}
+
+.bg-bg-dot-50 {
+  background-color: white;
+}
+
+.bg-bg-dot-500 {
+  background-color: #c3c3c3;
+}
+
 /*************************************
 /* Text Hex Color
 *************************************/
@@ -2795,6 +3300,46 @@ fieldset legend {
   color: #f1f1f1;
 }
 
+.text-bg-dot-100 {
+  color: white;
+}
+
+.text-bg-dot-900 {
+  color: #676767;
+}
+
+.text-bg-dot-200 {
+  color: white;
+}
+
+.text-bg-dot-800 {
+  color: #7e7e7e;
+}
+
+.text-bg-dot-300 {
+  color: #f1f1f1;
+}
+
+.text-bg-dot-700 {
+  color: #959595;
+}
+
+.text-bg-dot-400 {
+  color: #dadada;
+}
+
+.text-bg-dot-600 {
+  color: #acacac;
+}
+
+.text-bg-dot-50 {
+  color: white;
+}
+
+.text-bg-dot-500 {
+  color: #c3c3c3;
+}
+
 /*************************************
 /* Border Hex Color
 *************************************/
@@ -3716,6 +4261,46 @@ fieldset legend {
 
 .border-bg-light-500 {
   border-color: #f1f1f1;
+}
+
+.border-bg-dot-100 {
+  border-color: white;
+}
+
+.border-bg-dot-900 {
+  border-color: #676767;
+}
+
+.border-bg-dot-200 {
+  border-color: white;
+}
+
+.border-bg-dot-800 {
+  border-color: #7e7e7e;
+}
+
+.border-bg-dot-300 {
+  border-color: #f1f1f1;
+}
+
+.border-bg-dot-700 {
+  border-color: #959595;
+}
+
+.border-bg-dot-400 {
+  border-color: #dadada;
+}
+
+.border-bg-dot-600 {
+  border-color: #acacac;
+}
+
+.border-bg-dot-50 {
+  border-color: white;
+}
+
+.border-bg-dot-500 {
+  border-color: #c3c3c3;
 }
 
 /*************************************
@@ -6792,6 +7377,10 @@ fieldset legend {
   transform: rotate(45deg);
 }
 
+.checkbox.circle {
+  border-radius: 50%;
+}
+
 .checkbox:checked {
   border-color: var(--bee-primary);
   background: var(--bee-primary);
@@ -6801,6 +7390,316 @@ fieldset legend {
   visibility: visible;
   border-color: var(--bee-white);
   opacity: 1;
+}
+
+.checkbox-outline:checked {
+  background: transparent;
+}
+
+.checkbox-outline:checked::before {
+  border-color: var(--bee-primary);
+}
+
+/*************************************
+/* Radio Style 
+*************************************/
+.form-check {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.form-check label {
+  color: var(--bee-black);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  cursor: pointer;
+}
+
+.radio {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--radio-color);
+  border-radius: 50%;
+  background: var(--bee-white);
+  cursor: pointer;
+  transition: all 300ms;
+
+  --radio-bg: var(--bee-bg);
+  --radio-color: var(--bee-primary);
+  appearance: none;
+}
+
+.radio::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  visibility: hidden;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: var(--bee-white);
+  content: "";
+  opacity: 0;
+  transition: all 300ms;
+  transform: translate(-50%, -50%);
+}
+
+.radio:checked {
+  border-width: 1px;
+  border-color: var(--radio-color);
+}
+
+.radio:checked::before {
+  visibility: visible;
+  background: var(--radio-color);
+  opacity: 1;
+}
+
+.radio-filled {
+  background: var(--radio-bg);
+}
+
+.radio-filled::before {
+  width: 1rem;
+  height: 1rem;
+}
+
+.radio-filled:checked {
+  border-width: 0.6rem;
+  border-color: var(--radio-color);
+}
+
+.radio-filled:checked::before {
+  visibility: visible;
+  background: var(--bee-white);
+  opacity: 1;
+}
+
+.radio-outline-filled:checked {
+  background: var(--radio-bg);
+}
+
+.radio-outline-filled::before {
+  display: none;
+}
+
+.radio-outline::before {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.radio-outline:checked {
+  border-width: 1px;
+  border-color: var(--radio-color);
+}
+
+.radio-outline:checked::before {
+  visibility: visible;
+  background: var(--radio-color);
+  opacity: 1;
+}
+
+/*************************************
+/* Dots Style 
+*************************************/
+.dot {
+  display: inline-flex;
+  min-width: 1.2rem;
+  min-height: 1.2rem;
+  border-radius: 50%;
+  background-color: var(--bee-bg-dot);
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.dot-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/*************************************
+/* Switch Style 
+*************************************/
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  width: 5rem;
+  height: 2.4rem;
+  border: 1px solid var(--bee-border);
+  background-color: var(--bee-border);
+  vertical-align: top;
+  cursor: pointer;
+
+  --switch-bg: var(--bee-border);
+  --switch-border: var(--bee-primary);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.switch::after {
+  position: absolute;
+  top: 50%;
+  left: 0.3rem;
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--bee-white);
+  content: "";
+  transition: all 300ms;
+  transform: translateY(-50%);
+}
+
+.switch:checked {
+  border-color: var(--switch-border);
+  background: var(--switch-bg);
+}
+
+.switch:checked::after {
+  transform: translate(2.6rem, -50%);
+}
+
+.switch-default {
+  border: 1px solid var(--bee-border);
+  background-color: var(--bee-border);
+}
+
+.switch-default:checked {
+  border-color: var(--bee-primary);
+  background: var(--bee-primary);
+}
+
+.switch.round {
+  border-radius: 0.5rem;
+}
+
+.switch.round::after {
+  border-radius: 0.5rem;
+}
+
+.switch.circle {
+  border-radius: 3rem;
+}
+
+.switch.circle::after {
+  border-radius: 50%;
+}
+
+/*************************************
+/* Table Style 
+*************************************/
+.table {
+  display: table;
+  margin: 30px;
+  width: 100%;
+  border-spacing: initial;
+  border-collapse: initial;
+  text-indent: 0;
+}
+
+.table > thead {
+  background: var(--bee-border);
+}
+
+.table > thead tr th {
+  padding: 1.6rem 1rem;
+  border: 1px solid var(--bee-border);
+  text-align: start;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.table > tbody tr td,
+.table > tbody tr th {
+  padding: 1.6rem 1rem;
+  border-bottom: 1px solid var(--bee-border);
+  text-align: start;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+/*************************************
+/* Breadcrumb Style
+*************************************/
+.breadcrumbs ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+
+  -webkit-box: 1;
+  -moz-box: 1;
+}
+
+.breadcrumbs ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  color: var(--bee-grey);
+  list-style: none;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.breadcrumbs ul li::after {
+  display: block;
+  margin-right: 0.75rem;
+  margin-left: 0.5rem;
+  content: "/";
+  opacity: 0.4;
+}
+
+.breadcrumbs ul li:last-child::after {
+  display: none;
+}
+
+.breadcrumbs ul li a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--bee-grey);
+  text-decoration: none;
+}
+
+.breadcrumbs ul li a svg {
+  margin-right: 0.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.breadcrumbs ul li a svg path {
+  stroke: currentColor;
+}
+
+.breadcrumbs ul li a:hover {
+  text-decoration: underline;
+}
+
+/*************************************
+/* Forms Style
+*************************************/
+.form {
+  max-width: 44rem;
 }
 
 /*************************************
@@ -7088,6 +7987,28 @@ fieldset legend {
   color: black;
 }
 
+.btn-dot {
+  border-color: #c3c3c3;
+  background-color: #c3c3c3;
+  color: black;
+}
+
+.btn-dot.active, .btn-dot:hover {
+  border-color: #b0b0b0;
+  background-color: #b0b0b0;
+}
+
+.btn-outline-dot {
+  border-color: #c3c3c3;
+  background-color: transparent;
+  color: #c3c3c3;
+}
+
+.btn-outline-dot.active, .btn-outline-dot:hover {
+  background-color: #c3c3c3;
+  color: black;
+}
+
 .btn-lg {
   padding: 1.2rem 2.2rem !important;
 }
@@ -7282,6 +8203,18 @@ fieldset legend {
   font-weight: 600;
 }
 
+.alert-dot {
+  border-color: #e1e1e1;
+  background-color: #f3f3f3;
+  color: #898989;
+}
+
+.alert-dot a,
+.alert-dot .alert-link {
+  color: #c3c3c3;
+  font-weight: 600;
+}
+
 /*************************************
 /* Badge Style
 *************************************/
@@ -7375,7 +8308,6 @@ input[type=monthl],
 input[type=week],
 textarea {
   display: inline-block;
-  padding: 0.4rem 0.8rem;
   border: 1px solid var(--bee-input-border-color);
 }
 
@@ -10135,6 +11067,53 @@ video.video-fullscreen {
 }
 
 /*************************************
+/* Default gap Property
+*************************************/
+.gap-0 {
+  gap: 0px !important;
+}
+
+.gap-5 {
+  gap: 5px !important;
+}
+
+.gap-10 {
+  gap: 10px !important;
+}
+
+.gap-15 {
+  gap: 15px !important;
+}
+
+.gap-20 {
+  gap: 20px !important;
+}
+
+.gap-25 {
+  gap: 25px !important;
+}
+
+.gap-30 {
+  gap: 30px !important;
+}
+
+.gap-35 {
+  gap: 35px !important;
+}
+
+.gap-40 {
+  gap: 40px !important;
+}
+
+.gap-45 {
+  gap: 45px !important;
+}
+
+.gap-50 {
+  gap: 50px !important;
+}
+
+/*************************************
 /* Text Font Size
 *************************************/
 .text-10 {
@@ -10384,7 +11363,7 @@ h6, .h6 {
 /*************************************
 /* FlexBox Property
 *************************************/
-.flexbox {
+.flex {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -10392,7 +11371,7 @@ h6, .h6 {
   display: flex;
 }
 
-.flex {
+.flexbox {
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;

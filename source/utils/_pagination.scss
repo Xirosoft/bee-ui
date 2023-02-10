@@ -6,7 +6,7 @@
 *************************************/
 
 .pagination {
-    @include flexbox(flex);
+    @include flex(flex);
     @include flex-wrap;
     @include align-items(center);
     list-style: none;

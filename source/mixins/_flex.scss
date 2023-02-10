@@ -6,7 +6,7 @@
 // FlexBox Priperty
   // - applies to: flex value
   // flex | inline-flex 
-  @mixin flexbox($value: flex) {
+  @mixin flex($value: flex) {
     @if $value == flex {
         display: -webkit-box;
         display: -moz-box;
@@ -30,7 +30,7 @@
   // The 'flex' shorthand
   // - applies to: flex items
   // <positive-number>, initial, auto, or none
-  @mixin flex($fg: 1, $fs: 0, $fb: auto) {
+  @mixin flexbox($fg: 1, $fs: 0, $fb: auto) {
   
     // Set a variable to be used by box-flex properties
     $fg-boxflex: $fg;
