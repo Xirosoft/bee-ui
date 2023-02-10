@@ -206,7 +206,7 @@ fieldset legend {
   --bee-input-font-line-height: 1.5;
   --bee-input-color: #212529;
   --bee-input-bg: #fff;
-  --bee-input-padding-x: 0.6rem;
+  --bee-input-padding-x: 0.8rem;
   --bee-input-padding-y: 1.2rem;
   --bee-input-border-color: #dee2e6;
   --bee-input-border-primary: #0d6efd;
@@ -7632,6 +7632,77 @@ fieldset legend {
 }
 
 /*************************************
+/* Breadcrumb Style
+*************************************/
+.breadcrumbs ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+
+  -webkit-box: 1;
+  -moz-box: 1;
+}
+
+.breadcrumbs ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  color: var(--bee-grey);
+  list-style: none;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.breadcrumbs ul li::after {
+  display: block;
+  margin-right: 0.75rem;
+  margin-left: 0.5rem;
+  content: "/";
+  opacity: 0.4;
+}
+
+.breadcrumbs ul li:last-child::after {
+  display: none;
+}
+
+.breadcrumbs ul li a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--bee-grey);
+  text-decoration: none;
+}
+
+.breadcrumbs ul li a svg {
+  margin-right: 0.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.breadcrumbs ul li a svg path {
+  stroke: currentColor;
+}
+
+.breadcrumbs ul li a:hover {
+  text-decoration: underline;
+}
+
+/*************************************
+/* Forms Style
+*************************************/
+.form {
+  max-width: 44rem;
+}
+
+/*************************************
 /* Button Style
 *************************************/
 .btn {
@@ -8237,7 +8308,6 @@ input[type=monthl],
 input[type=week],
 textarea {
   display: inline-block;
-  padding: 0.4rem 0.8rem;
   border: 1px solid var(--bee-input-border-color);
 }
 
