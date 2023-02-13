@@ -24,7 +24,7 @@ const nextConfig = {
     loader: 'akamai',
     path: '',
   },
-  basePath: rootPath,
+  basePath: '/bee-ui',
   assetPrefix: rootPath,
 }
 
