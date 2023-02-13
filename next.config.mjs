@@ -2,7 +2,7 @@ import nextra from 'nextra'
 import withPlugins from 'next-compose-plugins'
 import nextOptimizedImages from 'next-optimized-images'
 
-const rootPath = process.env.MODE == 'production' ? `/${process.env.REPO_NAME}` : '';
+const rootPath = process.env.MODE == 'production' ? '/bee-ui' : '';
 
 
 const nextraConfig = nextra({
@@ -24,8 +24,8 @@ const nextConfig = {
     loader: 'akamai',
     path: '',
   },
-  basePath: `${rootPath}`,
-  assetPrefix: `${rootPath}`,
+  basePath: rootPath,
+  assetPrefix: rootPath,
 }
 
 export default withPlugins([nextraConfig, nextOptimizedImages], nextConfig)
