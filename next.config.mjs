@@ -12,6 +12,7 @@ const withNextra = nextra({
   images: {
     loader: 'akamai',
     path: '',
+    unoptimized:  true
   },
   assetPrefix: './',
 })
