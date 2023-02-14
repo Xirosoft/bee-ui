@@ -6,7 +6,7 @@ import nextOptimizedImages from 'next-optimized-images'
 dotenv.config()
 
 const rootPath = process.env.NODE_ENV == 'development' ? '' :`/${process.env.npm_package_name}`;
-console.log(process.env)
+console.log('rootpath:', rootPath)
 
 const nextraConfig = nextra({
   theme: 'nextra-theme-docs',
