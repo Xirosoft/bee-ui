@@ -1,12 +1,6 @@
-import dotenv from 'dotenv'
 import nextra from 'nextra'
 import withPlugins from 'next-compose-plugins'
 import nextOptimizedImages from 'next-optimized-images'
-
-dotenv.config()
-
-const rootPath = process.env.NODE_ENV == 'development' ? '' :`/${process.env.npm_package_name}`;
-console.log('rootpath:', rootPath)
 
 const nextraConfig = nextra({
   theme: 'nextra-theme-docs',
@@ -23,12 +17,19 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized:  true,
-    disableStaticImages: true,
-    loader: 'akamai',
-    path: '',
+    disableStaticImages: false,
+    // loader: 'akamai',
+    // path: '/public/',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: `${process.env.GITHUB_REPOSITORY_OWNER}.github.io/`,
+        pathname: `${process.env.BASE_PATH}/**`,
+      },
+    ],
   },
-  basePath: rootPath,
-  assetPrefix: rootPath,
+  basePath: process.env.BASE_PATH,
+  assetPrefix: process.env.BASE_PATH,
 }
 
 export default withPlugins([nextraConfig, nextOptimizedImages], nextConfig)
