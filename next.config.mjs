@@ -1,5 +1,7 @@
-require('dotenv').config()
+import * as dotenv from 'dotenv'
 import nextra from 'nextra'
+
+dotenv.config()
 
 const withNextra = nextra({
   theme: 'nextra-theme-docs',
