@@ -1,21 +1,4 @@
-// const withNextra = require('nextra')({
-//   theme: "nextra-theme-docs",
-//   themeConfig: "./src/theme.config.js",
-// })
-
-// const nextConfig = {
-//   i18n: {
-//     locales: ['en', 'bn'],
-//     defaultLocale: 'en'
-//   },
-//   basePath: process.env.BASE_PATH,
-// }
- 
-// module.exports = withNextra(nextConfig)
-
-
 import nextra from 'nextra'
-
 
 const withNextra = nextra({
   theme: 'nextra-theme-docs',
@@ -28,12 +11,8 @@ const withNextra = nextra({
 })
 
 const nextConfig = {
-  i18n: {
-    locales: ['en', 'bn'],
-    defaultLocale: 'en'
-  },
   images: {
-    unoptimized : true
+    unoptimized : true,
   },
   basePath: process.env.BASE_PATH,
 }
