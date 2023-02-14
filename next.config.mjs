@@ -1,9 +1,11 @@
+import dotenv from 'dotenv'
 import nextra from 'nextra'
 import withPlugins from 'next-compose-plugins'
 import nextOptimizedImages from 'next-optimized-images'
 
-const rootPath = process.env.MODE == 'production' ? '/bee-ui' : '';
+dotenv.config()
 
+const rootPath = process.env.NODE_ENV == 'development' ? '' :`/${process.env.npm_package_name}`;
 
 const nextraConfig = nextra({
   theme: 'nextra-theme-docs',
@@ -24,7 +26,7 @@ const nextConfig = {
     loader: 'akamai',
     path: '',
   },
-  basePath: '/bee-ui',
+  basePath: rootPath,
   assetPrefix: rootPath,
 }
 
