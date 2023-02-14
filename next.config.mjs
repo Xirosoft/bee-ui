@@ -1,35 +1,41 @@
-import nextra from 'nextra'
-import withPlugins from 'next-compose-plugins'
-import nextOptimizedImages from 'next-optimized-images'
+// const withNextra = require('nextra')({
+//   theme: "nextra-theme-docs",
+//   themeConfig: "./src/theme.config.js",
+// })
 
-const nextraConfig = nextra({
+// const nextConfig = {
+//   i18n: {
+//     locales: ['en', 'bn'],
+//     defaultLocale: 'en'
+//   },
+//   basePath: process.env.BASE_PATH,
+// }
+ 
+// module.exports = withNextra(nextConfig)
+
+
+import nextra from 'nextra'
+
+
+const withNextra = nextra({
   theme: 'nextra-theme-docs',
   themeConfig: './src/theme.config.js',
   staticImage: true,
   latex: true,
-  unstable_staticImage: true,
   flexsearch: {
-    codeblock: true
+    codeblock: false
   },
 })
 
 const nextConfig = {
-  reactStrictMode: true,
+  i18n: {
+    locales: ['en', 'bn'],
+    defaultLocale: 'en'
+  },
   images: {
-    unoptimized:  true,
-    disableStaticImages: false,
-    loader: 'akamai',
-    path: '/bee-ui/',
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: `${process.env.GITHUB_REPOSITORY_OWNER}.github.io/`,
-        pathname: `${process.env.BASE_PATH}/**`,
-      },
-    ],
+    unoptimized : true
   },
   basePath: process.env.BASE_PATH,
-  assetPrefix: process.env.BASE_PATH,
 }
 
-export default withPlugins([nextraConfig, nextOptimizedImages], nextConfig)
+export default withNextra(nextConfig)

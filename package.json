@@ -31,7 +31,9 @@
         "debug": "NODE_OPTIONS='--inspect' next dev",
         "clean": "rimraf .next .turbo",
         "all": "npm-run-all --parallel watch dev",
-        "build-all": "npm-run-all --parallel default build"
+        "build-all": "npm-run-all --parallel default build",
+        "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
+
     },
     "repository": "git+https://github.com/xirosoft/bee-ui.git",
     "devDependencies": {
