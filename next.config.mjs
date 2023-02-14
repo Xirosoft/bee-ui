@@ -18,8 +18,8 @@ const nextConfig = {
   images: {
     unoptimized:  true,
     disableStaticImages: false,
-    // loader: 'akamai',
-    // path: '/public/',
+    loader: 'akamai',
+    path: '/bee-ui/',
     remotePatterns: [
       {
         protocol: 'https',
