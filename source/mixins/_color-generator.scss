@@ -1,0 +1,16 @@
+
+
+// @mixin color-generator() {
+//     @each $color, $value in colorMap($baseColors, 10) {
+//         .#{$color} {
+//         &::before {
+//             content: "#{$value}";
+//             font-family: monospace;
+//             float: right;
+//             text-transform: uppercase;
+//         }
+//         background-color: $value;
+//         }
+//     }
+// }
+

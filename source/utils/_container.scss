@@ -1,0 +1,25 @@
+@use '../internal' as *;
+
+
+/*************************************
+/* Container
+*************************************/
+.container {
+    @include container-generator;
+    
+    @each $key, $val in $default-containers {
+        @if($key != 'ratina' ) {
+            @include mq(null, $key) {
+                max-width: $val;
+            }
+        }
+    }
+    @each $key, $val in $default-containers {
+        &-#{$key} {
+            max-width: $val;
+        }
+    }
+    &-fluid {
+        @include container-generator($fluid: true);
+    }
+}

@@ -1,0 +1,23 @@
+@use '../internal' as *;
+
+/*************************************
+/* Sizing Property
+*************************************/
+
+@for $i from 0 to 21 {
+    .w-#{$i * 5} {
+        width: #{$i * 5}#{"%"} !important;
+    }
+    .h-#{$i * 5} {
+        height: #{$i * 5}#{"%"} !important;
+    }
+}
+
+@each $key, $val in  $sizing-property {
+    .w-#{$key} {
+        width: $val !important;
+    }
+    .h-#{$key} {
+        height: $val !important;
+    }
+}

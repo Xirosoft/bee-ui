@@ -1,0 +1,57 @@
+@use '../internal' as *;
+
+/****************************
+* Name: button
+* Class: .btn
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://xirosoft.com/bee-ui/components/progress
+*/
+
+/*********************************
+/* Progress Section Start
+*********************************/
+.progress {
+    height: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: $regular;
+    line-height: 1.8rem;
+    border-radius: 1rem;
+    background: $bg-light;
+    color: $white;
+    width: 100%;
+    margin: 1rem 0;
+    transition: $transition;
+
+    &-bar {
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        text-align: center;
+        white-space: nowrap;
+        background: $primary;
+        border-radius: 1rem;
+        height: 100%;
+        transition: $transition;
+
+        &-striped {
+            background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+            background-size: 1.6rem 1.6rem;
+        }
+        &-animated {
+            animation: 1s linear infinite progress-bar-stripes;
+        }
+    }
+}
+
+
+@keyframes progress-bar-stripes {
+    0% {
+        background-position-x: 1rem;
+    }
+}
+/*********************************
+/* Progress Section End
+*********************************/

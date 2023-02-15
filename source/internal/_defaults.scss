@@ -1,0 +1,293 @@
+@use 'constants' as *;
+
+$rem-unit: 10px;
+
+$default-breakpoints: (
+    $xm: 375px,
+    $xs: 480px,
+    $sm: 576px,
+    $md: 768px,
+    $lg: 992px,
+    $xl: 1200px,
+    $xxl: 1400px,
+    $ratina: 1720px,
+) !default;
+
+
+$default-containers: (
+    $xm: 100%,
+    $xs: 480px,
+    $sm: 540px,
+    $md: 720px,
+    $lg: 960px,
+    $xl: 1140px,
+    $xxl: 1320px,
+    $ratina: 1600px,
+) !default;
+
+$default-grid: (
+    'space': 3rem,
+    'columns': 12,
+) !default;
+
+$space: 3rem !default;
+$default-spacing: (
+    'directions': (
+        $left: 'left',
+        $right: 'right',
+        $top: 'top',
+        $bottom: 'bottom',
+        $x-exis: 'x',
+        $y-exis: 'y'
+    )
+) !default;
+
+// DEFAULTS
+$default-sizing-system: (
+    0: 0rem,
+    1: 0.5rem,
+    2: 1rem,
+    3: 1.5rem,
+    4: 2rem,
+    5: 2.5rem,
+    6: 3rem,
+    8: 4rem,
+    10: 5rem,
+    12: 6rem,
+    16: 8rem,
+    20: 10rem,
+    24: 12rem,
+    32: 16rem,
+    'auto': auto,
+    'none': none,
+) !default;
+
+$opacity-percentages: (
+    25p: 25%,
+    50p: 50%,
+    75p: 75%,
+    100p: 100%,
+) !default;
+
+// Percentage
+$default-percentages: (
+    10p: 10%, 
+    20p: 20%,
+    30p: 30%,
+    40p: 40%,
+    50p: 50%,
+    60p: 60%,
+    70p: 70%,
+    80p: 80%,
+    90p: 90%,
+    100p: 100%,
+) !default;
+
+// Heading Font Size
+$heading-font-size: (
+    1: 5rem,
+    2: 4.5rem,
+    3: 4rem,
+    4: 3.5rem,
+    5: 3rem,
+    6: 2.5rem
+);
+
+// Font Weights
+$font-weights: (
+    "100": 100,
+    "200": 200,
+    "300": 300,
+    "400": 400, 
+    "500": 500, 
+    "600": 600, 
+    "700": 700,
+    "800": 800,
+    '900': 900
+);
+
+// Text Direction
+$text-direction: (
+    "inherit": inherit,
+    "initial": initial,
+    "justify": justify,
+    "revert": revert,
+    "unset": unset,
+    "left": left,
+    "start": start,
+    "center": center,
+    "right": right, 
+    "end": end,
+);
+
+// Text Transform
+
+$text-transform: (
+    'lowercase': lowercase,
+    'capitalize': capitalize,
+    'uppercase': uppercase,
+);
+
+// Display Property
+$display-property: (
+    'none': none,
+    'inline': inline,
+    'block': block,
+    'inline-block': inline-block,
+    'flex': flex,
+    'inline-flex': inline-flex,
+    'grid': grid,
+    'table': table,
+    'table-cell': table-cell,
+    'table-row': table-row,
+);
+
+// Display align Direction Property
+$display-align-direction-property: (
+    'start': flex-start,
+    'end': flex-end,
+    'center': center,
+    'baseline': baseline,
+    'stretch': stretch,
+);
+// Display Self Direction Property
+$display-self-direction-property: (
+    'start': flex-start,
+    'end': flex-end,
+    'center': center,
+    'baseline': baseline,
+    'stretch': stretch,
+);
+// Display Wrap Direction Property
+$display-wrap-direction-property: (
+    'nowrap' : nowrap,
+    'wrap' : wrap,
+
+);
+
+// Display Direction Property
+$display-direction-property: (
+    'center': center,
+    'left': left,
+    'start': flex-start,
+    'right': right,
+    'end': flex-end,
+    'inherit': inherit,
+    'initial': initial,
+    'normal': normal,
+    'revert': revert,
+    'unset': unset,
+    'around': space-around,
+    'between': space-between,
+    'evenly': space-evenly,
+);
+
+// Order Property
+$order-property: (
+    '0' : 0,
+    '1' : 1,
+    '2' : 2,
+    '3' : 3,
+    '4' : 4,
+    '5' : 5,
+);
+
+
+// Body Typography
+$body-property: (
+	'body-font-family' : Inter,
+	'body-font-size' : 1.6rem,
+	'body-font-weight' : 400,
+	'body-font-line-height' : 1.5,
+	'body-color' : #212529,
+	'body-bg' : #fff
+);
+
+
+// Input Typography
+
+$input-property: (
+	'input-font-family' : Inter,
+	'input-font-size' : 1.4rem,
+	'input-font-weight' : 400,
+	'input-font-line-height' : 1.5,
+	'input-color' : #212529,
+	'input-bg' : #fff,
+    'input-padding-x': 0.8rem, 
+    'input-padding-y': 1.2rem,
+    'input-border-color': #dee2e6,
+    'input-border-primary': #0d6efd,
+    'input-focus-border-color': #86b7fe,
+);
+
+@mixin border-radius($radius: 0.4rem) {
+    border-radius: $radius;
+}
+
+
+// List Group 
+$list-group: (
+    'list-group-color': var(--bee-body-color),
+    'list-group-bg': var(--bee-body-bg),
+    'list-group-border-color': var(--bee-border),
+    'list-group-border-width': 0.1rem,
+    'list-group-border-radius': 0.6rem,
+    'list-group-item-padding-x': 1.6rem,
+    'list-group-item-padding-y': 0.8rem,
+    // 'list-group-action-color': var(--bee-secondary),
+    // 'list-group-action-hover-color': var(--bee-body-color),
+    // 'list-group-action-hover-bg': var(--bee-light),
+    // 'list-group-action-active-color': var(--bee-white),
+    // 'list-group-action-active-bg': var(--bee-primary),
+    'list-group-disabled-color': var(--bee-secondary),
+    'list-group-disabled-bg': var(--bee-body-bg),
+    'list-group-active-color': #fff,
+    'list-group-active-bg': var(--bee-primary),
+    'list-group-active-border-color': var(--bee-primary),
+);
+
+
+// Object Fit
+
+$object-fit: (
+    'none': none,
+    'cover': cover,
+    'contain': contain,
+    'fill': fill,
+    'scale': scale-down,
+);
+
+// Overflow Property
+$overflow-property: (
+    'auto': auto,
+    'hidden': hidden,
+    'visible': visible,
+    'scroll': scroll,
+);
+
+// Sizing Property
+$sizing-property: (
+    'auto': auto,
+    'inherit': inherit,
+    'initial': initial,
+    'fit-content': fit-content,
+    'max-content': max-content,
+    'min-content': min-content,
+    'revert': revert,
+    'unset': unset,
+);
+
+// Vertical Align
+$vertical-align: (
+    'baseline': baseline,
+    'top': top,
+    'middle': middle,
+    'text-top': text-top,
+    'text-bottom': text-bottom,
+);
+
+// Visible Property
+$visible-property: (
+    'visible': visible,
+    'hidden': hidden,
+);

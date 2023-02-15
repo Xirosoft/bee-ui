@@ -1,0 +1,14 @@
+@use 'sass:math';
+@use '../internal' as *;
+
+
+/* This works well with panel */
+section {
+    display: block;
+}
+
+.content {
+    max-width: 48em;
+    margin: 0 auto 1.5em;
+    width: 100%;
+}

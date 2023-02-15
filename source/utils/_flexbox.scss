@@ -1,0 +1,47 @@
+@use '../internal' as *;
+
+/*************************************
+/* FlexBox Property
+*************************************/
+.flex {
+    @include flex;
+}
+.flexbox {
+    @include flexbox;
+}
+// .inline-flex {
+//     @include inline-flex;
+// }
+.flex-direction {
+    @include flex-direction;
+}
+.flex-wrap {
+    @include flex-wrap;
+}
+.flex-flow {
+    @include flex-flow;
+}
+.order {
+    @include order;
+}
+.flex-grow {
+    @include flex-grow;
+}
+.flex-shrink {
+    @include flex-shrink;
+}
+.flex-basis {
+    @include flex-basis;
+}
+.justify-content {
+    @include justify-content;
+}
+.align-content {
+    @include align-content;
+}
+.align-items {
+    @include align-items;
+}
+.align-self {
+    @include align-self;
+}

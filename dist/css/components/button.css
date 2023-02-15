@@ -1,0 +1,16 @@
+/*
+* Bee UI 0.0.1 
+* © 2023 Xirosoft, 
+* https://xirosoft.github.io/bee
+*/
+/* FONT */ /****************************
+* Name: button
+* Class: .btn
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://xirosoft.com/bee-ui/components/button
+*/
+.btn {
+  padding: 8px 12px;
+}

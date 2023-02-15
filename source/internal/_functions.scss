@@ -1,0 +1,112 @@
+@use 'sass:string';
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:color';
+@use 'sass:math';
+@use 'sass-true/sass/config/throw';
+@use 'sass-true/sass/true' as *;
+
+
+//   Functions
+//   TODO Refactor to different categories
+
+$DELIMETER: '-';
+
+//  Converts a given hex value to RGB.
+@function hex-to-rgb($hex) {
+    @return red($hex),
+    green($hex),
+    blue($hex);
+}
+
+
+//  To generate the negative variant of classes, we want to prepend 'n' to the key and add a negative sign to the value.
+
+//  This automatically skips string values and 0 values.
+//  This also assumes that the values passed in are positive variants of classes. This will break with negative variants.
+
+@function get-negative-value-map($map) {
+    $result: ();
+
+    @each $key,
+    $value in $map {
+        $to-add: ($key: $value,
+        );
+
+        @if type-of($value)==number and $key !=0 and strip-unit($value) !=0 {
+            $to-add: map.merge($to-add, (n#{$key}: -#{$value}));
+        }
+
+        $result: map.merge($result, $to-add);
+    }
+
+    @return $result;
+}
+
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+    @if type-of($number)=='number' and not unitless($number) {
+        @return math.div($number, ($number * 0 + 1));
+    }
+
+    @return $number;
+}
+
+
+/// make a custom percentage fucntion
+/// @param {Number} $number with-out unit
+/// @return {Number} $number with percentage
+// @debug get-percentage(100%, strip-unit(12)) * 6
+@function get-percentage($width: 100%, $number) {
+    @return math.div($width, $number);
+}
+
+
+
+
+/// make material color palete function
+/// @param {Color} colorCode or name
+/// @param {Number} variations is a number of color variant
+/// @return {Color} with hex code
+/// 
+@function colorMap($baseColors, $variations) {
+    $colors: ();
+
+    @each $color,
+    $val in $baseColors {
+        $maxVar: 36;
+        $mid: math.div($variations, 2);
+        $dist: $mid - 1;
+        $step: math.div($maxVar, $dist);
+        $value: nth($val, 1);
+
+        // lighten and darken
+        @for $i from 1 through $dist {
+            $percent: $maxVar - ($step * ($i - 1));
+            $darken: ($variations - $i) * 100;
+            $lighten: $i * 100;
+
+            $colors: map-merge($colors, (#{$color}-#{$lighten}: lighten($value, $percent),
+                    #{$color}-#{$darken}: darken($value, $percent)));
+        }
+
+        // middle eg 500
+        $colors: map-merge($colors, (#{$color}-50: lighten($value, 38.7)));
+        $colors: map-merge($colors, (#{$color}-#{math.div($variations, 2)*100}: $value));
+    }
+
+    @return $colors;
+}
+
+
+
+/// Hex to HSL color
+/// @param {Color: name/hex/rgb} 
+/// @param {Percentage: lightness}
+/// @return {Hex} hex code
+
+@function hex2hsl($color, $lightness: 50%) {
+    @return color.scale($color, $lightness: $lightness);
+}

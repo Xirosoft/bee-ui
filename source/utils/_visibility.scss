@@ -1,0 +1,10 @@
+@use '../internal' as *;
+
+/*************************************
+/* Visibility Property
+*************************************/
+@each $key, $val in  $visible-property {
+    .#{$key} {
+        visibility: $val !important;
+    }
+}

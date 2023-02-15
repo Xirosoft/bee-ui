@@ -1,0 +1,66 @@
+@use '../internal' as *;
+
+/*************************************
+/* Switch Style 
+*************************************/
+.switch {
+    --switch-bg : var(--bee-border);
+    --switch-border : var(--bee-primary);
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    height: 2.4rem;
+    width: 5rem;
+    border: 1px solid $border;
+    background-color: $border;
+    cursor: pointer;
+    vertical-align: top;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0.3rem;
+        transform: translateY(-50%);
+        background-color: $white;
+        height: 1.5rem;
+        width: 1.5rem;
+        transition: $transition;
+    }
+    &:checked {
+        background: var(--switch-bg);
+        border-color: var(--switch-border);
+        &::after {
+            transform: translate(2.6rem, -50%);
+        }
+    }
+    &-default {
+        border: 1px solid $border;
+        background-color: $border;
+
+        &:checked {
+            background: $primary;
+            border-color: $primary;
+        }
+    }
+    &.round {
+        border-radius: .5rem;
+
+        &::after {
+            border-radius: .5rem;
+        }
+    }
+
+    &.circle {
+        border-radius: 3rem;
+
+        &::after {
+            border-radius: 50%;
+        }
+    }
+}
+

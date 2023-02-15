@@ -1,0 +1,24 @@
+@use '../internal' as *;
+
+
+/*************************************
+/* Object Fit
+*************************************/
+/// Display property Variable
+/// @param {Display Object Fit Map} From internal/default.scss
+///
+
+@each $props-key, $props-val in $object-fit {
+    .object-fit-#{$props-key} {
+        object-fit: $props-val !important;
+    }
+}
+@each $key, $val in $default-breakpoints {
+    @each $props-key, $props-val in $object-fit {
+        .object-fit-#{$key}-#{$props-key} {
+            @include mq(null, $key) {
+                object-fit: $props-val !important;
+            }
+        }
+    }
+}

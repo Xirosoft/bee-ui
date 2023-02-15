@@ -1,0 +1,152 @@
+@use '../internal' as *;
+
+
+
+// .#{$margin}  {
+//     @include space-generator($type: 'margin');
+// }
+
+
+// .#{$padding}  {
+//     @include space-generator($type: 'padding');
+// }
+
+
+
+/*************************************
+/* Default Margin Property
+*************************************/
+@for $i from 0 to 11 {
+    .m-#{$i * 5} {
+        margin: #{$i * 5}px !important;
+    }
+}
+
+
+$margin_auto: m, ml, mr, ms, me;
+
+// Margin
+
+@each $margin in $margin_auto {
+    .#{$margin}-auto {
+        @if($margin == 'm') {
+            margin: auto !important;
+        } @else if ($margin == 'ml') {
+            margin-left: auto !important;
+        } @else if ($margin == 'mr') {
+            margin-right: auto !important;
+        } @else if ($margin == 'ms') {
+            margin-left: auto !important;
+        } @else if ($margin == 'me') {
+            margin-right: auto !important;
+        }
+    }
+}
+
+/*************************************
+/* Margin Property
+*************************************/
+$margin_units: mt, mb, ml, mr, mx, my;
+
+// margins
+@each $m in $margin_units {
+    .#{$m}-0 {
+        @if($m == 'mt') {
+            margin-top: 0 !important;
+        } @else if ($m == 'mb') {
+            margin-bottom: 0 !important;
+        } @else if ($m == 'ml') {
+            margin-left: 0 !important;
+        } @else if ($m == 'mr') {
+            margin-right: 0 !important;
+        } @else if ($m == 'mx') {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        } @else if ($m == 'my') {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    }
+	@for $i from 1 to 11 {
+        .#{$m}-#{$i * 5} {
+            @if ($m == "mt") {
+                margin-top: #{$i * 5+ "px"} !important;
+            } @else if ($m == "mb") {
+                margin-bottom: #{$i * 5+"px"} !important;
+            } @else if ($m == "ml") {
+                margin-left: #{$i * 5+"px"} !important;
+            } @else if ($m == "mr") {
+                margin-right: #{$i * 5+"px"} !important;
+            } @else if ($m == "mx") {
+                margin-left: #{$i * 5+"px"} !important;
+                margin-right: #{$i * 5+"px"} !important;
+            } @else if ($m == "my") {
+                margin-top: #{$i * 5+"px"} !important;
+                margin-bottom: #{$i * 5+"px"} !important;
+            }
+        }
+	}
+}
+
+/*************************************
+/* Default Padiing Property
+*************************************/
+@for $i from 0 to 11 {
+    .p-#{$i * 5} {
+        padding: #{$i * 5}px !important;
+    }
+}
+
+/*************************************
+/* Padding Property
+*************************************/
+$padding_units: pt, pb, pl, pr, px, py;
+
+@each $p in $padding_units {
+    .#{$p}-0 {
+        @if($p == 'pt') {
+            padding-top: 0 !important;
+        } @else if ($p == 'pb') {
+            padding-bottom: 0 !important;
+        } @else if ($p == 'pl') {
+            padding-left: 0 !important;
+        } @else if ($p == 'pr') {
+            padding-right: 0 !important;
+        } @else if ($p == 'px') {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        } @else if ($p == 'py') {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+    }
+	@for $i from 1 to 11 {
+        .#{$p}-#{$i * 5} {
+            @if ($p == "pt") {
+                padding-top: #{$i * 5+"px"} !important;
+            } @else if ($p == "pb") {
+                padding-bottom: #{$i * 5+"px"} !important;
+            } @else if ($p == "pl") {
+                padding-left: #{$i * 5+"px"} !important;
+            } @else if ($p == "pr") {
+                padding-right: #{$i * 5+"px"} !important;
+            } @else if ($p == "px") {
+                padding-left: #{$i * 5+"px"} !important;
+                padding-right: #{$i * 5+"px"} !important;
+            } @else if ($p == "py") {
+                padding-top: #{$i * 5+"px"} !important;
+                padding-bottom: #{$i * 5+"px"} !important;
+            }
+        }
+	}
+}
+
+
+/*************************************
+/* Default gap Property
+*************************************/
+@for $i from 0 to 11 {
+    .gap-#{$i * 5} {
+        gap: #{$i * 5}px !important;
+    }
+}

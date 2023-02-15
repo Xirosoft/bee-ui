@@ -1,0 +1,49 @@
+@use '../internal' as *;
+
+
+/*************************************
+/* Text Font Size
+*************************************/
+@for $i from 10 to 40 {
+	.text-#{$i} {
+		font-size: #{$i}px !important;
+	}
+}
+
+/*************************************
+/* Heading Text Font Size
+*************************************/
+// @debug $heading-font-size;
+
+@each $key, $value in $heading-font-size {
+	h#{$key},.h#{$key} {
+		font-size: $value;
+	}
+}
+
+/*************************************
+/* Font Weight Size
+*************************************/
+@each $key, $value in $font-weights {
+	.font-#{$key} {
+		font-weight: $value;
+	}
+}
+
+/*************************************
+/* Text Align
+*************************************/
+@each $key, $value in $text-direction {
+	.text-#{$key} {
+		text-align: $value !important;
+	}
+}
+
+/*************************************
+/* Text Transform
+*************************************/
+@each $key, $value in $text-transform {
+	.text-#{$key} {
+		text-transform: $value !important;
+	}
+}

@@ -1,0 +1,100 @@
+@use '../internal' as *;
+
+/*************************************
+/* Position Property
+*************************************/
+// Same value for sides.
+
+.relative {
+  position: relative !important;
+}
+.absolute {
+  position: absolute !important;
+}
+.fixed {
+  position: fixed !important;
+}
+.sticky {
+  position: sticky !important;
+  position: -webkit-sticky
+}
+
+.my-class {
+    @include pos(0px, top left);
+  }
+  
+  // -> Output
+  
+  // .my-class {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
+  
+  
+  // Same value for `all` sides,
+  // `all` only works if all sides have the same value.
+  
+  .my-class {
+    @include pos(0, all, fixed);
+  }
+  
+  // -> Output
+  
+  // .my-class {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  // }
+  
+  
+  // Different values for sides.
+  
+  .my-class {
+    @include pos(auto 200px 3em, top left right);
+  }
+  
+  // -> Output
+  
+  // .my-class {
+  //   position: absolute;
+  //   top: auto;
+  //   left: 200px;
+  //   right: 3em;
+  // }
+  
+  
+  // No positioning using `none`.
+  // It will probably be better to not use the a mixin for this
+  // but it can be useful if you use the mixin in a loop.
+  
+  .my-class {
+    @include pos(0 3px, left top, none);
+  }
+  
+  // -> Output
+  
+  // .my-class {
+  //   top: 3px;
+  //   left: 0;
+  // }
+  
+  
+  // Overwrite not specified sides with `auto` to overwrite inherited rules.
+  // It's dirty but useful at times.
+  
+  .my-class {
+    @include pos(0 200px, top left, $auto-overwrite: true);
+  }
+  
+  // -> Output
+  
+  // .my-class {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 200px;
+  //   right: auto;
+  //   bottom: auto;
+  // }
