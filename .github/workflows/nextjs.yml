@@ -31,7 +31,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
       - run: pnpm install
-      - run: pnpm install
       - run: pnpm build
       - run: pnpm export
       - run: touch ./out/.nojekyll
@@ -41,4 +40,3 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: out # The folder the action should deploy.
-      - run : pnpm store prune
