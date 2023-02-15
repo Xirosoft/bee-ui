@@ -4,3 +4,4 @@ out
 .next
 .vercel
 .pnpm
+.DS_Store
