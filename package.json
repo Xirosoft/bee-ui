@@ -31,7 +31,7 @@
         "debug": "NODE_OPTIONS='--inspect' next dev",
         "clean": "rimraf .next .turbo",
         "all": "npm-run-all --parallel watch dev",
-        "build-all": "npm-run-all --parallel default build"
+        "build-all": "npm-run-all --parallel default build export"
     },
     "repository": "git+https://github.com/xirosoft/bee-ui.git",
     "devDependencies": {
@@ -50,7 +50,6 @@
         "gulp-size": "^3.0.0"
     },
     "dependencies": {
-        "dotenv": "^16.0.3",
         "glob": "^7.2.0",
         "global": "^4.4.0",
         "gulp-sass": "^5.1.0",

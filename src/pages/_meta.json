@@ -1,4 +1,12 @@
 {
-  "index": "Introduction",
-  "get-started": "Get Started"
+  "index": {
+    "title": "Home",
+    "theme": {
+      "breadcrumb": true,
+      "footer": false,
+      "sidebar": true,
+      "toc": true,
+      "pagination": true
+    }
+  }
 }
