@@ -30,7 +30,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
-      - run: pnpm add
+      - run: pnpm install
+      - run: pnpm store prune
       - run: pnpm build
       - run: pnpm export
       - run: touch ./out/.nojekyll
