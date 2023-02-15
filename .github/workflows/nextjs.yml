@@ -21,14 +21,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.27.0
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
-      - run: npm install
-      - run: npm run build
-      - run: npm run export
+          cache: "pnpm"
+      - run: pnpm install
+      - run: pnpm install
+      - run: pnpm build
+      - run: pnpm export
       - run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
@@ -36,3 +41,4 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: out # The folder the action should deploy.
+      - run : pnpm store prune
