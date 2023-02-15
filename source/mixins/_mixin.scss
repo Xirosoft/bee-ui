@@ -22,7 +22,7 @@
     border-color: $bee-success;
 
     &:focus {
-        box-shadow: 0 0 0 0.2rem transparentize($bee-success, 1 - $focus-opacity), inset 0px 1px 8px rgba(0, 0, 0, 0.07);
+        box-shadow: 0 0 0 .125rem transparentize($bee-success, 1 - $focus-opacity), inset 0px .063rem .5rem rgba(0, 0, 0, 0.07);
     }
 }
 
@@ -30,7 +30,7 @@
     border-color: $bee-danger;
 
     &:focus {
-        box-shadow: 0 0 0 0.2rem transparentize($bee-danger, 1 - $focus-opacity), inset 0px 1px 8px rgba(0, 0, 0, 0.07);
+        box-shadow: 0 0 0 .125rem transparentize($bee-danger, 1 - $focus-opacity), inset 0px .063rem .5rem rgba(0, 0, 0, 0.07);
     }
 }
 

@@ -31,7 +31,7 @@
         "debug": "NODE_OPTIONS='--inspect' next dev",
         "clean": "rimraf .next .turbo",
         "all": "npm-run-all --parallel watch dev",
-        "build-all": "npm-run-all --parallel default build export"
+        "build-all": "npm-run-all --parallel default build"
     },
     "repository": "git+https://github.com/xirosoft/bee-ui.git",
     "devDependencies": {

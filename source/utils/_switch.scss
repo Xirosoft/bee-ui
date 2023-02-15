@@ -9,9 +9,9 @@
     position: relative;
     display: inline-block;
     margin: 0;
-    height: 2.4rem;
-    width: 5rem;
-    border: 1px solid $border;
+    height: 1.5rem;
+    width: 3.125rem;
+    border: .063rem solid $border;
     background-color: $border;
     cursor: pointer;
     vertical-align: top;
@@ -24,18 +24,18 @@
         display: block;
         position: absolute;
         top: 50%;
-        left: 0.3rem;
+        left: .188rem;
         transform: translateY(-50%);
         background-color: $white;
-        height: 1.5rem;
-        width: 1.5rem;
+        height: .938rem;
+        width: .938rem;
         transition: $transition;
     }
     &:checked {
         background: var(--switch-bg);
         border-color: var(--switch-border);
         &::after {
-            transform: translate(2.6rem, -50%);
+            transform: translate(1.625rem, -50%);
         }
     }
     &-default {
@@ -48,15 +48,15 @@
         }
     }
     &.round {
-        border-radius: .5rem;
+        border-radius: .313rem;
 
         &::after {
-            border-radius: .5rem;
+            border-radius: .313rem;
         }
     }
 
     &.circle {
-        border-radius: 3rem;
+        border-radius: 1.875rem;
 
         &::after {
             border-radius: 50%;

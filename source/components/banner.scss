@@ -16,7 +16,7 @@
 	// background: rgba($primary, 0.08);
 	background: #94c34714;
 	position: relative;
-	padding: 18rem 0 16rem;
+	padding: rem(180px) 0 rem(160);
 	z-index: 1;
 
 	&::after {
@@ -37,14 +37,14 @@
 	}
 
 	@include mq(lg) {
-		padding: 15rem 0;
+		padding: rem(150px) 0;
 	}
 	@include mq(lg) {
-		padding: 12rem 0;
+		padding: rem(120px) 0;
 	}
 }
 .hero__content {
-	max-width: 57.5rem;
+	max-width: rem(575px);
 	.hero {
 		&__subtitle {
 			font-family: $default;
@@ -56,6 +56,9 @@
 		}
 		&__title {
 			color: $heading;
+			font-weight: $semibold;
+			font-size: rem(46px);
+			line-height: rem(56px);
 			margin-bottom: 0;
 		}
 		&__desc {
@@ -80,6 +83,10 @@
 	@include mq(md) {
 		max-width: 400px;
 		margin: 0px auto 30px;
+	}
+	img {
+		width: 100%;
+		height: 100%;
 	}
 }
 /*********************************

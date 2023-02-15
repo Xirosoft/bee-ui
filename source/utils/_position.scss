@@ -86,7 +86,7 @@
   // It's dirty but useful at times.
   
   .my-class {
-    @include pos(0 200px, top left, $auto-overwrite: true);
+    @include pos(0 12.5rem, top left, $auto-overwrite: true);
   }
   
   // -> Output

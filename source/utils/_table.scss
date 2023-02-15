@@ -9,16 +9,16 @@
     border-collapse: initial;
     border-spacing: initial;
     width: 100%;
-    margin: 30px;
+    margin: 1.875rem;
 
     > thead {
         background: $border;
         tr {
             th {
-                border: 1px solid $border;
-                font-size: 1.4rem;
-                line-height: 2rem;
-                padding: 1.6rem 1rem;
+                border: .063rem solid $border;
+                font-size: .875rem;
+                line-height: 1.25rem;
+                padding: 1rem .625rem;
                 white-space: nowrap;
                 font-weight: $regular;
                 text-align: start;
@@ -29,10 +29,10 @@
         tr {
             td,
             th {
-                border-bottom: 1px solid $border;
-                font-size: 1.4rem;
-                line-height: 2rem;
-                padding: 1.6rem 1rem;
+                border-bottom: .063rem solid $border;
+                font-size: .875rem;
+                line-height: 1.25rem;
+                padding: 1rem .625rem;
                 white-space: nowrap;
                 font-weight: $regular;
                 text-align: start;

@@ -40,6 +40,8 @@
 .card__title {
   display: block;
   margin-bottom: 10px;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 .card__btn {

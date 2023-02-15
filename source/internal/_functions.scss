@@ -5,7 +5,7 @@
 @use 'sass:math';
 @use 'sass-true/sass/config/throw';
 @use 'sass-true/sass/true' as *;
-
+@use 'defaults' as *;
 
 //   Functions
 //   TODO Refactor to different categories
@@ -109,4 +109,15 @@ $DELIMETER: '-';
 
 @function hex2hsl($color, $lightness: 50%) {
     @return color.scale($color, $lightness: $lightness);
+}
+
+
+
+/// px to rem converter
+/// @param {val, $base: 16px}
+/// @return {value with Rem}
+
+@function rem($val, $base: $rem-unit) {
+    $rem: math.div(strip-unit($val), strip-unit($base));
+    @return $rem * 1rem;
 }

@@ -13,15 +13,15 @@
 /* Progress Section Start
 *********************************/
 .progress {
-    height: 1.8rem;
-    font-size: 1.2rem;
+    height: rem(18px);
+    font-size: rem(12px);
     font-weight: $regular;
-    line-height: 1.8rem;
-    border-radius: 1rem;
+    line-height: rem(18px);
+    border-radius: rem(10px);
     background: $bg-light;
     color: $white;
     width: 100%;
-    margin: 1rem 0;
+    margin: rem(10px) 0;
     transition: $transition;
 
     &-bar {
@@ -32,13 +32,13 @@
         text-align: center;
         white-space: nowrap;
         background: $primary;
-        border-radius: 1rem;
+        border-radius: rem(10px);
         height: 100%;
         transition: $transition;
 
         &-striped {
             background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
-            background-size: 1.6rem 1.6rem;
+            background-size: rem(16px) rem(16px);
         }
         &-animated {
             animation: 1s linear infinite progress-bar-stripes;
@@ -49,7 +49,7 @@
 
 @keyframes progress-bar-stripes {
     0% {
-        background-position-x: 1rem;
+        background-position-x: rem(10px);
     }
 }
 /*********************************

@@ -5,10 +5,10 @@
 /* Alert Style
 *************************************/
 .alert {
-    padding: 0.8rem;
-    border-radius: 0.4rem;
-    border: 1px solid;
-    margin: 1rem 0;
+    padding: .5rem;
+    border-radius: .25rem;
+    border: .063rem solid;
+    margin: rem(10px) 0;
 
     @each $key, $value in $default-colors {
         $color: nth($value, 1);

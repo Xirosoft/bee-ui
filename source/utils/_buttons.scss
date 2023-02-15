@@ -5,9 +5,9 @@
 /* Button Style
 *************************************/
 .btn {
-    padding: 0.8rem 1.6rem;
-    border-radius: 0.4rem;
-    border: 1px solid;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    border: .063rem solid;
     cursor: pointer;
     text-decoration: none;
 
@@ -23,7 +23,7 @@
                 padding: 0 !important;
                 border: none;
                 text-decoration: underline;
-                text-underline-offset: 0.4rem;
+                text-underline-offset: .25rem;
             }
             &.active,
             &:hover {
@@ -39,7 +39,7 @@
                 padding: 0 !important;
                 border: none;
                 text-decoration: underline;
-                text-underline-offset: 0.4rem;
+                text-underline-offset: .25rem;
             }
             &.active,
             &:hover {
@@ -49,11 +49,11 @@
         }
     }
     &-lg {
-        padding: 1.2rem 2.2rem !important;
+        padding: .75rem 1.375rem !important;
     }
     &-sm {
-        font-size: 14px;
-        padding: 0.6rem 1.2rem !important;
+        font-size: .875rem;
+        padding: .375rem .75rem !important;
     }
     
     &-group {
@@ -66,24 +66,24 @@
             border-right: none;
 
             &:first-of-type {
-                border-top-left-radius: 0.4rem;
-                border-bottom-left-radius: 0.4rem;
+                border-top-left-radius: .25rem;
+                border-bottom-left-radius: .25rem;
             }
             &:last-of-type {
-                border-top-right-radius: 0.4rem;
-                border-bottom-right-radius: 0.4rem;
-                border-right: 1px solid;
+                border-top-right-radius: .25rem;
+                border-bottom-right-radius: .25rem;
+                border-right: .063rem solid;
             }
         }
         &-lg {
             .btn {
-                padding: 1.2rem 2.2rem;
+                padding: .75rem 1.375rem;
             }
         }
         &-sm {
             .btn {
-                font-size: 14px;
-                padding: 0.6rem 1.2rem;
+                font-size: .875rem;
+                padding: .375rem .75rem;
             }
         }
     }

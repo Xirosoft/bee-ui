@@ -16,12 +16,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: calc(-1 * var(--#{$prefix}space-y));
-    margin-right: calc(-.5 * math.div($space, 2));
-    margin-left: calc(-.5 * math.div($space, 2));
+    margin-right: calc(-.5 * var(--#{$prefix}space-x) / 2);
+    margin-left: calc(-.5 * var(--#{$prefix}space-x) / 2);
 
     & > * {
-        padding-right: calc(.5 * math.div($space, 2));
-        padding-left: calc(.5 * math.div($space, 2));
+        padding-right: calc(.5 * var(--#{$prefix}space-x) / 2);
+        padding-left: calc(.5 * var(--#{$prefix}space-x) / 2);
     }
 }
 
@@ -38,8 +38,8 @@
       &-#{$i} {
         flex: 0 0 auto;
         width: get-percentage(100%, $columns) * $i;
-        padding-right: math.div($space, 2);
-        padding-left: math.div($space, 2);
+        padding-right: calc(var(--#{$prefix}space-x) / 2);
+        padding-left: calc(var(--#{$prefix}space-x) / 2);
       }
       &-offset-#{$i} {
         margin-left: get-percentage(100%, $columns) * $i;

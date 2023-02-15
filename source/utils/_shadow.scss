@@ -5,7 +5,7 @@
 /* Shadow Property
 *************************************/
 .shadow {
-    box-shadow: 0 .5rem 1rem rgba(33,37,41,.15)!important;
+    box-shadow: 0 .313rem .625rem rgba(33,37,41,.15)!important;
     &-none {
         box-shadow: none!important;
     }
@@ -13,6 +13,6 @@
         box-shadow: 0 .125rem .25rem rgba(33,37,41,.075)!important;
     }
     &-lg {
-        box-shadow: 0 1rem 3rem rgba(33,37,41,.175)!important;
+        box-shadow: 0 .625rem 1.875rem rgba(33,37,41,.175)!important;
     }
 }

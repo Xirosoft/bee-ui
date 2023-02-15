@@ -15,15 +15,15 @@
             align-items: center;
             list-style: none;
             position: relative;
-            font-size: 1.6rem;
-            line-height: 2.2rem;
+            font-size: 1rem;
+            line-height: 1.375rem;
             color: $grey;
 
             &::after {
                 content: '/';
                 display: block;
-                margin-left: 0.5rem;
-                margin-right: 0.75rem;
+                margin-left: .313rem;
+                margin-right: .438rem;
                 opacity: .4;
             }
             &:last-child {
@@ -38,9 +38,9 @@
                 text-decoration: none;
 
                 svg {
-                    height: 1.8rem;
-                    width: 1.8rem;
-                    margin-right: 0.5rem;
+                    height: 1.125rem;
+                    width: 1.125rem;
+                    margin-right: .313rem;
 
                     path {
                         stroke: currentColor;
