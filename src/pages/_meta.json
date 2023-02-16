@@ -1,12 +1,31 @@
 {
   "index": {
+    "type": "page",
     "title": "Home",
+    "display": "hidden",
     "theme": {
-      "breadcrumb": true,
-      "footer": false,
-      "sidebar": true,
-      "toc": true,
-      "pagination": true
+      "typesetting": "article",
+      "layout": "full"
     }
+  },
+  "documentaion": {
+    "title": "Documentaiton",
+    "type": "page",
+    "href": "./get-started"
+  },
+  "get-started": {
+    "title":"Get Started"
+  },
+  "components": {
+    "title": "Components"
+  },
+  "-- links": {
+    "type": "separator",
+    "title": "Quick Links"
+  },
+  "next.js-link": {
+    "title": "Other Producs ↗",
+    "href": "https://xirosoft.com",
+    "newWindow": true
   }
 }

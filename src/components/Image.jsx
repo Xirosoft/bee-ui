@@ -14,6 +14,7 @@ export default function Image(props) {
       width={!props.width?100:props.width}
       height={!props.width?100:props.height}
       loader={customLoader}
+      unoptimized={true}
     />
   );
 }
