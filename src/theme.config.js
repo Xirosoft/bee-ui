@@ -36,7 +36,7 @@ export default {
     extraContent: (
       <>
         <p style={{marginTop: '2.5rem'}}>Below will render an iframe</p>
-        <iframe src="https://www.youtube.com/embed/QILR_2CczIo" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/QILR_2CczIo" frameBorder={0} allow="accelerometer; autoplay" allowFullScreen></iframe>
       </>
     )
   },
