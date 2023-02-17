@@ -5,7 +5,7 @@ const BASE_PATH = '/bee-ui'
 
 // opt-out of image optimization, no-op
 const customLoader = ({ src }) => {
-  return BASE_PATH+src
+  return `${BASE_PATH}src`
 }
 
 export default function Image(props) {
