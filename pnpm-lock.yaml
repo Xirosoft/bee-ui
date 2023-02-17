@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@next/font': ^13.1.6
   csscomb: ^4.3.0
   glob: ^7.2.0
   global: ^4.4.0
@@ -29,6 +30,7 @@ specifiers:
   sass-true: ^6.1.0
 
 dependencies:
+  '@next/font': 13.1.6
   glob: 7.2.3
   global: 4.4.0
   gulp-sass: 5.1.0
@@ -814,6 +816,10 @@ packages:
 
   /@next/env/13.1.6:
     resolution: {integrity: sha512-s+W9Fdqh5MFk6ECrbnVmmAOwxKQuhGMT7xXHrkYIBMBcTiOqNWhv5KbJIboKR5STXxNXl32hllnvKaffzFaWQg==}
+    dev: false
+
+  /@next/font/13.1.6:
+    resolution: {integrity: sha512-AITjmeb1RgX1HKMCiA39ztx2mxeAyxl4ljv2UoSBUGAbFFMg8MO7YAvjHCgFhD39hL7YTbFjol04e/BPBH5RzQ==}
     dev: false
 
   /@next/swc-android-arm-eabi/13.1.6:
