@@ -35,8 +35,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
-      - run: pnpm install --shamefully-hoist
-      - run: pnpm build
+      - run: pnpm install
+      - run: pnpm build ./jsconfig.json
       - run: pnpm export
       - run: touch ./out/.nojekyll
 
