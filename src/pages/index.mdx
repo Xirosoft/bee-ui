@@ -3,6 +3,8 @@ id: intro
 title: Introduction
 ---
 
+import { Callout } from 'nextra-theme-docs'
+import { Tab, Tabs } from 'nextra-theme-docs'
 
 # **Bee UI**
 
@@ -18,9 +20,31 @@ title: Introduction
 -   **Responsive** ─ text
 -   **Zero-dependency** ─ text
 
+<div className="steps-container">
+
 ### Install
 
-Shown install method
+<Tabs items={['pnpm', 'npm', 'yarn']}>
+  <Tab>
+    ```bash
+    pnpm i next react react-dom nextra nextra-theme-docs
+    ```
+  </Tab>
+  <Tab>
+    ```bash
+    npm i next react react-dom nextra nextra-theme-docs
+    ```
+  </Tab>
+  <Tab>
+    ```bash
+    yarn add next react react-dom nextra nextra-theme-docs
+    ```
+  </Tab>
+</Tabs>
+
+<Callout>
+  If you already have Next.js installed in your project, you only need to install `nextra` and `nextra-theme-docs` as the add-ons.
+</Callout>
 
 ### How to Use
 
@@ -63,6 +87,7 @@ If you want to use single or some number of components.
 </html>
 ```
 
+
 ### Development
 
 Use Gitpod, a free online dev environment for GitHub.
@@ -79,6 +104,8 @@ $ cd bee-ui
 $ npm install
 $ npm watch
 ```
+
+</div>
 
 ### Folder Structure of **Bee UI**
 ```
