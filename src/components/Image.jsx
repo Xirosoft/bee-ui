@@ -1,8 +1,8 @@
 // components/Image.js
 import NextImage from "next/image";
-const BASE_PATH = process.env.NODE_ENV == 'development' ? '' : '/bee-ui'
+const BASE_PATH = '/bee-ui'
+// const BASE_PATH = process.env.NODE_ENV == 'development' ? '' : '/bee-ui'
 
-console.log(process.env, BASE_PATH)
 // opt-out of image optimization, no-op
 const customLoader = ({ src }) => {
   return BASE_PATH+src
