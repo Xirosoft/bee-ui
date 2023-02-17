@@ -14,10 +14,10 @@ const withNextra = nextra({
 })
 
 const nextConfig = {
-  /* webpack: (config) => {
+  webpack: (config) => {
     config.resolve.alias['@components'] = __dirname + '/src/components';
     return config;
-  }, */
+  },
   images: {
     // unoptimized: true,
     loader: "custom",
