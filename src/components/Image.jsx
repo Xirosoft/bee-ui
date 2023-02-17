@@ -12,7 +12,7 @@ export default function Image(props) {
     <NextImage
       {...props}
       width={!props.width?100:props.width}
-      height={!props.width?100:props.height}
+      height={!props.height?100:props.height}
       loader={customLoader}
       unoptimized={false}
     />
