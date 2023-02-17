@@ -3,6 +3,7 @@ const nextra = require('nextra')
 const BASE_PATH = process.env.NODE_ENV == 'development' ? '' : '/bee-ui'
 
 
+console.log(process.env, BASE_PATH)
 const withNextra = nextra({
   theme: 'nextra-theme-docs',
   themeConfig: './src/theme.config.js',
