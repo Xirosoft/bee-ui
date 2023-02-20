@@ -8,7 +8,7 @@
 /// body default variable
 /// @param {Body Map} From internal/default.scss
 /// 
-:root, [data-#{$prefix}theme="light"] {
+:root[data-#{$prefix}theme="light"], .light {
 	@each $key, $value in $body-property {
 	  --#{$prefix}#{$key} : #{nth($value, 1)};
 	}
@@ -22,9 +22,14 @@
 /// input default variable
 /// @param {Input Map} From internal/default.scss
 /// 
-:root {
+:root[data-#{$prefix}theme="light"], .light {
 	@each $key, $value in $input-property {
 	  --#{$prefix}#{$key} : #{nth($value, 1)};
+	}
+}
+:root[data-#{$prefix}theme="dark"], .dark {
+	@each $key, $value in $input-property-dark {
+		--#{$prefix}#{$key} : #{nth($value, 1)};
 	}
 }
 
@@ -35,7 +40,12 @@
 /// list group default variable
 /// @param {List Group Map} From internal/default.scss
 /// 
-:root {
+:root[data-#{$prefix}theme="light"], .light  {
+	@each $key, $value in $list-group {
+	  --#{$prefix}#{$key} : #{nth($value, 1)};
+	}
+}
+:root[data-#{$prefix}theme="dark"], .dark  {
 	@each $key, $value in $list-group {
 	  --#{$prefix}#{$key} : #{nth($value, 1)};
 	}

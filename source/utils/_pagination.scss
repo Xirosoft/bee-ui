@@ -22,21 +22,21 @@
         .page-link {
             position: relative;
             display: block;
-            color: var(--bee-primary);
+            color: var(--bee-theme-dark);
             text-decoration: none;
-            background-color: var(--bee-white);
-            border: .063rem solid var(--bee-border);
+            background-color: var(--bee-theme-light);
+            border: .063rem solid var(--bee-theme-border);
             padding: .375rem .75rem;
             display: block;
             text-transform: capitalize;
 
             &:hover {
-                background: var(--bee-light);
+                background: var(--bee-theme-border);
             }
             &.active {
-                background: var(--bee-primary);
+                background: var(--bee-theme-accent);
+                border-color: var(--bee-theme-accent);
                 color: var(--bee-white);
-                border-color: var(--bee-primary);
             }
         }
         &:first-child {

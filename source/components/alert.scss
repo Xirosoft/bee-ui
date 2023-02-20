@@ -1,0 +1,15 @@
+@use '../internal' as *;
+
+/****************************
+* Name: alert
+* Class: .alert
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://github.xirosoft.io/bee-ui/components/alert
+*/
+
+
+.alert {
+  @include makeAlert();
+}

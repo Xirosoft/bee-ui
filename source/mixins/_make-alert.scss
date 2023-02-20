@@ -1,0 +1,39 @@
+@use '../internal/theme' as *;
+@use '../internal/constants' as *;
+@use '../internal/functions' as *;
+@use '../internal/defaults' as *;
+// Global Mixins
+
+
+@mixin makeAlert() {
+  padding: .5rem;
+  border-radius: .25rem;
+  border: .063rem solid;
+  margin: rem(10px) 0;
+  background-color: var(--bee-theme-light);
+  border-color: var(--bee-theme-border);
+
+  @each $key, $value in $default-colors {
+    $color: nth($value, 1);
+    &-#{$key} {
+      background-color: hex2hsl($color, 80%);
+      @if($key == 'light') {
+          color: hex2hsl(nth($color, 1), -50%);
+          border-color: hex2hsl($color, -20%); 
+      } @else {
+          border-color: hex2hsl($color, 50%); 
+          color: hex2hsl(nth($color, 1), -30%);
+      }
+      a,
+      .alert-link {
+          @if($key == 'light') {
+              color: hex2hsl(nth($color, 1), -50%);
+              font-weight: 600;
+          } @else {
+              color: nth($color, 1);
+              font-weight: 600;
+          }
+      }
+    }
+  }
+}

@@ -103,12 +103,34 @@ $DELIMETER: '-';
 
 
 /// Hex to HSL color
-/// @param {Color: name/hex/rgb} 
-/// @param {Percentage: lightness}
+/// @param {Color: name/hex/rgb} HexCode
+/// @param {Percentage: lightness} Percentage
 /// @return {Hex} hex code
 
-@function hex2hsl($color, $lightness: 50%) {
-    @return color.scale($color, $lightness: $lightness);
+@function hex2hsl($color, $lightness: 50%, $alpha: 1, $type: 'hex', $return: 'val') {
+    $hsl: hsl(hue($color), saturation($color), lightness($color));
+    $hsl-val: hsl(hue($color), saturation($color), lightness($color));
+    $rgba: rgba(red($color), green($color), blue($color), $alpha);
+    $rgba-val: red($color), green($color), blue($color);
+    $hex: color.scale($color, $lightness: $lightness);
+    
+    @if $type == 'hsl' {
+        @if $return == 'val' {
+            @return $hsl-val;
+        } @else {
+            @return $hsl;
+        }
+    }
+    @else if $type == 'rgba' or $type == 'rgb' {
+        @if $return == 'val' {
+            @return $rgba-val;
+        } @else {
+            @return $rgba;
+        }
+    } 
+    @else {
+        @return $hex;
+    }
 }
 
 

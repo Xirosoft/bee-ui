@@ -22,9 +22,11 @@ input[type=url],
 input[type=monthl],
 input[type=week],
 textarea {
-    border: 1px solid var(--bee-input-border-color);
-    display: inline-block;
-    // padding: 0.4rem 0.8rem;
+    &:not(.btn) {    
+        border: 1px solid var(--bee-theme-border);
+        display: inline-block;
+        // padding: 0.4rem 0.8rem;
+    }
 }
 .form {
     &-control {
@@ -35,13 +37,13 @@ textarea {
         font-size: var(--bee-input-font-size);
         font-weight: var(--bee-input-font-weight);
         line-height: var(--bee-input-font-line-height);
-        color: var(--bee-input-color);
-        background-color: var(--bee-input-bg);
+        color: var(--bee-theme-dark);
+        background-color: var(--bee-theme-light);
         background-clip: padding-box;
-        border: .063rem solid var(--bee-input-border-color);
+        border: .063rem solid var(--bee-theme-border);
         appearance: none; // Fix appearance for date inputs in Safari
         @include border-radius($radius: .313rem);
-      
+
         &[type="file"] {
           overflow: hidden; // prevent pseudo element button overlap
       

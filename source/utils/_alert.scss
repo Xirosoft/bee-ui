@@ -1,10 +1,6 @@
 @use '../internal' as *;
 
-
-/*************************************
-/* Alert Style
-*************************************/
-.alert {
+@mixin makeAlert() {
     padding: .5rem;
     border-radius: .25rem;
     border: .063rem solid;

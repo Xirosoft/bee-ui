@@ -15,8 +15,8 @@
         padding: var(--bee-list-group-item-padding-y) var(--bee-list-group-item-padding-x);
         color: var(--bee-list-group-color);
         text-decoration: none;
-        background-color: var(--bee-list-group-bg);
-        border: var(--bee-list-group-border-width) solid var(--bee-list-group-border-color);
+        background-color: var(--bee-theme-light);
+        border: var(--bee-list-group-border-width) solid var(--bee-theme-border);
 
         &+.list-group-item {
             border-top-width: 0;
@@ -43,7 +43,9 @@
     }
     a {
         &:not(.active):hover {
-            background: var(--bee-light);
+            background: var(--bee-theme-accent);
+            border-color: var(--bee-theme-accent);
+            color: var(--bee-theme-dark);
         }
     }
 }

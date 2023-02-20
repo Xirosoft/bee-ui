@@ -9,13 +9,14 @@
 * variants: One,Two
 * Version: 0.0.1
 * Since: 0.0.1
-* Live Url: https://xirosoft.com/bee-ui/components/card
+* Live Url: https://github.xirosoft.io/bee-ui/components/card
 */
 .card {
   display: block;
   border: 1px solid;
-  border-color: rgba(0, 0, 0, 0.1764705882);
+  border-color: var(--bee-theme-border);
   border-radius: 8px;
+  background-color: var(--bee-theme-light);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1764705882);
 }
 
@@ -45,5 +46,6 @@
 }
 
 .card__btn {
-  margin-top: 20px;
+  display: inline-block;
+  margin-top: 1.75rem;
 }

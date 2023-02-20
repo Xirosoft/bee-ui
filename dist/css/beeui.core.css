@@ -187,7 +187,7 @@ fieldset legend {
 /*************************************
 /* Body Default Style
 *************************************/
-:root, [data-bee-theme=light] {
+:root[data-bee-theme=light], .light {
   --bee-body-font-family: Inter;
   --bee-body-font-size: 1rem;
   --bee-body-font-weight: 400;
@@ -199,13 +199,27 @@ fieldset legend {
 /*************************************
 /* Input Default Style
 *************************************/
-:root {
+:root[data-bee-theme=light], .light {
   --bee-input-font-family: Inter;
   --bee-input-font-size: 0.875rem;
   --bee-input-font-weight: 400;
   --bee-input-font-line-height: 1.5;
   --bee-input-color: #212529;
-  --bee-input-bg: #fff;
+  --bee-input-bg: #ffffff;
+  --bee-input-padding-x: 0.5rem;
+  --bee-input-padding-y: 0.75rem;
+  --bee-input-border-color: #dee2e6;
+  --bee-input-border-primary: #0d6efd;
+  --bee-input-focus-border-color: #86b7fe;
+}
+
+:root[data-bee-theme=dark], .dark {
+  --bee-input-font-family: Inter;
+  --bee-input-font-size: 0.875rem;
+  --bee-input-font-weight: 400;
+  --bee-input-font-line-height: 1.5;
+  --bee-input-color: #fff;
+  --bee-input-bg: #212529;
   --bee-input-padding-x: 0.5rem;
   --bee-input-padding-y: 0.75rem;
   --bee-input-border-color: #dee2e6;
@@ -216,7 +230,7 @@ fieldset legend {
 /*************************************
 /* List Group Default Style
 *************************************/
-:root {
+:root[data-bee-theme=light], .light {
   --bee-list-group-color: var(--bee-body-color);
   --bee-list-group-bg: var(--bee-body-bg);
   --bee-list-group-border-color: var(--bee-border);
@@ -231,7 +245,42 @@ fieldset legend {
   --bee-list-group-active-border-color: var(--bee-primary);
 }
 
-:root, [data-bee-theme=light] {
+:root[data-bee-theme=dark], .dark {
+  --bee-list-group-color: var(--bee-body-color);
+  --bee-list-group-bg: var(--bee-body-bg);
+  --bee-list-group-border-color: var(--bee-border);
+  --bee-list-group-border-width: 0.063rem;
+  --bee-list-group-border-radius: 0.375rem;
+  --bee-list-group-item-padding-x: 1rem;
+  --bee-list-group-item-padding-y: 0.5rem;
+  --bee-list-group-disabled-color: var(--bee-secondary);
+  --bee-list-group-disabled-bg: var(--bee-body-bg);
+  --bee-list-group-active-color: #fff;
+  --bee-list-group-active-bg: var(--bee-primary);
+  --bee-list-group-active-border-color: var(--bee-primary);
+}
+
+:root[data-bee-theme=light], .light {
+  --bee-theme-background: #ffffff;
+  --bee-theme-primary: #0d6efd;
+  --bee-theme-secondary: #6c757d;
+  --bee-theme-accent: #0d6efd;
+  --bee-theme-light: #f8f9fa;
+  --bee-theme-dark: #212529;
+  --bee-theme-border: #dee2e6;
+}
+
+:root[data-bee-theme=dark], .dark {
+  --bee-theme-background: #000000;
+  --bee-theme-primary: #0d6efd;
+  --bee-theme-secondary: #a3b1bd;
+  --bee-theme-accent: #3d444a;
+  --bee-theme-light: #212529;
+  --bee-theme-dark: #f8f9fa;
+  --bee-theme-border: #4c5259;
+}
+
+:root[data-bee-theme=light], .light {
   --bee-primary: #0d6efd;
   --bee-secondary: #6c757d;
   --bee-success: #198754;
@@ -240,6 +289,7 @@ fieldset legend {
   --bee-danger: #dc3545;
   --bee-light: #f8f9fa;
   --bee-dark: #212529;
+  --bee-content: #fff;
   --bee-link: transparent;
   --bee-body: #fff;
   --bee-white: #ffffff;
@@ -303,6 +353,10 @@ fieldset legend {
 
 .bg-dark {
   background-color: #212529 !important;
+}
+
+.bg-content {
+  background-color: #fff !important;
 }
 
 .bg-link {
@@ -460,6 +514,11 @@ fieldset legend {
   color: #fff;
 }
 
+.text-bg-content {
+  background-color: #fff !important;
+  color: #212529;
+}
+
 .text-bg-link {
   background-color: transparent !important;
   color: #0d6efd;
@@ -611,6 +670,10 @@ fieldset legend {
   background-color: #212529 !important;
 }
 
+.table-content {
+  background-color: #fff !important;
+}
+
 .table-link {
   background-color: transparent !important;
 }
@@ -756,6 +819,10 @@ fieldset legend {
 
 .text-dark {
   color: #212529;
+}
+
+.text-content {
+  color: #fff;
 }
 
 .text-link {
@@ -905,6 +972,10 @@ fieldset legend {
   color: #212529 !important;
 }
 
+.link-content {
+  color: #fff !important;
+}
+
 .link-link {
   color: transparent !important;
 }
@@ -966,6 +1037,11 @@ fieldset legend {
 .checkbox-dark {
   border-color: #212529 !important;
   background: #212529 !important;
+}
+
+.checkbox-content {
+  border-color: #fff !important;
+  background: #fff !important;
 }
 
 .checkbox-link {
@@ -1034,6 +1110,11 @@ fieldset legend {
 .radio-dark {
   --radio-color: #212529 !important;
   --radio-bg: #212529 !important;
+}
+
+.radio-content {
+  --radio-color: #fff !important;
+  --radio-bg: #fff !important;
 }
 
 .radio-link {
@@ -1219,6 +1300,11 @@ fieldset legend {
   --switch-border: #212529 !important;
 }
 
+.switch-content {
+  --switch-bg: #fff !important;
+  --switch-border: #fff !important;
+}
+
 .switch-link {
   --switch-bg: transparent !important;
   --switch-border: transparent !important;
@@ -1392,6 +1478,10 @@ fieldset legend {
 
 .dot-dark {
   background: #212529 !important;
+}
+
+.dot-content {
+  background: #fff !important;
 }
 
 .dot-link {
@@ -7341,7 +7431,7 @@ fieldset legend {
 }
 
 .form-check label {
-  color: var(--bee-black);
+  color: var(--bee-theme-dark);
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -7411,7 +7501,7 @@ fieldset legend {
 }
 
 .form-check label {
-  color: var(--bee-black);
+  color: var(--bee-theme-dark);
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -7889,6 +7979,28 @@ fieldset legend {
   color: #fff;
 }
 
+.btn-content {
+  border-color: #fff;
+  background-color: #fff;
+  color: #212529;
+}
+
+.btn-content.active, .btn-content:hover {
+  border-color: #e6e6e6;
+  background-color: #e6e6e6;
+}
+
+.btn-outline-content {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-outline-content.active, .btn-outline-content:hover {
+  background-color: #fff;
+  color: #212529;
+}
+
 .btn-link {
   padding: 0 !important;
   border: none;
@@ -8050,177 +8162,13 @@ fieldset legend {
 }
 
 /*************************************
-/* Alert Style
-*************************************/
-.alert {
-  margin: 0.625rem 0;
-  padding: 0.5rem;
-  border: 0.063rem solid;
-  border-radius: 0.25rem;
-}
-
-.alert-primary {
-  border-color: #86b7fe;
-  background-color: #cfe2ff;
-  color: #024cb9;
-}
-
-.alert-primary a,
-.alert-primary .alert-link {
-  color: #0d6efd;
-  font-weight: 600;
-}
-
-.alert-secondary {
-  border-color: #b5babf;
-  background-color: #e1e3e5;
-  color: #4c5258;
-}
-
-.alert-secondary a,
-.alert-secondary .alert-link {
-  color: #6c757d;
-  font-weight: 600;
-}
-
-.alert-success {
-  border-color: #6be4ac;
-  background-color: #c4f4de;
-  color: #125f3b;
-}
-
-.alert-success a,
-.alert-success .alert-link {
-  color: #198754;
-  font-weight: 600;
-}
-
-.alert-info {
-  border-color: #85e5f8;
-  background-color: #cef5fc;
-  color: #098da8;
-}
-
-.alert-info a,
-.alert-info .alert-link {
-  color: #0dcaf0;
-  font-weight: 600;
-}
-
-.alert-warning {
-  border-color: #ffe083;
-  background-color: #fff3cd;
-  color: #b78a00;
-}
-
-.alert-warning a,
-.alert-warning .alert-link {
-  color: #ffc107;
-  font-weight: 600;
-}
-
-.alert-danger {
-  border-color: #ee9aa2;
-  background-color: #f8d7da;
-  color: #a31c29;
-}
-
-.alert-danger a,
-.alert-danger .alert-link {
-  color: #dc3545;
-  font-weight: 600;
-}
-
-.alert-light {
-  border-color: #bec7d1;
-  background-color: #fefefe;
-  color: #687d91;
-}
-
-.alert-light a,
-.alert-light .alert-link {
-  color: #687d91;
-  font-weight: 600;
-}
-
-.alert-dark {
-  border-color: #86929e;
-  background-color: #cfd3d8;
-  color: #171a1d;
-}
-
-.alert-dark a,
-.alert-dark .alert-link {
-  color: #212529;
-  font-weight: 600;
-}
-
-.alert-link {
-  border-color: rgba(128, 128, 128, 0);
-  background-color: rgba(204, 204, 204, 0);
-  color: rgba(0, 0, 0, 0);
-}
-
-.alert-link a,
-.alert-link .alert-link {
-  color: transparent;
-  font-weight: 600;
-}
-
-.alert-body {
-  border-color: white;
-  background-color: white;
-  color: #b3b3b3;
-}
-
-.alert-body a,
-.alert-body .alert-link {
-  color: #fff;
-  font-weight: 600;
-}
-
-.alert-white {
-  border-color: white;
-  background-color: white;
-  color: #b3b3b3;
-}
-
-.alert-white a,
-.alert-white .alert-link {
-  color: #fff;
-  font-weight: 600;
-}
-
-.alert-transparent {
-  border-color: rgba(128, 128, 128, 0);
-  background-color: rgba(204, 204, 204, 0);
-  color: rgba(0, 0, 0, 0);
-}
-
-.alert-transparent a,
-.alert-transparent .alert-link {
-  color: transparent;
-  font-weight: 600;
-}
-
-.alert-dot {
-  border-color: #e1e1e1;
-  background-color: #f3f3f3;
-  color: #898989;
-}
-
-.alert-dot a,
-.alert-dot .alert-link {
-  color: #c3c3c3;
-  font-weight: 600;
-}
-
-/*************************************
 /* Badge Style
 *************************************/
 .badge {
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
+  background-color: var(--bee-theme-dark);
+  color: var(--bee-theme-light);
   font-weight: 700;
   font-size: 0.7em;
   line-height: 1.2;
@@ -8256,20 +8204,20 @@ fieldset legend {
   display: block;
   display: block;
   padding: 0.375rem 0.75rem;
-  border: 0.063rem solid var(--bee-border);
-  background-color: var(--bee-white);
-  color: var(--bee-primary);
+  border: 0.063rem solid var(--bee-theme-border);
+  background-color: var(--bee-theme-light);
+  color: var(--bee-theme-dark);
   text-decoration: none;
   text-transform: capitalize;
 }
 
 .pagination .page-item .page-link:hover {
-  background: var(--bee-light);
+  background: var(--bee-theme-border);
 }
 
 .pagination .page-item .page-link.active {
-  border-color: var(--bee-primary);
-  background: var(--bee-primary);
+  border-color: var(--bee-theme-accent);
+  background: var(--bee-theme-accent);
   color: var(--bee-white);
 }
 
@@ -8290,36 +8238,36 @@ fieldset legend {
 /*************************************
 /* Input Style
 *************************************/
-input[type=text],
-input[type=email],
-input[type=tel],
-input[type=password],
-input[type=number],
-input[type=file],
-input[type=search],
-input[type=button],
-input[type=submit],
-input[type=date],
-input[type=datetime-local],
-input[type=datetime],
-input[type=time],
-input[type=url],
-input[type=monthl],
-input[type=week],
-textarea {
+input[type=text]:not(.btn),
+input[type=email]:not(.btn),
+input[type=tel]:not(.btn),
+input[type=password]:not(.btn),
+input[type=number]:not(.btn),
+input[type=file]:not(.btn),
+input[type=search]:not(.btn),
+input[type=button]:not(.btn),
+input[type=submit]:not(.btn),
+input[type=date]:not(.btn),
+input[type=datetime-local]:not(.btn),
+input[type=datetime]:not(.btn),
+input[type=time]:not(.btn),
+input[type=url]:not(.btn),
+input[type=monthl]:not(.btn),
+input[type=week]:not(.btn),
+textarea:not(.btn) {
   display: inline-block;
-  border: 1px solid var(--bee-input-border-color);
+  border: 1px solid var(--bee-theme-border);
 }
 
 .form-control {
   display: block;
   padding: var(--bee-input-padding-x) var(--bee-input-padding-x);
   width: 100%;
-  border: 0.063rem solid var(--bee-input-border-color);
+  border: 0.063rem solid var(--bee-theme-border);
   border-radius: 0.313rem;
-  background-color: var(--bee-input-bg);
+  background-color: var(--bee-theme-light);
   background-clip: padding-box;
-  color: var(--bee-input-color);
+  color: var(--bee-theme-dark);
   font-weight: var(--bee-input-font-weight);
   font-size: var(--bee-input-font-size);
   font-family: var(--bee-input-font-family);
@@ -8382,8 +8330,8 @@ textarea {
   position: relative;
   display: block;
   padding: var(--bee-list-group-item-padding-y) var(--bee-list-group-item-padding-x);
-  border: var(--bee-list-group-border-width) solid var(--bee-list-group-border-color);
-  background-color: var(--bee-list-group-bg);
+  border: var(--bee-list-group-border-width) solid var(--bee-theme-border);
+  background-color: var(--bee-theme-light);
   color: var(--bee-list-group-color);
   text-decoration: none;
 }
@@ -8415,7 +8363,9 @@ textarea {
 }
 
 .list-group a:not(.active):hover {
-  background: var(--bee-light);
+  border-color: var(--bee-theme-accent);
+  background: var(--bee-theme-accent);
+  color: var(--bee-theme-dark);
 }
 
 /*************************************

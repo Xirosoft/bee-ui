@@ -1,12 +1,29 @@
 @use '../internal' as *;
 
 
-/// Css Color Variable
+/// define main color pallate with css variable
+/// @param {Theme-color-palette} map
+/// @param {theme-mode-with-type} map
+/// @return {multiple-css-variable}
+/// 
+
+@each $mode in $theme-mode {
+  $i: index($theme-mode, $mode);
+  :root[data-#{$prefix}theme=#{$mode}], .#{$mode} {
+    @each $key, $val in $theme-palette {
+      --#{$prefix}theme-#{$key}: #{nth($val, $i)};
+    }
+  }
+  // @media (prefers-color-scheme: #{$mode}) {
+  // }
+}
+
+
+/// Css Color Variable [default=light]
 /// @param {Color Map} From internal/theme.scss
 /// 
 $all-colors : map-merge($default-colors, $base-colors);
-
-:root, [data-#{$prefix}theme="light"] {
+:root[data-#{$prefix}theme="light"], .light {
   @each $key, $value in $all-colors {
     --#{$prefix}#{$key} : #{nth($value, 1)};
   }

@@ -6,7 +6,7 @@
 * Variants: primary, secondary
 * Version: 0.0.1
 * Since: 0.0.1
-* Live Url: https://xirosoft.com/bee-ui/components/banner
+* Live Url: https://github.xirosoft.io/bee-ui/components/banner
 */
 
 /*********************************
@@ -55,7 +55,7 @@
 			margin-bottom: 4px;
 		}
 		&__title {
-			color: $heading;
+			color: var(--bee-theme-dark);
 			font-weight: $semibold;
 			font-size: rem(46px);
 			line-height: rem(56px);

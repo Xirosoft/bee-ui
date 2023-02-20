@@ -9,17 +9,14 @@
 * Variants: primary, secondary
 * Version: 0.0.1
 * Since: 0.0.1
-* Live Url: https://xirosoft.com/bee-ui/components/progress
+* Live Url: https://github.xirosoft.io/bee-ui/components/progress
 */
-/*********************************
-/* Progress Section Start
-*********************************/
 .progress {
   margin: 0.625rem 0;
   width: 100%;
   height: 1.125rem;
   border-radius: 0.625rem;
-  background: var(--bee-bg-light);
+  background: var(--bee-theme-light);
   color: var(--bee-white);
   font-weight: 400;
   font-size: 0.75rem;
@@ -58,6 +55,3 @@
     background-position-x: 0.625rem;
   }
 }
-/*********************************
-/* Progress Section End
-*********************************/

@@ -5,57 +5,10 @@
 
 @use 'constants' as *;
 // Color scheme for bee
-
-// $bee-black: #000000;
 $bee-white: #ffffff;
-// $bee-primary: #f03d4d;
-// $bee-primary-light: #ffdadd;
-// $bee-accent-hover: #d62939;
-// $bee-accent-border: #c21b2b;
-// $bee-light: #f6f9fc;
-// $bee-light-gray: #f8f9fa;
-// $bee-gray: #d5d7dc;
-// $bee-dark-gray: #909090;
-// $bee-dark: #363636;
-// $bee-link: #5e5cc7;
-// $bee-link-dark: #4643e2;
-// $bee-info: #2972fa;
-// $bee-success: #0dd157;
-// $bee-warning: #fab633;
-// $bee-danger: #fb4143;
-
-// $bee-light-hover: #d9e6f2;
-// $bee-dark-hover: #424242;
-// $bee-info-hover: #2368e9;
-// $bee-link-hover: #f8f7ff;
-// $bee-success-hover: #00b147;
-// $bee-warning-hover: #f9a90e;
-// $bee-danger-hover: #f1393c;
 
 $bee-fg: #0f172a;
 $bee-bg: $bee-white;
-
-// $bee-select-bg: rgba(0, 161, 255, 0.2);
-// $bee-input-border: rgb(61, 171, 240);
-
-// $bee-code-bg: var($bee-primary-light);
-// $bee-code-fg: #dc4753;
-
-// $bee-form-group-bg: var($bee-light-gray);
-// $bee-form-group-fg: var($bee-dark-gray);
-
-// $toast-primary-bg: rgba(49, 59, 80, 0.9);
-
-// $tooltip-primary-bg: rgba(69, 77, 93, 0.9);
-
-// $placeholder-fg: #a9a9a9;
-
-// $animation-duration: 0.2s;
-// $focus-opacity: 0.55;
-
-// $focus-size: 0 0 0.1rem 0.15rem;
-// $focus-color: rgba(240, 61, 77, 0.13);
-
 
 
 $default-colors: (
@@ -68,12 +21,14 @@ $default-colors: (
   'danger': (#dc3545, #fff),
   'light': (#f8f9fa, black),
   'dark': (#212529, #fff),
+  'content': (#fff, #212529),
   'link': (transparent, #0d6efd),
   'body': (#fff, black),
   'white': (#fff, black),
   'transparent': (transparent, black),
   'dot': (#c3c3c3, black)
 ) !default;
+
 
 
 $base-colors: (
@@ -102,3 +57,17 @@ $base-colors: (
   'bg-light': #f1f1f1,
   'bg-dot': #c3c3c3,
 );
+
+
+
+$theme-mode: ('light', 'dark');
+$theme-palette: (
+  // name:    (light,     dark)
+  background: (#ffffff, #000000),
+  primary:    (#0d6efd, #0d6efd),
+  secondary:  (#6c757d, #a3b1bd),
+  accent:     (#0d6efd, #3d444a),
+  light:      (#f8f9fa, #212529),
+  dark:       (#212529, #f8f9fa),
+  border:     (#dee2e6, #4c5259)
+)!default;
