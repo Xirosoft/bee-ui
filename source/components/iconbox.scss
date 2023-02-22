@@ -1,0 +1,55 @@
+@use '../internal' as *;
+
+/****************************
+* Name: iconbox
+* Class: .iconbox
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://github.xirosoft.io/bee-ui/components/iconbox
+*/
+
+.iconbox {
+	// background: var(--bee-theme-bg);
+	border: 1px solid var(--bee-theme-border);
+	padding: 3.125rem 1.25rem;
+	border-radius: .5rem;
+	transition: $transition;
+
+	&__icon {
+		margin-bottom: 1.25rem;
+		width: 3.125rem;
+		height: auto;
+		display: inline-block;
+		img {
+			width: auto;
+			height: auto;
+			display: block;
+		}
+	}
+	&__title {
+		font-size: 1.125rem;
+		font-weight: 600;
+		line-height: 2rem;
+		text-transform: capitalize;
+		color: var(--bee-theme-dark);
+	}
+	
+	&:hover {
+		border-color: transparent;
+		box-shadow: 0px 6px 30px var(--bee-theme-shadow);
+	}
+}
+
+.bg-gradient-indigo {
+	background: linear-gradient(300deg, #562dd4 0%, #e2498a 100%);
+	color: var(--bee-white);
+}
+.bg-gradient-yellow {
+	background: linear-gradient(300deg, #ff7b48 0%, #ffca4c 100%);
+	color: var(--bee-white);
+}
+.bg-gradient-blue {
+	background: linear-gradient(300deg, #753cea 0%, #05cbd1 100%);
+	color: var(--bee-white);
+}

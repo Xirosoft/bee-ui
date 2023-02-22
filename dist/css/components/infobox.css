@@ -1,0 +1,77 @@
+/*
+* Bee UI 0.0.1 
+* © 2023 Xirosoft, 
+* https://xirosoft.github.io/bee
+*/
+/* FONT */ /****************************
+* Name: infobox
+* Class: .infobox
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://github.xirosoft.io/bee-ui/components/infobox
+*/
+.infobox {
+  padding: 1.875rem;
+  border: 1px solid var(--bee-theme-border);
+  border-radius: 0.5rem;
+  background: var(--bee-theme-bg);
+  transition: all 300ms;
+}
+
+.infobox__icon {
+  display: inline-block;
+  margin-bottom: 1.563rem;
+  width: 3.125rem;
+  height: auto;
+}
+
+.infobox__icon img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.infobox__title {
+  margin-bottom: 0.625rem;
+  color: var(--bee-theme-dark);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 2rem;
+}
+
+.infobox__text {
+  color: var(--bee-theme-content);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.infobox__btn {
+  display: inline-flex;
+  margin-top: 1.563rem;
+}
+
+.infobox__btn .btn {
+  padding: 0.5rem 1.375rem;
+  text-transform: capitalize;
+}
+
+.infobox:hover {
+  border-color: transparent;
+  box-shadow: 0px 6px 30px var(--bee-theme-shadow);
+}
+
+.infobox.flex {
+  border: none;
+}
+
+.infobox.flex .infobox__icon {
+  margin-right: 1.25rem;
+  margin-bottom: 0;
+}
+
+.infobox.flex .infobox__body {
+  flex: 1;
+}

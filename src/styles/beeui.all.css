@@ -71,7 +71,6 @@ body {
 
 /* Nunito Sans for the font */
 body {
-  background-color: var(--bee-theme-background);
   color: var(--bee-body-color);
   font-weight: var(--bee-body-font-weight);
   font-size: var(--bee-body-font-size);
@@ -188,7 +187,7 @@ fieldset legend {
 /*************************************
 /* Body Default Style
 *************************************/
-:root, .light {
+:root[data-bee-theme=light], .light {
   --bee-body-font-family: Inter;
   --bee-body-font-size: 1rem;
   --bee-body-font-weight: 400;
@@ -200,7 +199,7 @@ fieldset legend {
 /*************************************
 /* Input Default Style
 *************************************/
-:root, .light {
+:root[data-bee-theme=light], .light {
   --bee-input-font-family: Inter;
   --bee-input-font-size: 0.875rem;
   --bee-input-font-weight: 400;
@@ -231,7 +230,7 @@ fieldset legend {
 /*************************************
 /* List Group Default Style
 *************************************/
-:root, .light {
+:root[data-bee-theme=light], .light {
   --bee-list-group-color: var(--bee-body-color);
   --bee-list-group-bg: var(--bee-body-bg);
   --bee-list-group-border-color: var(--bee-border);
@@ -261,7 +260,7 @@ fieldset legend {
   --bee-list-group-active-border-color: var(--bee-primary);
 }
 
-:root, .light {
+:root[data-bee-theme=light], .light {
   --bee-theme-background: #ffffff;
   --bee-theme-primary: #0d6efd;
   --bee-theme-secondary: #6c757d;
@@ -269,9 +268,6 @@ fieldset legend {
   --bee-theme-light: #f8f9fa;
   --bee-theme-dark: #212529;
   --bee-theme-border: #dee2e6;
-  --bee-theme-content: #8c8c8c;
-  --bee-theme-shadow: #ebebeb;
-  --bee-theme-bg: #ffffff;
 }
 
 :root[data-bee-theme=dark], .dark {
@@ -282,52 +278,9 @@ fieldset legend {
   --bee-theme-light: #212529;
   --bee-theme-dark: #f8f9fa;
   --bee-theme-border: #4c5259;
-  --bee-theme-content: #8c8c8c;
-  --bee-theme-shadow: #171111;
-  --bee-theme-bg: #161617;
 }
 
-:root {
-  --bee-primary: #0d6efd;
-  --bee-secondary: #6c757d;
-  --bee-success: #198754;
-  --bee-info: #0dcaf0;
-  --bee-warning: #ffc107;
-  --bee-danger: #dc3545;
-  --bee-light: #f8f9fa;
-  --bee-dark: #212529;
-  --bee-content: #fff;
-  --bee-link: transparent;
-  --bee-body: #fff;
-  --bee-white: #ffffff;
-  --bee-transparent: transparent;
-  --bee-dot: #c3c3c3;
-  --bee-black: #000;
-  --bee-red: #F44336;
-  --bee-pink: #E91E63;
-  --bee-purple: #9C27B0;
-  --bee-deep-purple: #673AB7;
-  --bee-indigo: #3F51B5;
-  --bee-blue: #2196F3;
-  --bee-light-blue: #03A9F4;
-  --bee-cyan: #00BCD4;
-  --bee-teal: #009688;
-  --bee-green: #4CAF50;
-  --bee-light-green: #8BC34A;
-  --bee-lime: #CDDC39;
-  --bee-yellow: #FFEB3B;
-  --bee-amber: #FFC107;
-  --bee-orange: #FF9800;
-  --bee-deep-orange: #FF5722;
-  --bee-brown: #795548;
-  --bee-grey: #9E9E9E;
-  --bee-blue-grey: #607D8B;
-  --bee-border: #dee2e6;
-  --bee-bg-light: #f1f1f1;
-  --bee-bg-dot: #c3c3c3;
-}
-
-:root[data-bee-theme=dark], .dark {
+:root[data-bee-theme=light], .light {
   --bee-primary: #0d6efd;
   --bee-secondary: #6c757d;
   --bee-success: #198754;
@@ -7771,47 +7724,6 @@ fieldset legend {
 /*************************************
 /* Breadcrumb Style
 *************************************/
-.breadcrumbs__wrapper {
-  position: relative;
-}
-
-.breadcrumbs__wrapper.text-center {
-  text-align: center;
-}
-
-.breadcrumbs__wrapper.text-center .breadcrumbs__content {
-  margin: auto;
-}
-
-.breadcrumbs__wrapper.text-right {
-  text-align: right;
-}
-
-.breadcrumbs__wrapper.text-right .breadcrumbs__content {
-  margin-left: auto;
-}
-
-.breadcrumbs__content {
-  max-width: 550px;
-  font-family: var(--bee-body-font-family);
-}
-
-.breadcrumbs__content h2 {
-  margin-bottom: 20px;
-  color: var(--bee-theme-dark);
-  font-weight: 600;
-  font-size: 46px;
-  line-height: 60px;
-}
-
-.breadcrumbs__content p {
-  margin-bottom: 1.25rem;
-  color: var(--bee-grey);
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.625rem;
-}
-
 .breadcrumbs ul {
   display: -webkit-box;
   display: -moz-box;
@@ -12045,132 +11957,4 @@ h6, .h6 {
   0% {
     background-position-x: 0.625rem;
   }
-}
-/****************************
-* Name: infobox
-* Class: .infobox
-* Variants: primary, secondary
-* Version: 0.0.1
-* Since: 0.0.1
-* Live Url: https://github.xirosoft.io/bee-ui/components/infobox
-*/
-.infobox {
-  padding: 1.875rem;
-  border: 1px solid var(--bee-theme-border);
-  border-radius: 0.5rem;
-  background: var(--bee-theme-bg);
-  transition: all 300ms;
-}
-
-.infobox__icon {
-  display: inline-block;
-  margin-bottom: 1.563rem;
-  width: 3.125rem;
-  height: auto;
-}
-
-.infobox__icon img {
-  display: block;
-  width: auto;
-  height: auto;
-}
-
-.infobox__title {
-  margin-bottom: 0.625rem;
-  color: var(--bee-theme-dark);
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 1.375rem;
-  line-height: 2rem;
-}
-
-.infobox__text {
-  color: var(--bee-theme-content);
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.infobox__btn {
-  display: inline-flex;
-  margin-top: 1.563rem;
-}
-
-.infobox__btn .btn {
-  padding: 0.5rem 1.375rem;
-  text-transform: capitalize;
-}
-
-.infobox:hover {
-  border-color: transparent;
-  box-shadow: 0px 6px 30px var(--bee-theme-shadow);
-}
-
-.infobox.flex {
-  border: none;
-}
-
-.infobox.flex .infobox__icon {
-  margin-right: 1.25rem;
-  margin-bottom: 0;
-}
-
-.infobox.flex .infobox__body {
-  flex: 1;
-}
-
-/****************************
-* Name: iconbox
-* Class: .iconbox
-* Variants: primary, secondary
-* Version: 0.0.1
-* Since: 0.0.1
-* Live Url: https://github.xirosoft.io/bee-ui/components/iconbox
-*/
-.iconbox {
-  padding: 3.125rem 1.25rem;
-  border: 1px solid var(--bee-theme-border);
-  border-radius: 0.5rem;
-  transition: all 300ms;
-}
-
-.iconbox__icon {
-  display: inline-block;
-  margin-bottom: 1.25rem;
-  width: 3.125rem;
-  height: auto;
-}
-
-.iconbox__icon img {
-  display: block;
-  width: auto;
-  height: auto;
-}
-
-.iconbox__title {
-  color: var(--bee-theme-dark);
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 2rem;
-}
-
-.iconbox:hover {
-  border-color: transparent;
-  box-shadow: 0px 6px 30px var(--bee-theme-shadow);
-}
-
-.bg-gradient-indigo {
-  background: linear-gradient(300deg, #562dd4 0%, #e2498a 100%);
-  color: var(--bee-white);
-}
-
-.bg-gradient-yellow {
-  background: linear-gradient(300deg, #ff7b48 0%, #ffca4c 100%);
-  color: var(--bee-white);
-}
-
-.bg-gradient-blue {
-  background: linear-gradient(300deg, #753cea 0%, #05cbd1 100%);
-  color: var(--bee-white);
 }

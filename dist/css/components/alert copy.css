@@ -1,0 +1,189 @@
+/*
+* Bee UI 0.0.1 
+* © 2023 Xirosoft, 
+* https://xirosoft.github.io/bee
+*/
+/* FONT */ /****************************
+* Name: alert
+* Class: .alert
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://github.xirosoft.io/bee-ui/components/alert
+*/
+.alert {
+  margin: 0.625rem 0;
+  padding: 0.5rem;
+  border: 0.063rem solid;
+  border-color: var(--bee-theme-border);
+  border-radius: 0.25rem;
+  background-color: var(--bee-theme-light);
+}
+
+.alert-primary {
+  border-color: #86b7fe;
+  background-color: #cfe2ff;
+  color: #024cb9;
+}
+
+.alert-primary a,
+.alert-primary .alert-link {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.alert-secondary {
+  border-color: #b5babf;
+  background-color: #e1e3e5;
+  color: #4c5258;
+}
+
+.alert-secondary a,
+.alert-secondary .alert-link {
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.alert-success {
+  border-color: #6be4ac;
+  background-color: #c4f4de;
+  color: #125f3b;
+}
+
+.alert-success a,
+.alert-success .alert-link {
+  color: #198754;
+  font-weight: 600;
+}
+
+.alert-info {
+  border-color: #85e5f8;
+  background-color: #cef5fc;
+  color: #098da8;
+}
+
+.alert-info a,
+.alert-info .alert-link {
+  color: #0dcaf0;
+  font-weight: 600;
+}
+
+.alert-warning {
+  border-color: #ffe083;
+  background-color: #fff3cd;
+  color: #b78a00;
+}
+
+.alert-warning a,
+.alert-warning .alert-link {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.alert-danger {
+  border-color: #ee9aa2;
+  background-color: #f8d7da;
+  color: #a31c29;
+}
+
+.alert-danger a,
+.alert-danger .alert-link {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.alert-light {
+  border-color: #bec7d1;
+  background-color: #fefefe;
+  color: #687d91;
+}
+
+.alert-light a,
+.alert-light .alert-link {
+  color: #687d91;
+  font-weight: 600;
+}
+
+.alert-dark {
+  border-color: #86929e;
+  background-color: #cfd3d8;
+  color: #171a1d;
+}
+
+.alert-dark a,
+.alert-dark .alert-link {
+  color: #212529;
+  font-weight: 600;
+}
+
+.alert-content {
+  border-color: white;
+  background-color: white;
+  color: #b3b3b3;
+}
+
+.alert-content a,
+.alert-content .alert-link {
+  color: #fff;
+  font-weight: 600;
+}
+
+.alert-link {
+  border-color: rgba(128, 128, 128, 0);
+  background-color: rgba(204, 204, 204, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+.alert-link a,
+.alert-link .alert-link {
+  color: transparent;
+  font-weight: 600;
+}
+
+.alert-body {
+  border-color: white;
+  background-color: white;
+  color: #b3b3b3;
+}
+
+.alert-body a,
+.alert-body .alert-link {
+  color: #fff;
+  font-weight: 600;
+}
+
+.alert-white {
+  border-color: white;
+  background-color: white;
+  color: #b3b3b3;
+}
+
+.alert-white a,
+.alert-white .alert-link {
+  color: #fff;
+  font-weight: 600;
+}
+
+.alert-transparent {
+  border-color: rgba(128, 128, 128, 0);
+  background-color: rgba(204, 204, 204, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+.alert-transparent a,
+.alert-transparent .alert-link {
+  color: transparent;
+  font-weight: 600;
+}
+
+.alert-dot {
+  border-color: #e1e1e1;
+  background-color: #f3f3f3;
+  color: #898989;
+}
+
+.alert-dot a,
+.alert-dot .alert-link {
+  color: #c3c3c3;
+  font-weight: 600;
+}

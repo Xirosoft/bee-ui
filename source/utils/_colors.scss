@@ -6,29 +6,51 @@
 /// @param {theme-mode-with-type} map
 /// @return {multiple-css-variable}
 /// 
-
-@each $mode in $theme-mode {
-  $i: index($theme-mode, $mode);
-  :root[data-#{$prefix}theme=#{$mode}], .#{$mode} {
-    @each $key, $val in $theme-palette {
-      --#{$prefix}theme-#{$key}: #{nth($val, $i)};
-    }
+:root, .light {
+  @each $key, $val in $theme-palette {
+    --#{$prefix}theme-#{$key}: #{nth($val, 1)};
   }
-  // @media (prefers-color-scheme: #{$mode}) {
-  // }
 }
+
+:root[data-#{$prefix}theme="dark"], .dark {
+  @each $key, $val in $theme-palette {
+    --#{$prefix}theme-#{$key}: #{nth($val, 2)};
+  }
+}
+
+
+// @each $mode in $theme-mode {
+//   $i: index($theme-mode, $mode);
+//   :root[data-#{$prefix}theme=#{$mode}], .#{$mode} {
+//     @each $key, $val in $theme-palette {
+//       --#{$prefix}theme-#{$key}: #{nth($val, $i)};
+//     }
+//   }
+//   // @media (prefers-color-scheme: #{$mode}) {
+//   // }
+// }
+
 
 
 /// Css Color Variable [default=light]
 /// @param {Color Map} From internal/theme.scss
 /// 
 $all-colors : map-merge($default-colors, $base-colors);
-:root[data-#{$prefix}theme="light"], .light {
+:root {
   @each $key, $value in $all-colors {
     --#{$prefix}#{$key} : #{nth($value, 1)};
   }
 }
-
+:root[data-#{$prefix}theme="dark"], .dark {
+  @each $key, $value in $all-colors {
+    --#{$prefix}#{$key} : #{nth($value, 1)};
+  }
+}
+// :root[data-#{$prefix}theme="light"], .light {
+//   @each $key, $value in $all-colors {
+//     --#{$prefix}#{$key} : #{nth($value, 1)};
+//   }
+// }
 
 /*************************************
 /* Bg Color

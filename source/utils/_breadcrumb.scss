@@ -1,11 +1,44 @@
 @use '../internal' as *;
 
-
 /*************************************
 /* Breadcrumb Style
 *************************************/
-
 .breadcrumbs {
+    &__wrapper {
+        position: relative;
+        &.text-center {
+            text-align: center;
+
+            .breadcrumbs__content {
+                margin: auto;
+            }
+        }
+        &.text-right {
+            text-align: right;
+
+            .breadcrumbs__content {
+                margin-left: auto;
+            }
+        }
+    }
+    &__content {
+        max-width: 550px;
+        font-family: $default;
+        h2 {
+            font-size: 46px;
+            line-height: 60px;
+            color: var(--bee-theme-dark);
+            font-weight: $semibold;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.625rem;
+            color: $grey;
+            font-weight: $regular;
+            margin-bottom: rem(20px);
+        }
+    }
     ul {
         @include flex;
         @include flexbox;
@@ -54,3 +87,4 @@
         }
     }
 }
+
