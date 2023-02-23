@@ -67,7 +67,7 @@ $all-colors : map-merge($default-colors, $base-colors);
     .text-bg-#{$key} {
       background-color: nth($value, 1) !important;
       @if(type-of($value) == list) {
-          color: nth($value, 2);
+          color: nth($value, 2) !important;
         }
     }
 }

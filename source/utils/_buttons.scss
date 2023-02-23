@@ -10,6 +10,7 @@
     border: .063rem solid;
     cursor: pointer;
     text-decoration: none;
+    transition: $transition;
 
     @each $key, $value in $default-colors {
         $bg-color: nth($value, 1);
@@ -84,6 +85,39 @@
             .btn {
                 font-size: .875rem;
                 padding: .375rem .75rem;
+            }
+        }
+    }
+    &-solid {
+        position: relative;
+        padding: 0 !important;
+        border: 0;
+        background: transparent;
+        color: var(--bee-theme-content);
+        // transition: $transition;
+
+        @each $key, $value in $default-colors {
+            $color: nth($value, 1);
+    
+            &-#{$key} {
+                color: $color;
+            }
+        }
+
+        &::after {
+            content: '>';
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            transform: translateY(-50%);
+            color: currentColor;
+            transition: $transition;
+        }
+        &:hover {
+            // color: var(--bee-primary);
+            opacity: 0.8;
+            &::after {
+                right: -20px;
             }
         }
     }

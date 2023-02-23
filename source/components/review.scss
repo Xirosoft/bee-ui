@@ -1,0 +1,264 @@
+@use '../internal' as *;
+
+/****************************
+* Name: review
+* Class: .review
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://github.xirosoft.io/bee-ui/components/review
+*/
+
+
+.review__style-01 {
+	background: var(--bee-theme-bg);
+	padding: 1.875rem;
+	box-shadow: 0px 6px 30px var(--bee-theme-shadow);
+	border-radius: .5rem;
+	transition: $transition;
+	.review {
+		&__figure {
+			margin-bottom: 15px;
+			width: 6.25rem;
+			height: 6.25rem;
+			border-radius: 50%; 
+			display: inline-block;
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+				border-radius: 50%; 
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+		&__body {
+			flex: 1;
+		}
+		&__title {
+			font-size: 1.125rem;
+			font-weight: 600;
+			line-height: 1.375rem;
+			margin-bottom: .375rem;
+			color: var(--bee-theme-dark);
+			text-transform: capitalize;
+		}
+		&__position {
+			font-size: .938rem;
+			font-weight: 500;
+			color: var(--bee-theme-content);
+			margin-bottom: .875rem;
+			text-transform: capitalize;
+		}
+		&__text {
+			font-size: 1rem;
+			line-height: 1.5rem;
+			font-weight: 400;
+			color: var(--bee-theme-content);
+			font-style: italic;
+		}
+	}
+}
+.review__style-02 {
+	@include flex;
+	align-items: center;
+	padding: 40px 50px;
+	background: var(--bee-theme-bg);
+	padding: 1.875rem;
+	box-shadow: 0px 6px 30px var(--bee-theme-shadow);
+	border-radius: .5rem;
+	transition: $transition;
+
+	.review {
+		&__figure {
+			margin: 0 1.25rem 0 0;
+			width: 6.25rem;
+			height: 6.25rem;
+			border-radius: 50%; 
+			display: inline-block;
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+				border-radius: 50%; 
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+		&__body {
+			flex: 1;
+		}
+		&__title {
+			font-size: 1.125rem;
+			font-weight: 600;
+			line-height: 1.375rem;
+			margin-bottom: .375rem;
+			color: var(--bee-theme-dark);
+			text-transform: capitalize;
+		}
+		&__position {
+			font-size: .938rem;
+			font-weight: 500;
+			color: var(--bee-theme-content);
+			margin-bottom: .875rem;
+			text-transform: capitalize;
+		}
+		&__text {
+			font-size: 1rem;
+			line-height: 1.5rem;
+			font-weight: 400;
+			color: var(--bee-theme-content);
+			font-style: italic;
+		}
+	}
+}
+.review__style-03 {
+	background: var(--bee-theme-bg);
+	padding: 1.875rem;
+	box-shadow: 0px 6px 30px var(--bee-theme-shadow);
+	border-radius: .5rem;
+	transition: $transition;
+	color: var(--bee-theme-dark);
+	.review {
+		&__body {
+			margin-top: 25px;
+		}
+		&__title {
+			font-size: 1.125rem;
+			font-weight: 600;
+			line-height: 1.375rem;
+			margin-bottom: .375rem;
+			text-transform: capitalize;
+		}
+		&__position {
+			font-size: .875rem;
+			font-weight: 500;
+			// color: var(--bee-theme-content);
+			margin-bottom: .313rem;
+			text-transform: capitalize;
+		}
+		&__text {
+			font-size: 1rem;
+			line-height: 1.5rem;
+			font-weight: 400;
+			// color: var(--bee-theme-content);
+			font-style: italic;
+		}
+		&__rating {
+			@include flex;
+			align-items: center;
+
+			span {
+				font-size: 20px;
+				color: var(--bee-yellow);
+				fill: var(--bee-yellow);
+			}
+		}
+	}
+}
+.review__style-04 {
+	background: var(--bee-theme-bg);
+	padding: 1.875rem;
+	box-shadow: 0px 6px 30px var(--bee-theme-shadow);
+	border-radius: .5rem;
+	transition: $transition;
+	color: var(--bee-theme-dark);
+	.review {
+		&__inner {
+			display: flex;
+			align-items: center;
+			margin-top: 2rem;
+		}
+		&__figure {
+			margin: 0 1rem 0 0;
+			width: 4rem;
+			height: 4rem;
+			border-radius: 50%; 
+			display: inline-block;
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+				border-radius: 50%; 
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+		&__body {
+			
+		}
+		&__title {
+			font-size: 1.125rem;
+			font-weight: 600;
+			line-height: 1.375rem;
+			margin-bottom: .375rem;
+			text-transform: capitalize;
+		}
+		&__position {
+			font-size: .875rem;
+			font-weight: 500;
+			color: var(--bee-theme-content);
+			margin-bottom: .313rem;
+			text-transform: capitalize;
+		}
+		&__text {
+			font-size: 1rem;
+			line-height: 1.5rem;
+			font-weight: 400;
+			color: var(--bee-theme-content);
+		}
+	}
+}
+
+.review__style-05 {
+	background: var(--bee-theme-bg);
+	padding: 2.5rem 1.875rem 1.875rem;
+	box-shadow: 0px 6px 30px var(--bee-theme-shadow);
+	border-radius: .5rem;
+	transition: $transition;
+	color: var(--bee-theme-dark);
+	border-top: 3px solid $primary;
+	.review {
+		&__inner {
+			margin-top: 2.5rem;
+		}
+		&__figure {
+			margin-bottom: 1rem ;
+			width: 5rem;
+			height: 5rem;
+			border-radius: 50%; 
+			display: inline-block;
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+				border-radius: 50%; 
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+		&__body {
+			
+		}
+		&__title {
+			font-size: 1.125rem;
+			font-weight: 600;
+			line-height: 1.375rem;
+			margin-bottom: .375rem;
+			text-transform: capitalize;
+		}
+		&__position {
+			font-size: .875rem;
+			font-weight: 500;
+			color: var(--bee-theme-content);
+			margin-bottom: .313rem;
+			text-transform: capitalize;
+		}
+		&__text {
+			font-size: 1rem;
+			line-height: 1.5rem;
+			font-weight: 400;
+			color: var(--bee-theme-content);
+		}
+	}
+}

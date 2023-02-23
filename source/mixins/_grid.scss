@@ -51,6 +51,9 @@
   }
 }
 
+
+// @mixin 
+
 /// grid-generator
 /// @param {$columns: number } (1-12)
 /// @param {$space: space } (default: 1rem)
@@ -60,7 +63,7 @@
 @mixin grid-generator($columns, $breakpoints: $default-breakpoints) {
   @include col-generator($columns: $columns);
   @include col-generator($size: 100%, $columns: $columns);
-  
+
   @each $key, $val in $breakpoints {
     &-#{$key} {
       @include mq(null, $key) {
@@ -72,3 +75,5 @@
 
 /// col offset generator
 /// col-1, col-md-6, .col-offset-2
+///
+
