@@ -1,0 +1,88 @@
+/*
+* Bee UI 0.0.1 
+* © 2023 Xirosoft, 
+* https://xirosoft.github.io/bee
+*/
+/* FONT */ /****************************
+* Name: team
+* Class: .team
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://github.xirosoft.io/bee-ui/components/team
+*/
+.team__style-01 {
+  border-radius: 8px;
+  background: var(--bee-bg-dark);
+  box-shadow: 0px 6px 30px var(--bee-theme-shadow);
+}
+
+.team__style-01 .team__avatar {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  border-radius: 8px 8px 0 0;
+}
+
+.team__style-01 .team__avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.team__style-01 .team__body {
+  padding: 20px 30px;
+}
+
+.team__style-01 .team__title {
+  margin-bottom: 0.313rem;
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+}
+
+.team__style-01 .team__title a {
+  display: block;
+  color: var(--bee-theme-dark);
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.team__style-01 .team__title a:hover {
+  color: var(--bee-primary);
+}
+
+.team__style-01 .team__position {
+  display: block;
+  margin-bottom: 0;
+  color: var(--bee-theme-content);
+  font-weight: 400;
+  font-size: 0.938rem;
+}
+
+.team__style-01 .team__social {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.team__style-01 .team__social a {
+  display: inline-block;
+  margin-right: 0.75rem;
+  color: var(--bee-theme-content);
+  font-size: 1rem;
+  transition: all 300ms;
+}
+
+.team__style-01 .team__social a:hover {
+  color: var(--bee-primary);
+}
+
+.team__style-01 .team__social a:last-of-type {
+  margin-right: 0;
+}

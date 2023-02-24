@@ -147,9 +147,11 @@
 		&__rating {
 			@include flex;
 			align-items: center;
-
+			gap: .125rem;
+			margin-top: .313rem;
+			i,
 			span {
-				font-size: 20px;
+				font-size: 1rem;
 				color: var(--bee-yellow);
 				fill: var(--bee-yellow);
 			}

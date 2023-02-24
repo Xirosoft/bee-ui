@@ -1,0 +1,148 @@
+/*
+* Bee UI 0.0.1 
+* © 2023 Xirosoft, 
+* https://xirosoft.github.io/bee
+*/
+/* FONT */ /****************************
+* Name: post
+* Class: .post
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://github.xirosoft.io/bee-ui/components/post
+*/
+.post__style-01 {
+  padding: 0.938rem;
+  border-radius: 0.5rem;
+  background: var(--bee-theme-white);
+  box-shadow: 0px 0px 30px var(--bee-theme-shadow);
+}
+
+.post__style-01 .post__figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  transition: all 300ms;
+}
+
+.post__style-01 .post__figure img {
+  width: 100%;
+  height: 13.75rem;
+  border-radius: 0.5rem;
+  transition: all 300ms;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.post__style-01 .post__badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 4px;
+  background: var(--bee-warning);
+  color: var(--bee-white);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.post__style-01 .post__body {
+  padding: 1.875rem 0px 0;
+}
+
+.post__style-01 .post__title {
+  margin-bottom: 0.625rem;
+  color: var(--bee-theme-dark);
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+}
+
+.post__style-01 .post__title a {
+  display: block;
+  margin-bottom: 0.938rem;
+  color: currentColor;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.post__style-01 .post__title a:hover {
+  color: var(--bee-primary);
+}
+
+.post__style-01 .post__text {
+  margin-bottom: 0;
+  color: var(--bee-theme-content);
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.post__style-01 .post__btn {
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.post__style-01 .post__btn .btn {
+  text-transform: capitalize;
+}
+
+.post__style-01 .post__authors {
+  display: flex;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 0.063rem solid var(--bee-theme-border);
+}
+
+.post__style-01 .post__authors .author__thumb {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+}
+
+.post__style-01 .post__authors .author__thumb img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.post__style-01 .post__authors .author__body {
+  margin-left: 0.625rem;
+}
+
+.post__style-01 .post__authors .author__title {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--bee-theme-dark);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: var(--bee-body-font-family);
+  line-height: 1.25rem;
+  transition: all 300ms;
+}
+
+.post__style-01 .post__authors .author__title:hover {
+  color: var(--bee-primary);
+}
+
+.post__style-01 .post__authors .author__date {
+  display: block;
+  color: var(--bee-theme-content);
+  text-transform: capitalize;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.post__style-01:hover .post__title {
+  color: var(--bee-primary);
+}
+
+.post__style-01:hover .post__figure img {
+  transform: scale(1.1);
+}

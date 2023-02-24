@@ -1,0 +1,145 @@
+@use '../internal' as *;
+
+/****************************
+* Name: post
+* Class: .post
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://github.xirosoft.io/bee-ui/components/post
+*/
+
+
+.post__style-01 {
+	background: var(--bee-theme-white);
+	padding: .938rem;
+	border-radius: .5rem;
+	box-shadow: 0px 0px 30px var(--bee-theme-shadow);
+
+	.post {
+		&__figure {
+			border-radius: .5rem;
+			overflow: hidden;
+			transition: $transition;
+			position: relative;
+			img {
+				width: 100%;
+				height: 13.75rem;
+				border-radius: .5rem;
+				object-fit: cover;
+				object-position: center;
+				transition: $transition;
+			}
+		}
+		&__badge {
+			font-size: 14px;
+			line-height: 22px;
+			color: var(--bee-white);
+			background: var(--bee-warning);
+			font-weight: 500;
+			text-transform: capitalize;
+			display: inline-block;
+			padding: 5px 8px;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			border-radius: 4px;
+		}
+		&__body {
+			padding: 1.875rem 0px 0;
+
+		}
+		&__title {
+			font-size: 1.375rem;
+			line-height: 1.75rem;
+			font-weight: 600;
+			color: var(--bee-theme-dark);
+			margin-bottom: .625rem;
+
+			a {
+				color: currentColor;
+				display: block;
+				margin-bottom: .938rem;
+				text-decoration: none;
+				transition: $transition;
+
+				&:hover {
+					color: var(--bee-primary);
+				}
+			}
+		}
+		&__text  {
+			font-size: 1rem;
+			line-height: 1.5;
+			color: var(--bee-theme-content);
+			margin-bottom: 0;
+			text-decoration: none;
+		}
+		&__btn {
+			display: inline-flex;
+			margin-top: 20px;
+
+			.btn {
+				text-transform: capitalize;
+			}
+		}
+		&__authors {
+			display: flex;
+			margin-top: 1.25rem;
+			border-top: .063rem solid var(--bee-theme-border);
+			padding-top: 1.25rem;
+			.author {
+				&__thumb {
+					height: 3.125rem;
+					width: 3.125rem;
+					border-radius: 50%;
+					img {
+						width: 100%;
+						height: 100%;
+						border-radius: 50%;
+					}
+				}
+				&__body {
+					margin-left: .625rem;
+				}
+				&__title {
+					font-family: $default;
+					font-size: 1rem;
+					line-height: 1.25rem;
+					color: var(--bee-theme-dark);
+					font-weight: 500;
+					margin-bottom: .5rem;
+					display: block;
+					transition: $transition;
+					text-transform: capitalize;
+					text-decoration: none;
+					
+					&:hover {
+						color: var(--bee-primary);
+					}
+				}
+				&__date {
+					font-size: .875rem;
+					color: var(--bee-theme-content);
+					line-height: 1rem;
+					display: block;
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+	&:hover {
+		.post {
+			&__title {
+				color: var(--bee-primary);
+			}
+			&__figure {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+                                                 
+                                                            

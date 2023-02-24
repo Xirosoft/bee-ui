@@ -3,61 +3,95 @@ id: team-section
 title: Team
 ---
 
-import Image from '@components/Image'
+import Image from "@components/Image";
 
 ## Team Section
+
 <br />
 
-<section className="team-section">
+<div className="section">
     <div className="container">
         <div className="row">
-            <div className="col-lg-4 col-md-4 col-sm-6">
-                <div className="team__item__box text-left">
+            <div className="col-lg-6 col-md-4 col-sm-6">
+                <div className="team__style-01 text-center">
                     <div className="team__avatar">
-                        <Image src="/assets/images/favicon-96x96.png" alt="image" />
+                        <img src="/assets/images/team/team-01.jpg" alt="Team Image" />
                     </div>
-                    <div className="team__content">
-                        <h5><a href="#">Paul Trueman</a></h5>
-                        <div className="span">Designer</div>
-                        <div className="social__icon">
-                            <ul>
-                                <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i className="fab fa-dribbble"></i></a></li>
-                            </ul>
+                    <div className="team__body">
+                        <h4 className="team__title">
+                            <a href="#">Paul Trueman</a>
+                        </h4>
+                        <span className="team__position">Chief Operating Officer</span>
+                        <div className="team__social">
+                            <a href="#">
+                                <i className="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i className="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#">
+                                <i className="fab fa-dribbble"></i>
+                            </a>
+                            <a href="#">
+                                <i className="fa fa-envelope far"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-6 col-md-4 col-sm-6">
+                <div className="team__style-01 text-center">
+                    <div className="team__avatar">
+                        <img src="/assets/images/team/team-01.jpg" alt="Team Image" />
+                    </div>
+                    <div className="team__body">
+                        <h4 className="team__title">
+                            <a href="#">Paul Trueman</a>
+                        </h4>
+                        <span className="team__position">Chief Operating Officer</span>
+                        <div className="team__social">
+                            <a href="#">
+                                <i className="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i className="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#">
+                                <i className="fab fa-dribbble"></i>
+                            </a>
+                            <a href="#">
+                                <i className="fa fa-envelope far"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 
 ```html copy showLineNumbers
-<section class="team-section">
+<div class="section">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="team__item__box text-left">
+                <div class="team__style-01 text-center">
                     <div class="team__avatar">
-                        <img src="/assets/images/team-01.png" alt="image" />
+                        <img src="images/team-01.jpg" alt="image" />
                     </div>
-                    <div class="team__content">
-                        <h5><a href="#">Paul Trueman</a></h5>
-                        <div class="span">Designer</div>
-                        <div class="social__icon">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                            </ul>
+                    <div class="team__body">
+                        <h4 class="team__title"><a href="#">Paul Trueman</a></h4>
+                        <span class="team__position">Chief Operating Officer</span>
+                        <div class="team__social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-envelope far"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 ```
