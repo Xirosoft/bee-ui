@@ -1,0 +1,129 @@
+/*
+* Bee UI 0.0.1 
+* © 2023 Xirosoft, 
+* https://xirosoft.github.io/bee
+*/
+/* FONT */ /****************************
+* Name: pricing table
+* Class: .pricing__card
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://github.xirosoft.io/bee-ui/components/pricing-table
+*/
+.pricing__card {
+  padding: 2.5rem 1.875rem;
+  border-radius: 0.5rem;
+  background: var(--bee-theme-white);
+  box-shadow: 0px 0px 30px var(--bee-theme-shadow);
+  text-align: center;
+  transition: all 300ms;
+}
+
+.pricing__card .pricing__header {
+  margin-bottom: 16px;
+  color: var(--bee-dark);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.pricing__card .pricing__subheader {
+  margin-bottom: 2.5rem;
+  color: var(--bee-theme-content);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.pricing__card .pricing__meta {
+  display: inline-flex;
+  align-items: center;
+}
+
+.pricing__card .pricing__current {
+  position: relative;
+}
+
+.pricing__card .pricing__current .currency {
+  position: absolute;
+  top: 0;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.pricing__card .pricing__current .price {
+  padding-left: 0.938rem;
+  color: var(--bee-dark);
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 1.875rem;
+}
+
+.pricing__card .pricing__period {
+  position: relative;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  color: var(--bee-theme-content);
+  text-align: left;
+  font-size: 0.75rem;
+}
+
+.pricing__card .pricing__period span {
+  display: block;
+}
+
+.pricing__card .pricing__period::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0.063rem;
+  height: 100%;
+  background: #e9e9e9;
+  content: "";
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.pricing__card .pricing__list {
+  margin-top: 2.813rem;
+  list-style: none;
+}
+
+.pricing__card .pricing__list li {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.625rem;
+  padding-left: 0.938rem;
+  width: 100%;
+  color: var(--bee-theme-content);
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+.pricing__card .pricing__list li::after {
+  position: absolute;
+  top: 0.125rem;
+  left: 0;
+  color: currentColor;
+  content: "*";
+}
+
+.pricing__card .pricing__list li:last-of-type {
+  margin-bottom: 0;
+}
+
+.pricing__card .pricing__btn {
+  display: inline-flex;
+  margin-top: 3.438rem;
+}
+
+.pricing__card .pricing__btn .btn {
+  padding: 10px 20px;
+}
+
+.pricing__card:hover {
+  box-shadow: 0px 28px 40px rgba(14, 30, 53, 0.2);
+  transform: translateY(-10px);
+}

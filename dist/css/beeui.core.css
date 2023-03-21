@@ -7555,6 +7555,13 @@ fieldset legend {
   cursor: pointer;
 }
 
+.form-checks {
+  display: flex;
+  align-items: center;
+
+  gap: 0.313rem;
+}
+
 .radio {
   position: relative;
   display: inline-block;
@@ -7736,7 +7743,6 @@ fieldset legend {
 *************************************/
 .table {
   display: table;
-  margin: 1.875rem;
   width: 100%;
   border-spacing: initial;
   border-collapse: initial;
@@ -8503,7 +8509,6 @@ textarea:not(.btn) {
   padding: var(--bee-list-group-item-padding-y) var(--bee-list-group-item-padding-x);
   border: var(--bee-list-group-border-width) solid var(--bee-theme-border);
   background-color: var(--bee-theme-light);
-  color: var(--bee-list-group-color);
   text-decoration: none;
 }
 
@@ -8521,7 +8526,7 @@ textarea:not(.btn) {
   border-bottom-left-radius: var(--bee-list-group-border-radius);
 }
 
-.list-group-item.active {
+.list-group-item:hover, .list-group-item.active {
   z-index: 2;
   border-color: var(--bee-list-group-active-border-color);
   background: var(--bee-list-group-active-bg);

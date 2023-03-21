@@ -4,27 +4,40 @@ title: Form
 ---
 
 ## Form
+
+### Forms Default
+
 <br />
 
 <form action="">
     <div className="input-group">
-        <label htmlFor="f_name" className="form-label">First Name</label>
+        <label htmlFor="f_name" className="form-label">
+            First Name
+        </label>
         <input type="text" name="f_name" id="f_name" className="form-control" placeholder="Full Name" />
     </div>
     <div className="input-group">
-        <label htmlFor="l_name" className="form-label">Last Name</label>
+        <label htmlFor="l_name" className="form-label">
+            Last Name
+        </label>
         <input type="text" name="l_name" id="l_name" className="form-control" placeholder="Last Name" />
     </div>
     <div className="input-group">
-        <label htmlFor="email" className="form-label">Your Email</label>
+        <label htmlFor="email" className="form-label">
+            Your Email
+        </label>
         <input type="email" name="email" id="email" className="form-control" placeholder="Your Email" />
     </div>
     <div className="input-group">
-        <label htmlFor="number" className="form-label">Number</label>
+        <label htmlFor="number" className="form-label">
+            Number
+        </label>
         <input type="number" name="number" id="number" className="form-control" placeholder="Number" />
     </div>
     <div className="input-group">
-        <label htmlFor="textarea" className="form-label">Textarea</label>
+        <label htmlFor="textarea" className="form-label">
+            Textarea
+        </label>
         <textarea id="textarea" className="form-control" rows="3" placeholder="Your text Here"></textarea>
     </div>
     <input type="submit" className="btn btn-primary" value="Submit" />
@@ -56,3 +69,44 @@ title: Form
 </form>
 ```
 
+### Sign In Forms
+
+<br />
+
+<form action="#" className="form m-auto">
+    <div className="input-group flex align-items-center">
+        <label for="email" className="form-label">
+            Your Email
+        </label>
+        <input type="email" name="email" id="email" className="form-control" placeholder="Your Email" />
+    </div>
+    <div className="input-group">
+        <label for="password" className="form-label">
+            Password
+        </label>
+        <input type="password" name="password" id="password" className="form-control" placeholder="Password" />
+    </div>
+    <div className="form-check my-10">
+        <input className="checkbox checkbox-filled" id="check01" type="checkbox" />
+        <label for="check01">Remember me</label>
+    </div>
+    <input type="submit" className="btn btn-primary w-100" value="Submit" />
+</form>
+
+```html copy showLineNumbers
+<form action="#" class="form m-auto">
+    <div class="input-group flex align-items-center">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" />
+    </div>
+    <div class="input-group">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" name="password" id="password" class="form-control" placeholder="Password" />
+    </div>
+    <div class="form-check my-10">
+        <input class="checkbox checkbox-filled" id="check01" type="checkbox" />
+        <label for="check01">Remember me</label>
+    </div>
+    <input type="submit" class="btn btn-primary w-100" value="Submit" />
+</form>
+```
