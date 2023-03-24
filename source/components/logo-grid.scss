@@ -1,0 +1,179 @@
+@use '../internal' as *;
+
+/****************************
+* Name: logo grid
+* Class: .logo__grid
+* Variants: primary, secondary
+* Version: 0.0.1
+* Since: 0.0.1
+* Live Url: https://github.xirosoft.io/bee-ui/components/logo-grid
+*/
+
+/*************************************
+/* Logo Grid Style 01
+*************************************/
+.logo__grid-01 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border: 1px solid var(--bee-theme-border);
+    border-radius: .5rem;
+    
+    @include mq(md) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .logo__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid var(--bee-theme-border);
+        padding: 1.563rem;
+        cursor: pointer;
+
+        
+        @include mq(lg) {
+            padding: .938rem;
+        }
+        @include mq(md) {
+            border-bottom: 1px solid var(--bee-theme-border);
+
+            &:nth-of-type(3) {
+                border-right: none;
+            }
+            &:nth-of-type(4) {
+                border-bottom: none;
+            }
+            &:nth-of-type(5) {
+                border-bottom: none;
+            }
+            &:nth-of-type(6) {
+                border-bottom: none;
+            }
+        }
+        @include mq(sm) {
+            padding: .625rem;
+        }
+
+        &:last-of-type {
+            border-right: 0;
+        }
+
+        img {
+            filter: grayscale(1);
+            transition: $transition;
+        }
+
+        &:hover {
+            img {
+                filter: grayscale(0);
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+/*************************************
+/* Logo Grid Style 02
+*************************************/
+.logo__grid-02 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--bee-theme-border);
+    border-radius: .5rem;
+    
+    @include mq(sm) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .logo__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid var(--bee-theme-border);
+        border-bottom: 1px solid var(--bee-theme-border);
+        padding: 1.563rem;
+        cursor: pointer;
+
+        
+        @include mq(lg) {
+            padding: .938rem;
+        }
+        @include mq(sm) {
+            padding: .625rem;
+        }
+       
+        &:nth-of-type(4) {
+            border-right: none;
+        }
+        &:nth-of-type(5),
+        &:nth-of-type(6),
+        &:nth-of-type(7),
+        &:nth-of-type(8) {
+            border-bottom: none;
+        }
+        @include mq(sm) {
+            &:nth-of-type(5),
+            &:nth-of-type(6) {
+                border-bottom: 1px solid var(--bee-theme-border);
+            }
+        }
+        &:last-of-type {
+            border-right: none;
+        }
+       
+        img {
+            filter: grayscale(1);
+            transition: $transition;
+        }
+
+        &:hover {
+            img {
+                filter: grayscale(0);
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+/*************************************
+/* Logo Grid Style 03
+*************************************/
+.logo__grid-03 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+    @include mq(sm) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .logo__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.563rem;
+        cursor: pointer;
+        background: var(--bee-theme-light);
+        border-radius: .5rem;
+
+        
+        @include mq(lg) {
+            padding: .938rem;
+        }
+        @include mq(sm) {
+            padding: .625rem;
+        }
+       
+        img {
+            filter: grayscale(1);
+            transition: $transition;
+        }
+
+        &:hover {
+            img {
+                filter: grayscale(0);
+                transform: scale(1.1);
+            }
+        }
+    }
+}
